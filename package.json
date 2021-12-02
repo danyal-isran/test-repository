@@ -1,0 +1,19 @@
+{
+  "name": "test-repository",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danyal-isran/test-repository.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danyal-isran/test-repository/issues"
+  },
+  "homepage": "https://github.com/danyal-isran/test-repository#readme"
+}
