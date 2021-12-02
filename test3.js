@@ -1003,6 +1003,8 @@ function main() {
     }
 
     base = resp.baseUrl;
+    
+    console.log(base);
 
     // Apply Button Group HTML to each Button Group
     buttonContainers.filter(isStandaloneElement).forEach(buttonContainer => {
@@ -1335,7 +1337,7 @@ Prodigy.openFrame = target => {
 Prodigy.startDDC = (pageLoadEvent, API) => {
   // Store a local reference to DDC API
   DDC.API = API;
-
+  console.log('startingDDC');
   return DDC.API.insert('vehicle-pricing', function insertVehiclePricingMarkup(elem, meta) {
     const configType = pageLoadEvent.payload.searchPage ? 'SRP' : 'VDP';
     const vin = meta.vin;
