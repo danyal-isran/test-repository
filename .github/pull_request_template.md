@@ -12,6 +12,12 @@ https://getprodigy.atlassian.net/browse/REL-0001
 
 <!--- If applicable, instructions for how to deploy the code change -->
 
+## How to Test:
+
+<!--- Please describe in detail how you tested your changes. -->
+
+<!--- Did you consider how your change affects other areas of the code, etc. -->
+
 ## Types of Changes:
 
 <!--- What types of changes does your code introduce? Put an `x` in all the boxes that apply: -->
@@ -20,11 +26,6 @@ https://getprodigy.atlassian.net/browse/REL-0001
 - [ ] New feature (non-breaking change which adds functionality)
 - [ ] Docs change / refactoring / dependency upgrade
 - [ ] Breaking change (fix or feature that would cause existing functionality to change)
-
-## How to Test:
-
-<!--- Please describe in detail how you tested your changes. -->
-<!--- Did you consider how your change affects other areas of the code, etc. -->
 
 ## Checklist:
 
