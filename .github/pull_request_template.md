@@ -4,8 +4,6 @@
 
 https://getprodigy.atlassian.net/browse/REL-0001
 
-***
-
 ## Description:
 
 <!--- Why is this change required? What problem does it solve? Are there dependencies? -->
@@ -13,8 +11,6 @@ https://getprodigy.atlassian.net/browse/REL-0001
 <!---  If applicable, a link to related PRs in other repositories that are required by the same feature -->
 
 <!--- If applicable, instructions for how to deploy the code change -->
-
-***
 
 ## Types of Changes:
 
@@ -24,14 +20,11 @@ https://getprodigy.atlassian.net/browse/REL-0001
 - [ ] New feature (non-breaking change which adds functionality)
 - [ ] Docs change / refactoring / dependency upgrade
 - [ ] Breaking change (fix or feature that would cause existing functionality to change)
-***
 
 ## How to Test:
 
 <!--- Please describe in detail how you tested your changes. -->
 <!--- Did you consider how your change affects other areas of the code, etc. -->
-
-***
 
 ## Checklist:
 
