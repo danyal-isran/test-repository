@@ -6,7 +6,9 @@ The project is a command line interface which interacts with Upstart Auto Retail
 
 ### Executable
 
-Update your npm registry to use Upstart's JFrog Artifactory. Instruction can be found [here](#how-do-i-configure-upstart-jfrog-artificatory)
+Update your npm registry to use Upstart's JFrog Artifactory. 
+
+Instruction can be found [here](#how-do-i-configure-upstart-jfrog-artificatory)
 Make sure you have installed `npx` by running `npm i npx -g`
 
 Run `npm install uar-cli -g` to install it globally
@@ -79,17 +81,17 @@ Create a Github issue, and it will be looked at by one of the codeowners.
 
 You will need Artifactory access in [Okta](https://upstart.okta.com/app/UserHome) for this to be able to work.
 
-- Update your NPM registry 
-`npm config set registry https://upstart.jfrog.io/artifactory/api/npm/npm` 
+- Update your NPM registry
+  `npm config set registry https://upstart.jfrog.io/artifactory/api/npm/npm`
 
 - Authenticate
-`npm login`
+  `npm login`
 
 - To find your artifactory credentials:
-Navigate to https://upstart.okta.com/app/UserHome
+  Navigate to https://upstart.okta.com/app/UserHome
 
-- Select “Artifactory” 
-Click your name in the top right hand corner (note, this is your username)
+- Select “Artifactory”
+  Click your name in the top right hand corner (note, this is your username)
 
 - Click “Edit Profile”
 
