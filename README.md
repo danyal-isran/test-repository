@@ -40,6 +40,32 @@ Currently, `uar-cli` supports following operations:
 
 We plan to support more operations. If you are interested in contributing, please feel free to create a pull request.
 
+## How do I configure Upstart JFrog Artificatory?
+
+
+- Update your NPM registry 
+`https://upstart.jfrog.io/artifactory/api/npm/npm/` 
+
+- Authenticate
+`npm login`
+
+- To find your artifactory credentials:
+Navigate to https://upstart.okta.com/app/UserHome
+
+- Select “Artifactory” 
+Click your name in the top right hand corner (note, this is your username)
+
+- Click “Edit Profile”
+
+- Copy your API Key
+
+For the npm login step, the above process helps me identify:
+
+Username: danyal.isran
+Password: <API Key>
+
+Further instructions can be found here: https://upstartnetwork.atlassian.net/wiki/spaces/ENG/pages/632259484/Setup+Artifactory#NPM-%2F-Yarn
+
 ## Frequently Asked Questions
 
 **Q:** Why Standalone? Why not just create a script in `backend`?
@@ -73,31 +99,3 @@ It will help us catch any issues with our backend as we start to consume our own
 **Q:** How do I report issues?
 
 **A:** Create a Github issue, and it will be looked at by one of the codeowners.
-
-##
-
-**Q:** How do I configure Upstart JFrog Artificatory?
-
-
-- Update your NPM registry 
-`https://upstart.jfrog.io/artifactory/api/npm/npm/` 
-
-- Authenticate
-`npm login`
-
-- To find your artifactory credentials:
-Navigate to https://upstart.okta.com/app/UserHome
-
-- Select “Artifactory” 
-Click your name in the top right hand corner (note, this is your username)
-
-- Click “Edit Profile”
-
-- Copy your API Key
-
-For the npm login step, the above process helps me identify:
-
-Username: danyal.isran
-Password: <API Key>
-
-Further instructions can be found here: https://upstartnetwork.atlassian.net/wiki/spaces/ENG/pages/632259484/Setup+Artifactory#NPM-%2F-Yarn
