@@ -78,22 +78,22 @@ It will help us catch any issues with our backend as we start to consume our own
 
 **Q:** How do I configure Upstart JFrog Artificatory?
 
-**A:** 
 
 - Update your NPM registry 
 `https://upstart.jfrog.io/artifactory/api/npm/npm/` 
 
--To find your artifactory credentials:
+- Authenticate
+`npm login`
 
+- To find your artifactory credentials:
 Navigate to https://upstart.okta.com/app/UserHome
 
-Select “Artifactory”
-
+- Select “Artifactory” 
 Click your name in the top right hand corner (note, this is your username)
 
-Click “Edit Profile”
+- Click “Edit Profile”
 
-Copy your API Key
+- Copy your API Key
 
 For the npm login step, the above process helps me identify:
 
