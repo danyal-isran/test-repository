@@ -6,7 +6,7 @@ The project is a command line interface which interacts with Upstart Auto Retail
 
 ### Executable
 
-Update your npm registry to use Upstart's JFrog Artifactory. 
+Update your npm registry to use Upstart's JFrog Artifactory.
 
 Instruction can be found [here](#how-do-i-configure-upstart-jfrog-artificatory)
 Make sure you have installed `npx` by running `npm i npx -g`
@@ -15,9 +15,9 @@ Run `npm install uar-cli -g` to install it globally
 
 Execute command line by executing `uar-cli`
 
-**Note:** Revert back to previous configured npm registry, so existing projects are not impacted
-
 ![alt text](https://github.com/danyal-isran/test-repository/blob/main/cli.png "cli")
+
+**Note:** Revert back to previous configured npm registry, so existing projects are not impacted
 
 ### Development
 
