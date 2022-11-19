@@ -15,7 +15,7 @@ Run `npm install uar-cli -g` to install it globally
 
 Execute command line by executing `uar-cli`
 
-After installing, revert back to previous registry, so other projects like backend are not impacted
+**Note:** Revert back to previous configured npm registry, so existing projects are not impacted
 
 ![alt text](https://github.com/danyal-isran/test-repository/blob/main/cli.png "cli")
 
