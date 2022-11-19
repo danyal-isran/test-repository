@@ -73,6 +73,8 @@ Yes. Create a pull request and it will be reviewed by a codeowner.
 
 Create a Github issue, and it will be looked at by one of the codeowners.
 
+##
+
 ## How do I configure Upstart JFrog Artificatory?
 
 You will need Artifactory access in [Okta](https://upstart.okta.com/app/UserHome) for this to be able to work.
@@ -91,6 +93,6 @@ Click your name in the top right hand corner (note, this is your username)
 
 - Click “Edit Profile”
 
-- Copy your API Key (This is your password)
+- Copy your API Key (Password)
 
 Further instructions can be found here: https://upstartnetwork.atlassian.net/wiki/spaces/ENG/pages/632259484/Setup+Artifactory#NPM-%2F-Yarn
