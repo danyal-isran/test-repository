@@ -1,0 +1,3557 @@
+
+╭─── Claude Code v2.1.50 ──────────────────────────────────────────────────────╮
+│                                            │ Tips for getting started        │
+│                Welcome back!               │ Run /init to create a CLAUDE.m… │
+│                                            │ Note: You have launched claude… │
+│                                            │ ─────────────────────────────── │
+│                      ✻                     │ Recent activity                 │
+│                      |                     │ No recent activity              │
+│                     ▟█▙                    │                                 │
+│                  ▗ ▗   ▖ ▖                 │                                 │
+│                                            │                                 │
+│                    ▘▘ ▝▝                   │                                 │
+│                                            │                                 │
+│   Opus 4.6 · API Usage Billing · Upstart   │                                 │
+│            /Users/danyal.isran             │                                 │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+❯ /agents 
+  ⎿  Agents dialog dismissed
+
+❯ /config 
+  ⎿  Config dialog dismissed
+
+❯ /model 
+  ⎿  Set model to opus (claude-opus-4-5-20251101)
+
+❯ my trading model involves waiting for 4h lows to be swept, after which I  
+  expect to see a clean 5m trend to targets. what i noticed is that if      
+  price rejects target (4h highs pre-market), then trend can end, and price 
+   action can be choppy, 20ema not clean. Is this true?                     
+
+⏺ Your observation aligns with common market behavior. A few points:
+
+  Why this tends to be true:
+
+  1. Liquidity exhaustion - After sweeping 4h lows, the move toward highs
+  consumes the available liquidity. Once price reaches the opposing liquidity
+  pool (4h highs), there may not be enough fuel to continue.
+  2. Target = decision point - Pre-market 4h highs are significant levels where
+  larger players take profits or initiate counter-positions. A rejection there
+  signals the move has fulfilled its purpose.
+  3. Trend structure breaks down - Clean 5m trends rely on consistent higher
+  lows (or lower highs). A rejection at target often creates the first lower
+  high, breaking the pattern that made the 20 EMA "clean."
+  4. Chop = indecision - After a target rejection, you get two-sided flow: longs
+   taking profit, shorts entering. This creates the overlapping candles and EMA
+  whipsaws you're describing.
+
+  Practical takeaway:
+
+  Your edge is likely strongest in the move to target, not through it. Once
+  price reaches 4h highs pre-market and shows rejection (wick, bearish
+  engulfing, failed breakout), the setup has played out. Continuing to trade the
+   same direction in the chop that follows is fighting changed conditions.
+
+  Some traders use target rejection as a signal to:
+  - Close remaining position
+  - Wait for new structure to form
+  - Or even look for reversal setups if rejection is strong
+
+  Does this match what you're seeing in your backtests/live observations?
+
+❯ what should I be looking for move to target after sweeping 4h lows? I     
+  trade the 5m chart, and maybe the 1m, my problem is I do not know what to 
+   look for, all while price moves near target and causing worser risk      
+  reward because of my indecision...whats the pattern that I look for?      
+
+⏺ Here's a straightforward framework:
+
+  After the 4H Low Sweep, Look For:
+
+  1. Displacement (the "tell")
+  - A strong, impulsive candle (or 2-3 candles) moving away from the swept low
+  - Characteristics: large body, small/no wick in direction of move
+  - This confirms buyers stepped in at the liquidity grab
+
+  2. Break of Structure (BOS) on 5m
+  - Price breaks a recent 5m swing high
+  - This shifts the short-term trend bullish
+  - Now you have confirmation, not just hope
+
+  3. Your Entry: The Pullback
+  After BOS, wait for price to retrace to:
+  - Fair Value Gap (FVG) - the imbalance left by the displacement candle
+  - Order block - the last down candle before the displacement
+  - 20 EMA - if it lines up with the above, even better
+
+  The Simple Sequence:
+
+  4H low swept → Displacement → 5m BOS → Pullback to FVG/OB → Entry
+
+  What Solves Your Indecision:
+
+  Problem: "Did it actually sweep?"
+  Solution: Wait for displacement to confirm
+  ────────────────────────────────────────
+  Problem: "When do I enter?"
+  Solution: Only on pullback after BOS, not during the impulse
+  ────────────────────────────────────────
+  Problem: "Where's my stop?"
+  Solution: Below the FVG/OB you entered from
+  ────────────────────────────────────────
+  Problem: "Is R:R good enough?"
+  Solution: If pullback is deep (into FVG), yes. If price barely pulls back,
+  skip
+    it
+
+  Key rule: No BOS on 5m = no trade. The sweep alone isn't enough. You need
+  structure shift + pullback. This filter alone will cut your bad trades
+  significantly.
+
+  Want me to clarify any of these concepts?
+
+❯ i trade the 5m candles, so we had green 5m candle which broke high of     
+  previous cnadle, but not the high for previous candle before that. it     
+  closes right at the high.                                                 
+
+⏺ That's not your BOS yet. Here's the distinction:
+
+  What You Described:
+
+  Candle C: [====▲] closes at high, broke B's high
+  Candle B: [==]
+  Candle A: [===]   ← high NOT broken
+
+  Breaking one candle's high is just bullish pressure, not structure shift.
+
+  What You Need for BOS:
+
+  You need to break a swing high - a high with lower highs on both sides (or the
+   most recent pivot high in the downmove).
+
+          A ←── swing high (this needs to break)
+         /\
+        /  \
+       /    B
+      /      \
+     /        C ← sweep of 4h low
+
+  Your green candle breaking only the prior candle's high is internal price
+  action. The swing high (A) is your structure level.
+
+  The Close at High is Good Though:
+
+  - No upper wick = buyers in control into close
+  - Suggests continuation
+  - But it's early - this candle might be building toward the BOS, not
+  completing it
+
+  Your Play:
+
+  1. Identify where the actual 5m swing high is (the high before price dropped
+  into the 4h low)
+  2. That's your BOS level
+  3. The candle you described might be part of the move that eventually breaks
+  it
+  4. Entry comes after that break, on pullback
+
+  Does that clarify the difference? Where is the swing high relative to where
+  that candle closed?
+
+❯ 5m is volatile, and we might see target reached in two 5m candles, and    
+  price will chop. this is always the case when I enter, price will chop if 
+   there is no momentum for price to reach further daily targets. it feels  
+  like you have to enter without confirmation, when price reclaims the 4h   
+  low, and maybe see 1 or 2 reactions on 1m                                 
+
+⏺ You've identified something real. The "textbook" entry I described is too slow
+   for your setup.
+
+  If the move from 4h low sweep to 4h highs happens in 2-3 candles, waiting for
+  5m BOS + pullback means you're entering at target or missing it entirely.
+
+  The Aggressive Entry (What You're Describing):
+
+  Trigger: Price reclaims the 4h low (closes back above it on 5m after sweeping
+  below)
+
+  1m Confirmation (pick 1-2):
+  - Bullish engulfing off the reclaim
+  - Higher low holds above the 4h low level
+  - Strong displacement candle through the level
+  - Rejection wick below, close above
+
+  Stop: Below the sweep low
+
+  This is the trade-off:
+
+  Entry Style: Aggressive (reclaim + 1m)
+  R:R: Better
+  Win Rate: Lower
+  When It Works: Fast moves, obvious sweeps
+  ────────────────────────────────────────
+  Entry Style: Confirmed (5m BOS + PB)
+  R:R: Worse
+  Win Rate: Higher
+  When It Works: Slower grinds, unclear sweeps
+
+  Your Real Edge:
+
+  If your setup consistently moves fast to target, the aggressive entry is the
+  correct entry for this model. You're not being reckless - you're matching your
+   entry to how your setup actually behaves.
+
+  The discipline shifts to:
+  - Sweep must be clean (not just a wick near the low)
+  - Reclaim must be convincing (not a weak close barely above)
+  - If first 1m reaction fails, you're out - no hoping
+
+  Does the aggressive approach match what you've seen work in hindsight?
+
+❯ yes, even the 1m candle will print a big candle and reach 50% of the      
+  target, but at least momentum is there until target and we can take trims 
+   there                                                                    
+
+⏺ That confirms it. Your setup is an impulse play, not a trend-following play.
+
+  Your Actual Model (Refined):
+
+  4H low swept → Reclaim → 1m displacement candle = ENTRY
+                                  ↓
+                           Ride momentum → Trim at target
+
+  The 1m displacement candle is both your confirmation and your entry - they
+  happen simultaneously, not sequentially.
+
+  Execution Rules:
+
+  ┌─────────┬─────────────────────────────────────────────────┐
+  │ Element │                      Rule                       │
+  ├─────────┼─────────────────────────────────────────────────┤
+  │ Entry   │ Market/limit on 1m displacement through reclaim │
+  ├─────────┼─────────────────────────────────────────────────┤
+  │ Stop    │ Below sweep low                                 │
+  ├─────────┼─────────────────────────────────────────────────┤
+  │ Trim 1  │ 50% off at halfway to target                    │
+  ├─────────┼─────────────────────────────────────────────────┤
+  │ Trim 2  │ Remainder at target (4h highs)                  │
+  └─────────┴─────────────────────────────────────────────────┘
+
+  Why Trims Fix the Psychology:
+
+  - First 50% banked = pressure off
+  - Runner to target = you stay in the momentum
+  - If it chops after trim 1, you're already profitable
+  - No regret either way
+
+  The Only Question Left:
+
+  How do you distinguish a real 1m displacement from a weak candle that fakes
+  out?
+
+  Some filters:
+  - Candle body > average 1m range
+  - Closes through a level, not just wicks through
+  - Volume spike (if you track it)
+
+  Or do you just accept some fakeouts as cost of doing business with this setup?
+
+❯ this is q&a from my mentor channel, can we gather any insight into how he 
+   trades on this topic ?? /Users/danyal.isran/dev/tqu/components/Jan26.md  
+  /Users/danyal.isran/dev/tqu/components/Dec25.md                           
+  /Users/danyal.isran/dev/tqu/components/Nov25.md                           
+  /Users/danyal.isran/dev/tqu/components/Oct 25.md                          
+  /Users/danyal.isran/dev/tqu/components/Sept25.md                          
+  /Users/danyal.isran/dev/tqu/components/Aug25.md                           
+
+⏺ Read 1 file (ctrl+o to expand)
+
+⏺ This is extremely useful. Here are the key insights from your mentor's Q&A
+  that directly address your question:
+
+  ---
+  Vision's Actual Entry Method
+
+  He uses TWO entry styles:
+
+  Entry Type: Confirmed
+  When: Full 5m candle close outside opening range
+  Size: Full size
+  ────────────────────────────────────────
+  Entry Type: Starters
+  When: R:R makes sense + HTF bias aligned, before confirmation
+  Size: Half size
+
+  Direct quote from Vision:
+  "if you see me enter prior to that [confirmation] i emphasize that theres no 
+  confirmation but its based on r:r / intuition"
+
+  ---
+  What He Actually Looks For
+
+  1. Daily context first:
+  - Where did price open relative to previous day's candle?
+  - Open near lows = look for bounce/reclaim
+  - Open inside range = expect chop until 5m breaks
+
+  2. The 5m range:
+  - First 5m candle high/low defines the range
+  - Full candle close outside = confirmation
+  - BUT he takes starters before this when conviction is high
+
+  3. R:R driven decisions:
+  "Daily range high rejection at market open was aggressive and risk reward made
+   sense... if the next 5m candle opened and closed back inside the 5m range it 
+  would've invalidated"
+
+  ---
+  Your Exact Scenario (4H Low Sweep → Target)
+
+  Based on the Q&A, Vision would likely:
+
+  1. Pre-market: Note daily bias, mark levels
+  2. At open: See price near 4h low, mark 5m opening range
+  3. On sweep + reclaim: Take starters (half size) because:
+    - Daily bias supports upside
+    - R:R is favorable (stop below sweep, target at 4h highs)
+    - Reclaim shows buyers stepped in
+  4. On 5m range break: Add to full size (if not already at target)
+
+  ---
+  Key Filter He Uses
+
+  marketmkr's explanation:
+  "We 'confirm' bias by looking at what has the highest r:r on the daily... If 
+  it opens close to previous day low, best r:r is try and play the bounce"
+
+  So your 4h low sweep fits this - price at a low = best R:R is the
+  bounce/reclaim play.
+
+  ---
+  The Trim Structure (Why You Can Enter Early)
+
+  Vision's trim approach supports aggressive entries:
+
+  7 contracts → sell at 20%
+  1 contract → 30%
+  1 contract → 50%
+  1 contract → 75%
+  1 contract → 100%
+
+  "Trim enough that if your runners go red and you stop out it doesn't outweigh 
+  the profits"
+
+  This means: Enter on reclaim, trim 70%+ at halfway to target, let rest ride.
+  Exactly what you described working.
+
+  ---
+  Bottom Line
+
+  Your instinct is correct and aligns with how Vision actually trades:
+  - Aggressive entry on reclaim (starters/half size)
+  - 1m displacement as confirmation
+  - Trim heavy at 20%+ or halfway to target
+  - Trail remainder to target
+
+  The "confirmed" 5m BOS entry is the textbook method, but Vision takes early
+  entries when daily context + R:R supports it. Your setup qualifies.
+
+✻ Sautéed for 46s
+
+❯ can you give insight into what he means when he says R:R makes sense? is  
+  that the first thing my mentor looks for?                                 
+
+⏺ Good question. Based on the Q&A, here's how Vision thinks about it:
+
+  ---
+  The Order of Operations
+
+  1. Daily levels first (not R:R)
+
+  He marks key levels on the daily chart before market open:
+  - Previous day high/low
+  - Candle body closes
+  - 20/200 EMA
+
+  2. Where price opens determines R:R
+
+  "We 'confirm' bias by looking at what has the highest r:r on the daily"
+
+  marketmkr's breakdown:
+
+  ┌────────────────────────┬───────────────────────────┐
+  │     Open Location      │       Best R:R Play       │
+  ├────────────────────────┼───────────────────────────┤
+  │ Near previous day low  │ Play the bounce (calls)   │
+  ├────────────────────────┼───────────────────────────┤
+  │ Near previous day high │ Play the rejection (puts) │
+  ├────────────────────────┼───────────────────────────┤
+  │ Middle of range        │ Wait - likely to chop     │
+  └────────────────────────┴───────────────────────────┘
+
+  3. Then he calculates the actual R:R
+
+  From Vision on a specific trade:
+  "we were risking like 20% max on that trade and HOD was a guaranteed 50%. if 
+  we broke HOD that would give us the red to green daily... could easily go 
+  100%+"
+
+  ---
+  What "R:R Makes Sense" Actually Means
+
+  It's simple math:
+
+  Distance to stop (risk) vs Distance to target (reward)
+
+  Example using your setup:
+
+  Price sweeps 4H low at 590.00
+  Price reclaims to 590.50
+  4H high (target) at 594.00
+
+  Stop: Below sweep → 589.80 (0.70 risk)
+  Target: 4H high → 594.00 (3.50 reward)
+
+  R:R = 3.50 / 0.70 = 5:1
+
+  5:1 R:R = "makes sense" → take starters even without 5m confirmation
+
+  ---
+  When R:R Doesn't Make Sense
+
+  From the Q&A, marketmkr explains scenario where R:R is bad:
+
+  "since the hypothetical open is between the 20 [ema] and the previous high, 
+  it'll most likely chop... we are fighting trend and have resistance so close"
+
+  Translation: If your target is right above you and your stop is far below, R:R
+   is inverted. Skip it.
+
+  ---
+  The Real Sequence Vision Uses
+
+  Based on everything in the Q&A:
+
+  1. Mark daily levels (pre-market)
+  2. See where price opens relative to levels
+  3. Identify nearest target + logical stop
+  4. Calculate R:R mentally
+  5. If R:R is good (2:1+) AND bias aligns → starters allowed
+  6. If 5m confirms → full size
+
+  ---
+  For Your Setup Specifically
+
+  When price sweeps 4h lows, R:R is automatically favorable because:
+  - Stop is tight (just below the sweep)
+  - Target is far (4h highs)
+  - You're at an extreme (low of range)
+
+  This is why Vision would take starters on the reclaim - the R:R is obvious
+  before 5m even confirms.
+
+  Does this clarify how to assess it in real-time?
+
+❯ is the reason not able to time these moves the reason why 99% of traders  
+  fail? these moves meaning 5m smaller ltf trend sweeping htf lows (4h, 1d) 
+   to target and above                                                      
+
+⏺ No. Based on your mentor's Q&A, the timing isn't the hard part.
+
+  ---
+  What Actually Kills Traders (From the Q&A)
+
+  Vision:
+  "Prioritize risk management to remove emotional attachment"
+
+  marketmkr:
+  "I've seen tons of traders leave the server in the first couple months bc they
+   try and jump to making profits like vision without being disciplined like 
+  him. There's no quick money here."
+
+  ---
+  The Real Reasons (Ranked by Frequency in Q&A)
+
+  1. Psychology / Emotions
+  "I want to know how to have this psychological control. This is really biting 
+  me big time"
+
+  "How do you manage emotions in drawdowns?"
+
+  2. Not Trimming / Greed
+  "Almost every single trade I've done was profitable until I got greedy and 
+  made it unprofitable"
+
+  "Why risk give up 20,30,50% of your profits on the day just to add another 100
+   bucks"
+
+  3. Chasing Entries
+  "don't chase if you already see premiums are far gone"
+
+  "Skip. Don't chase it'll kill ya account"
+
+  4. Sizing Wrong
+  "the fact that you're having more green days is great news means you have 
+  almost everything perfect just fix your sizing"
+
+  5. Over-trading / Revenge Trading
+  "I was significantly up today and gave it all back by end of day. Revenge 
+  traded once I had my first big loss and spiralled"
+
+  ---
+  The Uncomfortable Truth
+
+  The setup you described (4h low sweep → 5m trend to target) isn't hard to see.
+   Your mentor posts it. You see it. Others see it.
+
+  What separates the 1%:
+
+  99% Do This: See the setup, hesitate, enter late
+  1% Do This: Enter on reclaim, accept being early
+  ────────────────────────────────────────
+  99% Do This: Hold for 100%, watch it reverse
+  1% Do This: Trim 70% at 20%, let rest ride
+  ────────────────────────────────────────
+  99% Do This: Take a loss, revenge trade
+  1% Do This: Take a loss, walk away
+  ────────────────────────────────────────
+  99% Do This: Size up after wins
+  1% Do This: Size consistently
+  ────────────────────────────────────────
+  99% Do This: Chase the move they missed
+  1% Do This: Wait for next setup
+
+  ---
+  Vision's Edge Isn't Timing
+
+  From the Q&A, someone asked about his 90%+ win rate:
+
+  "What Goldenboi said no trade = no setup but everything needs to be aligned, 
+  all other confluences... and lastly trusting your intuition"
+
+  His edge is:
+  1. Patience - waits for alignment, doesn't force
+  2. Conviction - when it aligns, he acts without hesitation
+  3. Trimming - locks profit early, removes emotion
+  4. Acceptance - takes what market gives, doesn't chase
+
+  ---
+  Your Actual Problem
+
+  You said earlier:
+  "my problem is I do not know what to look for, all while price moves near 
+  target and causing worser risk reward because of my indecision"
+
+  That's not a timing problem. That's:
+  - Lack of a clear rule → causes hesitation
+  - Hesitation → late entry → bad R:R
+  - Bad R:R → fear → poor execution
+
+  The fix isn't better timing. It's a rule you trust enough to act on without 
+  thinking.
+
+  ---
+  The Simple Rule (From Your Mentor's Method)
+
+  4H low swept + reclaim + 1m displacement = ENTER (half size)
+  Stop below sweep
+  Trim 70% at 20%
+  Done
+
+  No thinking. No "what if." Execute or skip.
+
+  The 99% fail because they can't do that consistently, not because they can't
+  see the move.
+
+✻ Cooked for 36s
+
+❯ what are confluences mentor uses? 
+
+⏺ Based on the Q&A, here's everything Vision uses:
+
+  ---
+  Core Tools (The Only Indicators)
+
+  Vision explicitly states:
+  "I don't use anything besides the daily time frame and emas (20/200)"
+  "20/200ema boss. 5m + daily. only indicators i use"
+
+  That's it. No VWAP, no volume profile, no order flow.
+
+  ---
+  The Confluences (In Order of Priority)
+
+  1. Daily Levels
+
+  ┌────────────────────────┬──────────────────┐
+  │       Level Type       │ How He Marks It  │
+  ├────────────────────────┼──────────────────┤
+  │ Previous day high/low  │ Wicks            │
+  ├────────────────────────┼──────────────────┤
+  │ Candle body open/close │ Horizontal lines │
+  ├────────────────────────┼──────────────────┤
+  │ 20 EMA (daily)         │ Curve            │
+  ├────────────────────────┼──────────────────┤
+  │ 200 EMA (daily)        │ Curve            │
+  └────────────────────────┴──────────────────┘
+
+  "You have to use daily confluences to see whether it makes sense"
+
+  ---
+  2. Where Price Opens Relative to Daily
+
+  This determines bias before market even opens:
+
+  ┌────────────────────────────────┬────────────────────────────────┐
+  │            Opens...            │              Bias              │
+  ├────────────────────────────────┼────────────────────────────────┤
+  │ Above previous day high        │ Bullish, look for continuation │
+  ├────────────────────────────────┼────────────────────────────────┤
+  │ Below previous day low         │ Bearish, look for continuation │
+  ├────────────────────────────────┼────────────────────────────────┤
+  │ Inside previous day, near high │ Likely rejection → puts        │
+  ├────────────────────────────────┼────────────────────────────────┤
+  │ Inside previous day, near low  │ Likely bounce → calls          │
+  ├────────────────────────────────┼────────────────────────────────┤
+  │ Middle of previous day         │ Chop likely, wait for 5m break │
+  └────────────────────────────────┴────────────────────────────────┘
+
+  Vision:
+  "important to look at the daily candles. if we open above or below one we have
+   higher chance to breakout. if we open inside it we have a higher chance to 
+  range"
+
+  ---
+  3. 5m Opening Range (ORB)
+
+  - First 5m candle high/low = the range
+  - Full candle close outside = confirmation
+  - This is the entry trigger, not the bias
+
+  "first candle close outside of the 5m range"
+
+  ---
+  4. 20 EMA on 5m
+
+  Used for:
+  - Trend confirmation (price above = bullish, below = bearish)
+  - Trailing stop for runners
+  - Re-entry spots on pullbacks
+
+  Vision:
+  "First sign of a reversal would be if we lose the 20ema on the 5m"
+
+  "If it doesn't break the 20ema you keep holding"
+
+  ---
+  5. 200 EMA on 5m
+
+  Less important than 20 EMA, used as:
+  - Major support/resistance
+  - Target or decision point
+
+  marketmkr:
+  "I treat it as a level/point of resistance. I don't use it for confirmation 
+  but I use it as a TP bc often it can reject or range before continuing"
+
+  ---
+  6. R:R Assessment
+
+  Not an indicator, but a mental check:
+  - Where's my stop? (5m low, sweep low, level)
+  - Where's my target? (next daily level)
+  - Is reward > 2x risk?
+
+  ---
+  The Checklist Vision Runs
+
+  Based on the Q&A, before entering he's checking:
+
+  □ Daily bias clear? (open location, trend)
+  □ Price at level with good R:R? (near high/low, not middle)
+  □ 5m confirms direction? (close outside range)
+  □ Above/below 20 EMA on 5m? (trend aligned)
+  □ Target identified? (next daily level)
+  □ Stop makes sense? (below 5m low or level)
+
+  Vision:
+  "everything needs to be aligned, all other confluences you can decipher 
+  instead of blindly entering on one confirmation. That's how you maintain a 
+  high win rate"
+
+  ---
+  What He Doesn't Use
+
+  From the Q&A, explicitly avoided or downplayed:
+
+  - VWAP → "I used to use it but it's extra noise"
+  - Relative strength → "Nope, it's not rly needed as I believe trend is more
+  important"
+  - News/flow → Uses Bloomberg terminal but doesn't rely on it for entries
+  - Patterns → No triangles, flags, head & shoulders mentioned
+  - Volume → Mentioned occasionally but not a core confluence
+
+  ---
+  Simplified Version
+
+  If you want to match his method:
+
+  Pre-market:
+  1. Mark daily levels (previous day H/L, bodies)
+  2. Note where 20/200 EMAs are on daily
+
+  At open:
+  3. See where price opens relative to levels
+  4. Determine bias + best R:R direction
+
+  For entry:
+  5. Wait for 5m close outside opening range
+  6. Confirm 20 EMA alignment on 5m
+  7. Enter with stop below 5m low, target at next daily level
+
+  That's the complete system based on what he's shared.
+
+✻ Cooked for 33s
+
+❯ is he looking for 5m close outside opening 5m range, or is he looking for 
+   the full 5m body close outside the opening 5m range?                     
+
+⏺ Full body - both open AND close outside the range.
+
+  ---
+  From the Q&A
+
+  suddenly00000 (student):
+  "You need a full candle - open and close above the opening 5 min range for 
+  confirmation if I am not mistaken"
+
+  marketmkr (on stop loss, same logic applies):
+  "yes full body close. anything less than and it could be a fakeout"
+
+  Vision (on invalidation):
+  "getting stopped out has to be the full body of the candle not just leaks"
+
+  marketmkr:
+  "Full candle close. Same goes for confirmation"
+
+  ---
+  Visual Difference
+
+  Opening 5m range: 590.00 - 590.50
+
+  CONFIRMED (full body outside):
+  ┌─────┐
+  │     │  Open: 590.55
+  │     │  Close: 590.80
+  └─────┘
+  Both above 590.50 ✓
+
+  NOT CONFIRMED (only close outside):
+  ┌─────┐
+  │     │  Open: 590.40 ← inside range
+  │     │  Close: 590.70
+  └─────┘
+  Open still inside range ✗
+
+  NOT CONFIRMED (wick only):
+     │
+  ┌──┴──┐
+  │     │  Open: 590.30
+  │     │  Close: 590.45
+  └─────┘
+  Wick broke out but body inside ✗
+
+  ---
+  Why This Matters
+
+  A candle that only closes outside (but opened inside) means:
+  - Price was still in the range at candle open
+  - Less conviction
+  - Higher chance of fakeout
+
+  A full body outside means:
+  - Price gapped/moved outside at open
+  - Stayed outside through close
+  - Stronger commitment to direction
+
+  ---
+  The Exact Rule
+
+  Confirmation = candle body (open to close) fully outside 5m opening range
+
+  Wicks don't count. Partial body doesn't count. Both open AND close must be
+  outside.
+
+❯ is there any 50% confirmation? 
+
+⏺ I didn't see "50% confirmation" mentioned in the Q&A files.
+
+  ---
+  What I Did See
+
+  The confirmation appears to be binary - either full body outside or not.
+
+  But there are two entry types with different conviction levels:
+
+  ┌────────────┬─────────────────────────┬───────────┐
+  │ Entry Type │      Confirmation       │   Size    │
+  ├────────────┼─────────────────────────┼───────────┤
+  │ Starters   │ None (R:R + bias only)  │ 50% size  │
+  ├────────────┼─────────────────────────┼───────────┤
+  │ Confirmed  │ Full body outside range │ 100% size │
+  └────────────┴─────────────────────────┴───────────┘
+
+  ---
+  The "Partial" Concept Is Position Size, Not Candle
+
+  When Vision enters before confirmation, he doesn't call it "50% confirmed" -
+  he calls it starters or half size:
+
+  "if you see me enter prior to that [confirmation] i emphasize that theres no 
+  confirmation but its based on r:r / intuition"
+
+  "starters / half size if we have the intention of adding more because entry 
+  might not be as good"
+
+  So instead of a partial confirmation signal, he:
+  - Takes half position on setup + bias
+  - Adds other half when full body confirms
+
+  ---
+  Could You Be Referring To Something Else?
+
+  If your mentor uses "50% confirmation" as a specific term, it might be:
+  1. From live streams (not in the Q&A I read)
+  2. Lifetime-only content
+  3. A concept he explains verbally but wasn't written in these files
+
+  Want to describe where you heard it or what context? I can help interpret
+  based on what I know from the Q&A.
+
+❯ how he determines setup + bias? 
+
+⏺ Based on the Q&A, here's how he builds bias and identifies setup:
+
+  ---
+  Bias (Determined Pre-Market / At Open)
+
+  Comes entirely from the daily timeframe.
+
+  Step 1: Where Does Price Open?
+
+  marketmkr's 3 scenarios:
+
+  "In 1, since the hypothetical open is between the 20 [ema] and the previous 
+  high, it'll most likely chop up till it breaks 688.75 or the ema as we are 
+  fighting trend and have resistance so close."
+
+  "In 2: we open up at the bottom, close to previous day low, so best r:r here 
+  is try and play the bounce."
+
+  "In 3: open below the lows so we just look for a break of the ORB low."
+
+
+  ┌──────────────────────────┬────────────────────────┐
+  │      Open Location       │          Bias          │
+  ├──────────────────────────┼────────────────────────┤
+  │ Near previous day low    │ Bullish (bounce)       │
+  ├──────────────────────────┼────────────────────────┤
+  │ Near previous day high   │ Bearish (rejection)    │
+  ├──────────────────────────┼────────────────────────┤
+  │ Below previous day low   │ Bearish (continuation) │
+  ├──────────────────────────┼────────────────────────┤
+  │ Above previous day high  │ Bullish (continuation) │
+  ├──────────────────────────┼────────────────────────┤
+  │ Middle + near resistance │ No bias (wait)         │
+  └──────────────────────────┴────────────────────────┘
+
+  ---
+  Step 2: EMA Position on Daily
+
+  "AMD was above all emas while Google had to beat the 200 still"
+
+
+  ┌────────────────────┬────────────────┐
+  │   Price vs EMAs    │ Bias Strength  │
+  ├────────────────────┼────────────────┤
+  │ Above 20 AND 200   │ Strong bullish │
+  ├────────────────────┼────────────────┤
+  │ Below 20 AND 200   │ Strong bearish │
+  ├────────────────────┼────────────────┤
+  │ Between 20 and 200 │ Mixed / weaker │
+  └────────────────────┴────────────────┘
+
+  ---
+  Step 3: Daily Candle Structure
+
+  Vision:
+  "important to look at the daily candles. if we open above or below one we have
+   higher chance to breakout. if we open inside it we have a higher chance to 
+  range"
+
+  my3m (student insight Vision agreed with):
+  "small upper wick forms on daily and rejects key level on 5m... I think where 
+  daily opens at is very important. Should be near lows or highs because of 
+  small wick criteria"
+
+  ---
+  Setup (Identified on 5m)
+
+  Once bias is determined, setup is the structure that allows entry.
+
+  The Setup Checklist
+
+  □ 5m opening range defined (first candle H/L)
+  □ Price at favorable location for R:R
+  □ Direction aligns with daily bias
+  □ Clear target (next daily level)
+  □ Logical stop (5m low, level, or sweep low)
+
+  ---
+  Putting It Together: Starters Example
+
+  Scenario: SPY opens near previous day low
+
+  ┌────────────┬────────────────────────────────────────────────────┐
+  │  Element   │                     Assessment                     │
+  ├────────────┼────────────────────────────────────────────────────┤
+  │ Daily bias │ Bullish - opening near low = bounce expected       │
+  ├────────────┼────────────────────────────────────────────────────┤
+  │ EMA check  │ Price below 20 EMA but has room to reclaim         │
+  ├────────────┼────────────────────────────────────────────────────┤
+  │ R:R        │ Stop below PDL (tight), target at PDH (far) = good │
+  ├────────────┼────────────────────────────────────────────────────┤
+  │ 5m setup   │ Opening range defined, watching for reclaim        │
+  └────────────┴────────────────────────────────────────────────────┘
+
+  Decision: Take starters on reclaim of PDL before 5m confirms, because:
+  - Bias is clear (daily)
+  - R:R is favorable
+  - Setup structure exists
+
+  Then add to full size if 5m prints full body outside range.
+
+  ---
+  Vision's Exact Words on This
+
+  "Daily range high rejection at market open was aggressive and risk reward made
+   sense. If the next 5m candle opened and closed back inside the 5m range it 
+  would've invalidated"
+
+  He's saying:
+  1. Daily level (range high) → bias
+  2. Rejection at open → setup
+  3. R:R made sense → starters
+  4. 5m confirms or invalidates → add or cut
+
+  ---
+  The Formula
+
+  BIAS = Daily levels + EMA position + Open location
+
+  SETUP = 5m range + Price at level + R:R favorable
+
+  STARTERS = Bias aligned + Setup present + R:R good (no 5m confirm yet)
+
+  CONFIRMED = All above + Full body outside 5m range
+
+  ---
+  For Your 4H Low Sweep
+
+  ┌────────────┬────────────────────────────────────────────────┐
+  │  Element   │                   Your Setup                   │
+  ├────────────┼────────────────────────────────────────────────┤
+  │ Bias       │ Bullish - price at 4H low (daily support)      │
+  ├────────────┼────────────────────────────────────────────────┤
+  │ Setup      │ Sweep + reclaim, 5m range defined              │
+  ├────────────┼────────────────────────────────────────────────┤
+  │ R:R        │ Stop below sweep (tight), target 4H high (far) │
+  ├────────────┼────────────────────────────────────────────────┤
+  │ Starters?  │ Yes - bias clear, R:R good, setup present      │
+  ├────────────┼────────────────────────────────────────────────┤
+  │ Confirmed? │ When 5m full body closes outside range         │
+  └────────────┴────────────────────────────────────────────────┘
+
+  This is why entering on the reclaim (before 5m confirms) aligns with his
+  method.
+
+✻ Sautéed for 33s
+
+❯ Here is topwatch he generates everyday before market open                 
+  /Users/danyal.isran/dev/tqu/components/topwatch.json can you go over it,  
+  and tell me how he determines daily bias before market open               
+
+⏺ Read 1 file (ctrl+o to expand)
+
+⏺ This is extremely revealing. Here's exactly how Vision determines bias
+  pre-market:
+
+  ---
+  The Pre-Market Checklist (From Actual Top Watch Notes)
+
+  1. Where Will Price Open Relative to Key Level?
+
+  This is his primary bias filter. Almost every top watch entry uses this:
+
+  ┌──────────────────────────────────────┬──────────────────────────────────┐
+  │             His Language             │          What It Means           │
+  ├──────────────────────────────────────┼──────────────────────────────────┤
+  │ "if it opens under 438.26"           │ Below level = bearish bias       │
+  ├──────────────────────────────────────┼──────────────────────────────────┤
+  │ "if opens above 191.37"              │ Above level = bullish bias       │
+  ├──────────────────────────────────────┼──────────────────────────────────┤
+  │ "open under previous day close"      │ Below PDC = bearish              │
+  ├──────────────────────────────────────┼──────────────────────────────────┤
+  │ "opening above previous day highs"   │ Above PDH = bullish continuation │
+  ├──────────────────────────────────────┼──────────────────────────────────┤
+  │ "opening inside previous day candle" │ No clear bias = wait for 5m      │
+  └──────────────────────────────────────┴──────────────────────────────────┘
+
+  Examples from his notes:
+  "tsla post earnings lotto... higher chance of selling if it opens under 438.26
+   to pdl"
+
+  "NVDA continuation especially if it can open above 191.37 has room towards 
+  193.63"
+
+  "T post earnings lotto if it opens above 23.17 at market open will play 
+  calls... if opens below will play puts"
+
+  ---
+  2. Daily Range Position
+
+  Where is price in the bigger structure?
+
+  ┌────────────────────────┬─────────────────────────────┐
+  │        Position        │          His Bias           │
+  ├────────────────────────┼─────────────────────────────┤
+  │ Near daily range lows  │ Look for bounce / calls     │
+  ├────────────────────────┼─────────────────────────────┤
+  │ Near daily range highs │ Look for rejection / puts   │
+  ├────────────────────────┼─────────────────────────────┤
+  │ Breaking out of range  │ Play the breakout direction │
+  ├────────────────────────┼─────────────────────────────┤
+  │ Middle of range        │ "will chop" / wait          │
+  └────────────────────────┴─────────────────────────────┘
+
+  Examples:
+  "amd opening outside of its 2 month daily range for the first time... nice 
+  long setup"
+
+  "aapl rejected daily highs yesterday if opens under 248.35 can target daily 
+  range lows"
+
+  "opening inside daily range... has a good r:r on either side, would recommend 
+  waiting for ltf confirmation"
+
+  ---
+  3. EMA Relationship on Daily
+
+  ┌──────────────────────────┬──────────────────────────┐
+  │        Condition         │           Bias           │
+  ├──────────────────────────┼──────────────────────────┤
+  │ Above 20 EMA             │ Bullish                  │
+  ├──────────────────────────┼──────────────────────────┤
+  │ Below 20 EMA             │ Bearish                  │
+  ├──────────────────────────┼──────────────────────────┤
+  │ Reclaiming 20 EMA        │ Bullish reversal setup   │
+  ├──────────────────────────┼──────────────────────────┤
+  │ First close under 20 EMA │ Bearish breakdown        │
+  ├──────────────────────────┼──────────────────────────┤
+  │ Near 200 EMA             │ Major support/resistance │
+  └──────────────────────────┴──────────────────────────┘
+
+  Examples:
+  "AMZN still want to see this go for 243.18 especially since it respected the 
+  daily 20ema"
+
+  "nvda got its first close under the 20ema on the daily. i want to see this get
+   some continuation to 175s"
+
+  "amzn... going to be the first daily candle to open above the 20ema in over a 
+  week"
+
+  ---
+  4. Weekly Candle Color Change
+
+  He watches for red-to-green or green-to-red flips:
+
+  Examples:
+  "amzn past 233.76 goes red to green on the weekly"
+
+  "googl potential green to red weekly candle. want to see this fall under 
+  281.14"
+
+  "tsla about to go green on the weekly worth a shot for 491.97 target"
+
+  ---
+  5. Gap Fills
+
+  Unfilled gaps = targets:
+
+  Examples:
+  "has a nice gap to fill under 201.75"
+
+  "nvda potential leg down towards 180.99" (gap fill)
+
+  "gap fill starts above 216.23"
+
+  ---
+  His Actual Decision Formula
+
+  Based on the top watch notes, here's his pre-market process:
+
+  1. Mark daily levels (previous day H/L/C, range H/L)
+  2. Note where 20 EMA is on daily
+  3. Check weekly candle status (red/green, trying to flip?)
+  4. See pre-market price → where will it open?
+  5. Determine bias:
+
+     IF opens above key level → bullish
+     IF opens below key level → bearish
+     IF opens inside range → wait for 5m break
+
+  6. Identify target (next level, gap fill, range H/L)
+  7. Assess R:R (is target far, stop close?)
+
+  ---
+  The Key Insight
+
+  The level determines the bias, not a prediction.
+
+  He doesn't say "I think TSLA goes up today."
+
+  He says:
+  "if it opens above 435.90 has potential to see 450s"
+  "if opens under 447.99 has a high probability of selling to range lows"
+
+  Both directions are valid. Where it opens decides which one he plays.
+
+  ---
+  For Your 4H Low Sweep Setup
+
+  Apply the same logic:
+
+  Pre-market: Price near 4H low (key level)
+
+  IF opens below 4H low → bearish continuation bias
+  IF opens above 4H low → bullish bounce bias (your setup)
+  IF sweeps and reclaims → strong bullish bias + good R:R
+
+  The sweep + reclaim tells you direction. The daily range high gives you
+  target. That's the bias.
+
+✻ Sautéed for 49s
+
+❯ so we want price to open above range high? that range high is a key       
+  level, and we can enter anticipating the 5m will close above range, and   
+  is that the confirmation then? what about risk reward?                    
+
+⏺ Let me clarify the sequence based on Vision's actual top watch notes:
+
+  ---
+  The Two Scenarios
+
+  Scenario A: Opens Above Key Level → Starters at Open
+
+  When Vision says this:
+  "T post earnings lotto if it opens above 23.17 at market open will play calls"
+
+  "NVDA if it can open above 191.37 has room towards 193.63"
+
+  "tsla lotto calls at open if it opens above 485.40"
+
+  What he's doing:
+  - Price opens above level = bias confirmed
+  - Takes starters (half size) immediately at open
+  - Doesn't wait for 5m to close
+  - R:R already favorable because target is far
+
+  ---
+  Scenario B: Opens Near Level → Wait for 5m Confirmation
+
+  When Vision says this:
+  "will wait for 5m confirmation"
+
+  "wait for 5m break"
+
+  "needs 5m confirmation for highs"
+
+  What he's doing:
+  - Price opens near/at level (not clearly above)
+  - Bias is unclear
+  - Waits for full 5m body outside range
+  - Then enters confirmed (full size)
+
+  ---
+  How R:R Decides Which Path
+
+  Opens ABOVE key level + Target FAR → Starters at open (R:R obvious)
+  Opens AT key level + Target FAR → Wait for 5m confirm (R:R needs confirmation)
+  Opens ABOVE key level + Target CLOSE → Wait or skip (R:R poor)
+
+  From his notes:
+
+  "aapl rejected daily highs yesterday if opens under 248.35 can target daily 
+  range lows at 244.00"
+
+  Stop: Above 248.35 (~0.50 risk)
+  Target: 244.00 (~4.00 reward)
+  R:R = 8:1 → Take starters at open
+
+  vs.
+
+  "opening inside previous day candle set up for a range... will wait for 5m 
+  confirmation"
+
+  R:R unclear until direction confirms → Wait
+
+  ---
+  The R:R Calculation
+
+  Before entering (starters or confirmed), Vision checks:
+
+  Target = Next daily level, range high/low, or gap fill
+  Stop = Below open level, 5m low, or sweep low
+
+  R:R = (Target - Entry) / (Entry - Stop)
+
+  If R:R > 2:1 → Trade makes sense
+  If R:R > 3:1 → Starters at open acceptable
+  If R:R < 2:1 → Skip or wait for better entry
+
+  ---
+  Your 4H Low Sweep Example
+
+  4H low (key level): 590.00
+  Price opens: 590.50 (above key level ✓)
+  Target (4H high): 594.00
+  Stop: Below sweep at 589.70
+
+  Entry at open: 590.50
+  Risk: 590.50 - 589.70 = 0.80
+  Reward: 594.00 - 590.50 = 3.50
+  R:R = 3.50 / 0.80 = 4.4:1 ✓
+
+  Decision: Starters at open, add on 5m confirmation
+
+  ---
+  The Full Sequence
+
+  ┌──────┬─────────────────────────────────────────┬────────────────┐
+  │ Step │              What Happens               │     Action     │
+  ├──────┼─────────────────────────────────────────┼────────────────┤
+  │ 1    │ Pre-market: Identify key level (4H low) │ Mark it        │
+  ├──────┼─────────────────────────────────────────┼────────────────┤
+  │ 2    │ Open: Price opens above level           │ Bias = bullish │
+  ├──────┼─────────────────────────────────────────┼────────────────┤
+  │ 3    │ R:R check: Target far, stop tight?      │ Yes = good R:R │
+  ├──────┼─────────────────────────────────────────┼────────────────┤
+  │ 4    │ Starters: Enter half size at open       │ Execute        │
+  ├──────┼─────────────────────────────────────────┼────────────────┤
+  │ 5    │ 5m closes: Full body outside range?     │ Confirmation   │
+  ├──────┼─────────────────────────────────────────┼────────────────┤
+  │ 6    │ Add: Full size now                      │ Execute        │
+  ├──────┼─────────────────────────────────────────┼────────────────┤
+  │ 7    │ Manage: Trim at 20%, trail rest         │ Execute        │
+  └──────┴─────────────────────────────────────────┴────────────────┘
+
+  ---
+  Key Point
+
+  The 5m confirmation isn't the bias - the open location is the bias.
+
+  The 5m confirmation is just:
+  - Extra conviction to add size
+  - Or the signal that bias was wrong (if it closes back inside)
+
+  If R:R is excellent at open, Vision takes starters without waiting. That's why
+   he says "will play calls at open" so often.
+
+❯ alright, can you review q&a discussion and tell me if there are more      
+  insights on bias, risk reward, trend?                                     
+  /Users/danyal.isran/dev/tqu/components/discord_messages.json              
+
+⏺ Read 1 file (ctrl+o to expand)
+
+⏺ Excellent. Here are the additional insights from the Discord Q&A:
+
+  ---
+  Trend Confirmation (EMA Usage)
+
+  Vision:
+  "It's just only calls if candles are above the 20/200ema. Puts only if the 
+  candles are below the 20/200ema. If you keep those two things in mind you can 
+  just use it as an extra confluence when targeting a certain level"
+
+  rishabr:
+  "yea but having the ema confirms that okay we are trending down"
+
+  "it basically confirms you're trended so... the candle he circles for puts 
+  could be an incorrect level for puts as it could still be above the ema 
+  (indicates upward trend)"
+
+  The Rule:
+
+  Above 20 EMA → Only calls
+  Below 20 EMA → Only puts
+  Between 20 and 200 → Be cautious
+
+  ---
+  R:R Assessment (Visual Method)
+
+  rishabr:
+  "look on the chart and see how much room you have to risk, in this case you're
+   looking at one candle close (the purple box) with the potential to go all the
+   way up to that low, just visually you can tell how little you have to risk 
+  for that high potential"
+
+  "the r:r was pretty shit so not worth taking it... you could have taken it and
+   made money and it would have paid a decent 15% maybe (?), but the risk was 
+  not worth it"
+
+  Vision:
+  "when you're at hod the r:r for puts is incredible" (targeting lod)
+
+  Key Insight:
+
+  R:R is visual - they literally look at the chart and see:
+  - How far is the target? (daily level)
+  - How tight can the stop be? (5m low/high)
+  - If target is close and stop is far → skip
+
+  ---
+  When NOT to Enter (R:R Filter)
+
+  rishabr:
+  "in this case you just wouldn't take it. the r:r is just terrible. skip it"
+
+  Vision:
+  "spy confirmed upside and same for other things but was way too close to daily
+   levels"
+
+  Skip the trade when:
+
+  - Price target is close (already near the level)
+  - Stop loss is far
+  - Would only pay ~15% (not worth the risk)
+
+  ---
+  Daily Levels for Targets
+
+  Vision:
+  "Targets are based off the daily"
+
+  "You need to plot levels on the daily to mark next price targets"
+
+  "I don't use hourly levels. I don't use pmh or pml levels. I use pdh and pdl."
+
+  rishabr:
+  "for early day trades... TP based off daily levels, prioritize previous 
+  day/most recent data possible"
+
+  ---
+  Stop Loss Rules
+
+  rishabr:
+  "We use the CURRENT 5m high or low depending on what you're in as your stop 
+  loss (if you're not using % stop loss)"
+
+  "SL based on if your confirmation candle is broken or an ema is crossed. If 
+  they're both close... you're going to need both. If they're far apart, then 
+  you can sell with just 1 confirmation"
+
+  Vision:
+  "-30% then move to levels when disciplined"
+
+  Two SL Methods:
+
+  ┌─────────────┬──────────────────────────────┐
+  │   Method    │         How It Works         │
+  ├─────────────┼──────────────────────────────┤
+  │ % Based     │ -20% to -30% hard stop       │
+  ├─────────────┼──────────────────────────────┤
+  │ Level Based │ Full body close below 5m low │
+  └─────────────┴──────────────────────────────┘
+
+  ---
+  Confirmation Candle Details
+
+  rishabr:
+  "No stupid Qs and yes we're looking for the full candle to close outside the 
+  range. If it opens inside the range but closes outside that's a leak which can
+   be a false breakout"
+
+  "leaks are not considered confirmation, we need full candle closes"
+
+  Vision:
+  "you need a full body outside the 5m range"
+
+  "It pushed up but didn't close above with the body of the candle, and only 
+  confirmed downside"
+
+  ---
+  The Entry Decision Tree
+
+  rishabr's breakdown:
+  "for early day trades its like this:
+  - buy with full close outside the high/low of the first 5m candle based on ema
+   and daily level positioning
+  - TP based off daily levels, prioritize previous day/most recent data possible
+    
+  - SL based on if your confirmation candle is broken or an ema is crossed"
+
+  ---
+  Key Sizing Rule
+
+  Vision:
+  "starters are always 50% of what your usual size is so $500 and then $500"
+
+  rishabr:
+  "please please please make him follow the 1-2 contract rule in the beginning"
+
+  "once you're trading over 200-250 you can start holding runners to ~50%"
+
+  ---
+  Consolidation vs Rejection
+
+  rishabr:
+  "Consolidation is neutral. Consolidation just means it doesn't know where to 
+  go so as long as it's below the emas and below your 5m SL you can hold"
+
+  "Rejection in this case is not closing above the range and continuing to range
+   and then dump"
+
+  ---
+  The Complete Framework (From All Sources)
+
+  Component: Bias
+  What to Look For: Where price opens relative to daily levels + EMA position
+  ────────────────────────────────────────
+  Component: Trend
+  What to Look For: Above 20 EMA = bullish, Below = bearish
+  ────────────────────────────────────────
+  Component: Entry Trigger
+  What to Look For: Full body close outside 5m opening range
+  ────────────────────────────────────────
+  Component: R:R Check
+  What to Look For: Target (daily level) far, Stop (5m low) tight
+  ────────────────────────────────────────
+  Component: Skip Signal
+  What to Look For: Target too close OR stop too far OR against EMA trend
+  ────────────────────────────────────────
+  Component: Starters
+  What to Look For: 50% size when R:R is good but no full confirmation
+  ────────────────────────────────────────
+  Component: Stop Loss
+  What to Look For: Full body close through 5m level OR -30%
+  ────────────────────────────────────────
+  Component: Target
+  What to Look For: Next daily level (PDH, PDL, range high/low)
+  ────────────────────────────────────────
+  Component: Trim
+  What to Look For: 60-70% at 20%+, trail rest with 20 EMA
+
+  ---
+  Your Setup Applied
+
+  For your 4H low sweep to 4H high:
+
+  Bias: Price at 4H low = bullish (bounce expected)
+  Trend: Check if above/below 20 EMA on 5m
+  Entry: Reclaim of 4H low + 1m displacement (starters)
+         OR full 5m body outside range (full size)
+  R:R: Stop below sweep (tight), Target at 4H high (far) ✓
+  Skip if: 4H high is too close OR 20 EMA is above price (against trend)
+
+✻ Baked for 59s
+
+❯ These are notes fro another person. Can you review and tell me some       
+  insights? especially on HTF                                               
+  ⎿  Interrupted · What should Claude do instead?
+
+❯ At around 4:10 Larry explains his strategy by explaining about this trade 
+   recap. He drew levels on the daily marking only prev day high and low.   
+  (I think ideally there should be more levels from a few recent days ago   
+  but as for this example the prev day low and prev day high levels should  
+  be enough)                                                                
+  SPY opened within prev days’ price range                                  
+  First candle was a red one and we got a LOD.                              
+  ltf 5 min, we have 5 mins high and 5 mins low, wait for close outside     
+  that high level or low level as confirmation. confirmation is defined as  
+  a candle's full body over/below the level. we don't care about wicks just 
+   the full body over/below the level                                       
+                                                                            
+  Image                                                                     
+  PowerTrades                                                               
+  APP                                                                       
+   — 6/6/25, 5:43 PM                                                        
+  GG @Kai, you just advanced to level 4!                                    
+  KaiRole icon, Students                                                    
+  OP                                                                        
+   — 6/6/25, 6:06 PM                                                        
+  Notes/Questions from 6 min video                                          
+  we should read price actions not the p&l for SL. trade needs room to      
+  move.                                                                     
+  Friday half size cuz Friday is more volatile.                             
+  At 4:13 into the video: we in puts and we have 5 mins high. And if that   
+  breaks above trade invalidates. It invalidates if a candle full body      
+  fully close above the candle you entered the trade at, just like          
+  confirmation where it needs a candle full body close below/over it. If    
+  trade rejects and we can use LOD to re-entry.                             
+  why do you draw the 350.35? We saw this trade late, so is it because      
+  that's a lod so we drew that level there and we want to see this lod      
+  break. And as more candles form, we should constantly update new low      
+  level and new high level on our 5 min chart? But if we saw the trade from 
+   market open and enter at 3rd confirmation candle, we still see the trade 
+   never invalidates.                                                       
+  Percentage SL or level SL. Better to us level SL because we want to read  
+  the PA not the P&l. Looks like had to watch chart and manually enter SL.  
+                                                                            
+  Image                                                                     
+  even if we miss the first entry, we can still apply the same technique to 
+   enter the next level breakout. We wait for level break confirmation      
+  which is full body close below that level. And we enter, and our SL would 
+   be full candle body close above the candle we entered. So for this case, 
+   our SL is NOT the full body close above the 342.85 level; we want the    
+  full body close above the candle we entered, which means above that       
+  342.27 level) Screenshot_2025-06-08_at_4.28.38_PM.png                     
+                                                                            
+  Image                                                                     
+  KaiRole icon, Students                                                    
+  OP                                                                        
+   — 6/6/25, 6:17 PM                                                        
+  Random questions that I had:                                              
+  How big is a starters size? Half size.                                    
+  how you manage trade that has gone say 1000%? where to take trims?        
+  why I lose money following your trade signal today? what did i do wrong?  
+  Or is it because today was just too fast (heard you said today you were   
+  trading for yourselves) ? How to improve on executing your alerts?        
+  what’s this range play on 06/03 spy?                                      
+                                                                            
+  KaiRole icon, Students                                                    
+  OP                                                                        
+   — 6/7/25, 5:17 PM                                                        
+  Notes/Questions from the [luck333 video]:                                 
+  Tip to identify a run is you zoom out and see a straight line             
+  At 11:30: to confirm the run we need a daily full body close over/below   
+  the level. (for bullish that means a daily candle full body close above   
+  the lower run level). But there's an extra level we created recently. So  
+  the candle in the 1st screenshot gives us 50% chance confirmation of the  
+  run. If we get something like 2nd screenshot, this is 100%.               
+  The idea behind run is there's really nothing to stop you as there's      
+  simply big space to move without resistance and support.                  
+  At 16:41-18:00 into the video, we are looking at the candle that crosses  
+  over 10.62 on the daily: if we trade intraday we could use a 5 min close  
+  above run to enter. But when there's higher time frame confluence it's    
+  usually a lot safer. (Question: when the 5 min closes over 10.62, it      
+  might not necessarily be in the morning. I think when we trade intraday   
+  we usually just trade in the morning right?)                              
+  5, At 19:31 4th screenshot: good example of #2 didn't go for 50%          
+  confirmation because of most recent levels. The next candle gives us 100% 
+   confirmation but unfortunately it's at the end of the run so didn't      
+  trade.                                                                    
+  At 25:00, 5th screenshot: We don't really always have to wait for the     
+  full daily candle close above the run.  If daily it's opening there gap   
+  up into the run. we didn't necessarily need to wait for the daily candle  
+  close as 100% confirmation, as we are trading intraday, and we just go to 
+   5 mins wait for PMH to break. (Question: why PM high? Aren't we using 5  
+  min high / 5 min low)                                                     
+  what about invalidates? does invalidates == SL? which means a full candle 
+   body close above/below the level in the opposite direction               
+  At 32 mins mentioned wick strategy?                                       
+  35:24 has example of Q6                                                   
+                                                                            
+  Below the line:                                                           
+  If there's a huge gap can we consider that as a run?                      
+  what is confluence?                                                       
+  what if open above pmh                                                    
+                                                                            
+  Image                                                                     
+  Image                                                                     
+  Image                                                                     
+  Image                                                                     
+  Image                                                                     
+  Kai                                                                       
+  Kai                                                                       
+   changed the post title: Kai's Notes on Vision Strats — 6/9/25, 11:37 PM  
+  KaiRole icon, Students                                                    
+  OP                                                                        
+   — 6/9/25, 11:37 PM                                                       
+  Strats 🔥                                                                 
+  Levels are support and resistance. We draw levels on daily with most      
+  recent price action. Levels are highs and lows of the candles not         
+  open/close price of the candle.                                           
+  5 min time frame we draw levels high of day and low of day. this level    
+  gets updated throughout the day. 17:10 into the video                     
+  On the 5 min time frame, we focus on 3 things: trend, bias, 5m            
+  confirmation                                                              
+  For trend, don't get tempted to go in early. Wait for the EMA trend to    
+  confirm and then go in.                                                   
+  For bias, look at daily time frame, if we are far away from next          
+  resistance level then naturally we play calls. When you go to 5 min       
+  seeing EMA bullish trend then you are more comfortable playing calls. For 
+   bias, we have range and continuation. We want to see if the risk reward  
+  worth it basically. (Questions: there's range, continuation, but what     
+  about reversal/pullback/whatever that's called?)                          
+  For confirmation, it's the 5 mins high 5 mins low thing. (Question: So    
+  last Friday trades, confirmation is the 5 mins close above the 5 min      
+  high, or the 5 mins close above the level? there's a level that's being   
+  broken through too! at 27 minutes) See video at 31 mins about the trade   
+  we made on 06/05. (Q: 2nd candle made a new low technically)              
+  We do the work on the daily time frame. 5 min time frame we just relax.   
+  It's really up to the market at this point.                               
+  SL would be the 5min high/low of the candle where you entered break,      
+  meaning a full candle body above/below that level (ignore the wicks).     
+  Avoid trade if the set up has no extra confluence. Even if it confirms,   
+  the trend is not in our favor. we can avoid the whole day using HOD and   
+  LOD if nothing really breaks it.. At 35 mins                              
+  Break candle or confirmation candle, if volume < 100k be cautious.        
+  If it was so close to a daily level, and it got rejected, be cautious!    
+  Daily level is a strong level!                                            
+                                                                            
+  KaiRole icon, Students                                                    
+  OP                                                                        
+   — 6/10/25, 4:37 PM                                                       
+  Notes/Questions from [the best trading setup for millions and gazillions  
+  of dollars]                                                               
+  We would like to see volume decrease while consolidation                  
+                                                                            
+  Image                                                                     
+  KaiRole icon, Students                                                    
+  OP                                                                        
+   — 6/15/25, 3:37 PM                                                       
+  Wick Strat:                                                               
+  We open inside previous day's candle, and in the morning it was just      
+  pushing higher. Daily candle was green                                    
+  Daily candle was close to a resistance. Not only that, the extra          
+  confluence is that there's no bottom wick so natually it will sell off    
+  passing the opening price so that we could make a wick down, and there's  
+  a big gap to be filled. The R:R is also good we are risking HOD for       
+  previous day's close.                                                     
+  Use starter size as there’s no enough confirmation. For example candle    
+  are not below 20 ema.                                                     
+  See this strat executed on 06/16/2025 here                                
+                                                                            
+  KaiRole icon, Students                                                    
+  OP                                                                        
+   — 7/5/25, 5:51 PM                                                        
+  20 EMA reclaim strats:                                                    
+  Act quick. Scalping, SL tight.                                            
+  Enter when it reclaims, pt 200 EMA, HOD, daily levels, etc.               
+  Enter if there's enough room to the upside (meaning less resistence to    
+  the upside).                                                              
+  Big dump big pump. Vice versa                                             
+  AMD not good cuz not enough room to the upsides, in a range. Google good. 
+   Meta not good                                                            
+  Can hold longer if crossing 200 EMA.                                      
+  Screenshot_2025-07-05_at_4.36.22_PM.png                                   
+                                                                            
+  Image                                                                     
+  Image                                                                     
+  Image                                                                     
+  KaiRole icon, Students                                                    
+  OP                                                                        
+   — 7/5/25, 6:06 PM                                                        
+  Always be cautious if the price is so close to a daily level and got      
+  rejected, even if it confirms! Be cautious! journalsKai's Trading         
+  Reflection                                                                
+  Range break strat:                                                        
+  It usually hits 200 EMA and LOD can be a little more confident to hold    
+  longer/trim later!                                                        
+  Range break + 20 ema confirmation!                                        
+                                                                            
+  KaiRole icon, Students                                                    
+  OP                                                                        
+   — 7/5/25, 6:36 PM                                                        
+  Image                                                                     
+  KaiRole icon, Students                                                    
+  OP                                                                        
+   — 7/5/25, 7:08 PM                                                        
+  Playing off of range high. Half size. PT range low. Also could use that   
+  wick strat as a confluence when the rejction candle forms there's         
+  essentially no bottom wick. Want to see the full candle body pushes       
+  towards the high, break it a bit, and then rejected back into the range!  
+  Image                                                                     
+  Image                                                                     
+  Image                                                                     
+  KaiRole icon, Students                                                    
+  OP                                                                        
+   — 7/6/25, 12:59 AM                                                       
+  Rules to follow no matter what:                                           
+  No rushing. No greed. No FOMO. No Chase. Keep size in check. Small wins.  
+  Compound growth. Time is my best friend. Keep mindset and psychology      
+  normal and relaxed. We want consistent. Don’t be over confident don’t be  
+  proud. Be humble. Use your discipline against your instinct. Do not enter 
+   stupid setup even.                                                       
+  KaiRole icon, Students                                                    
+  OP                                                                        
+   — 7/6/25, 6:10 PM                                                        
+  Additional notes to 5 min open range strat: How could you have avoided    
+  failed break out on SPY?                                                  
+  Based on my experience, there are 2 failed break out that I encountered   
+  on 06/24 and 07/01. Both have the characteristic where there's a daily    
+  level very close to the current price level, indicating a bit stronger    
+  resistance and should be cautious with these setup. Both encountered hard 
+   rejection at those levels. Also volume was slightly lower. If you are    
+  already in, consider close them or sell at least half. Otherwise, do not  
+  enter, or consider a reversal trade. Make sure to draw levels on prev day 
+   candle open and close if price is close to them.                         
+  Image                                                                     
+  Image                                                                     
+  KaiRole icon, Students                                                    
+  OP                                                                        
+   — 7/6/25, 6:50 PM                                                        
+  Additional notes to 5 min open range strat: How could you have avoided    
+  failed break out on SPY?                                                  
+  In contrast to 05/19, where there are 2 daily levels on the upside,       
+  indicating strong resistance. But the volume is slightly higher, and we   
+  DO NOT SEE hard rejection at those daily levels. These are the trades     
+  where break out should be successful. Can stay in this trade.             
+  Image                                                                     
+  KaiRole icon, Students                                                    
+  OP                                                                        
+   — 7/14/25, 1:40 AM                                                       
+  Wick strat works perfectly here. 3 opportunities.                         
+  Image                                                                     
+  KaiRole icon, Students                                                    
+  OP                                                                        
+   — 9/14/25, 7:26 PM                                                       
+  For managing runners, Next candle failed to break so you draw a level at  
+  that previous high and low. That’s your range. Option 1 is to wait for    
+  close below to close position here. Option 2 would be to wait for close   
+  below 20                                                                  
+  Back to back candles in one directions is momentum. And above average     
+  volume with minimal reverse direction volume. These are notes fro another 
+   person. Can you review and tell me some                                  
+    insights? especially on HTF                                             
+
+⏺ These are excellent notes from Kai. Here are the key insights, organized by
+  topic:
+
+  ---
+  HTF (Higher Time Frame) Insights
+
+  Daily Timeframe is Where the Work Happens
+
+  "We do the work on the daily time frame. 5 min time frame we just relax. It's 
+  really up to the market at this point."
+
+  What this means:
+  - Bias, levels, targets → all come from daily
+  - 5m is just for timing the entry
+  - Once you enter, daily structure determines outcome
+
+  ---
+  Daily Confirmation for "Runs" (Big Moves)
+
+  "At 11:30: to confirm the run we need a daily full body close over/below the 
+  level"
+
+
+  ┌────────────────────┬────────────────────────────────────────────────┐
+  │ Confirmation Level │                 What It Means                  │
+  ├────────────────────┼────────────────────────────────────────────────┤
+  │ 50% confirmation   │ Daily candle enters run zone but hasn't closed │
+  ├────────────────────┼────────────────────────────────────────────────┤
+  │ 100% confirmation  │ Daily full body closes inside run zone         │
+  └────────────────────┴────────────────────────────────────────────────┘
+
+  "The idea behind run is there's really nothing to stop you as there's simply 
+  big space to move without resistance and support."
+
+  Key insight: When there's a gap on the daily with no levels in between = high
+  probability move.
+
+  ---
+  HTF Confluence Makes LTF Safer
+
+  "when there's higher time frame confluence it's usually a lot safer"
+
+  "If daily it's opening there gap up into the run, we didn't necessarily need 
+  to wait for the daily candle close as 100% confirmation, as we are trading 
+  intraday"
+
+  Translation: If daily structure supports your direction, 5m confirmation is
+  more reliable.
+
+  ---
+  The Complete 5m Framework (From Kai's Notes)
+
+  Three Things to Focus On:
+
+  1. TREND → EMA direction (don't fight it)
+  2. BIAS → Daily levels (R:R assessment)
+  3. CONFIRMATION → 5m full body close outside range
+
+  ---
+  Stop Loss Clarity
+
+  "SL would be the 5min high/low of the candle where you entered break, meaning 
+  a full candle body above/below that level (ignore the wicks)"
+
+  "It invalidates if a candle full body fully close above the candle you entered
+   the trade at"
+
+  Not the level you broke → the candle you entered on.
+
+  Example:
+  - Level breaks at 350.00
+  - You enter on candle with low of 349.50
+  - SL = full body close above 349.50 (your entry candle)
+  - NOT full body close above 350.00 (the level)
+
+  ---
+  Failed Breakout Filter
+
+  Kai identified a pattern for avoiding failed breakouts:
+
+  "Both have the characteristic where there's a daily level very close to the 
+  current price level, indicating a bit stronger resistance"
+
+  Red flags:
+  - Daily level close to entry
+  - Lower volume on break
+  - Hard rejection at daily level
+
+  Green flags:
+  - Volume slightly higher
+  - NO hard rejection at daily levels
+  - Multiple daily levels in same direction (stacked resistance/support)
+
+  ---
+  The Wick Strategy (HTF Setup)
+
+  "We open inside previous day's candle... the extra confluence is that there's 
+  no bottom wick so naturally it will sell off passing the opening price so that
+   we could make a wick down"
+
+  Setup:
+  1. Daily candle has no wick on one side
+  2. Price opens inside previous day range
+  3. Expect price to create the missing wick
+  4. R:R: Risk HOD, target previous day close or gap fill
+
+  Entry: Starters (half size) because no 5m EMA confirmation yet.
+
+  ---
+  20 EMA Reclaim Strategy
+
+  "Act quick. Scalping, SL tight."
+  "Enter when it reclaims, pt 200 EMA, HOD, daily levels"
+  "Big dump big pump. Vice versa"
+
+  Requirements:
+  - Enough room to upside (no immediate resistance)
+  - Cross 200 EMA = can hold longer
+
+  ---
+  Range Play Insights
+
+  "Playing off of range high. Half size. PT range low."
+  "Want to see the full candle body pushes towards the high, break it a bit, and
+   then rejected back into the range!"
+
+  Range rejection setup:
+  1. Price pushes to range high/low
+  2. Breaks slightly (liquidity grab)
+  3. Rejects back into range
+  4. Target opposite side of range
+
+  ---
+  Key Rules (Psychology)
+
+  "No rushing. No greed. No FOMO. No Chase. Keep size in check. Small wins. 
+  Compound growth."
+
+  "Do not enter stupid setup even"
+
+  "Use your discipline against your instinct"
+
+  ---
+  Managing Runners
+
+  "Next candle failed to break so you draw a level at that previous high and 
+  low. That's your range."
+
+  Two options:
+  1. Wait for close below range to exit
+  2. Wait for close below 20 EMA to exit
+
+  "Back to back candles in one direction is momentum. And above average volume 
+  with minimal reverse direction volume."
+
+  ---
+  Summary: HTF → LTF Flow
+
+  DAILY (HTF):
+  ├── Mark levels (PDH, PDL, range H/L, gaps)
+  ├── Identify bias (where price opens relative to levels)
+  ├── Check for runs (gaps with no levels)
+  └── Note EMA position (20/200)
+
+  5M (LTF):
+  ├── Wait for full body close outside opening range
+  ├── Confirm EMA trend aligns with bias
+  ├── Check volume on break candle (>100k)
+  └── Enter with SL at entry candle H/L
+
+  EXECUTION:
+  ├── Starters if HTF aligned but no LTF confirm
+  ├── Full size if both HTF + LTF confirm
+  └── Skip if daily level too close (poor R:R)
+
+  ---
+  Your 4H Low Sweep (Applied)
+
+  Using Kai's framework:
+
+  ┌────────────────────┬─────────────────────────────────────┐
+  │      Element       │                Check                │
+  ├────────────────────┼─────────────────────────────────────┤
+  │ HTF Bias           │ 4H low = support, daily trend?      │
+  ├────────────────────┼─────────────────────────────────────┤
+  │ Run potential?     │ Gap between 4H low and 4H high?     │
+  ├────────────────────┼─────────────────────────────────────┤
+  │ 5m Confirmation    │ Full body close above opening range │
+  ├────────────────────┼─────────────────────────────────────┤
+  │ EMA aligned?       │ Price above 20 EMA on 5m            │
+  ├────────────────────┼─────────────────────────────────────┤
+  │ Volume             │ >100k on break candle               │
+  ├────────────────────┼─────────────────────────────────────┤
+  │ Daily level close? │ If 4H high is close, be cautious    │
+  ├────────────────────┼─────────────────────────────────────┤
+  │ SL                 │ Below your entry candle low         │
+  └────────────────────┴─────────────────────────────────────┘
+
+  This framework aligns with everything Vision teaches - Kai just documented it
+  well.
+
+✻ Cogitated for 33s
+
+❯ what is run zone he is referring to? 
+
+⏺ Based on Kai's notes, a run zone is an area on the daily chart with no levels
+  (support/resistance) in between - essentially empty space where price can move
+   freely.
+
+  ---
+  What a Run Zone Looks Like
+
+  Daily Chart:
+
+  695.00 ──────────── Level (resistance)
+
+          [empty space = RUN ZONE]
+          [no levels here]
+          [price can "run" freely]
+
+  680.00 ──────────── Level (support)
+
+  ---
+  From Kai's Notes
+
+  "The idea behind run is there's really nothing to stop you as there's simply 
+  big space to move without resistance and support."
+
+  "to confirm the run we need a daily full body close over/below the level"
+
+  ---
+  How to Identify a Run Zone
+
+  Kai's tip:
+  "Tip to identify a run is you zoom out and see a straight line"
+
+  When you zoom out on daily and see a gap/empty area between two levels with no
+   price action in between = run zone.
+
+  ---
+  Confirmation Levels for Runs
+
+  ┌──────────────┬────────────────────────────────────────────────────────┐
+  │ Confirmation │                      What Happens                      │
+  ├──────────────┼────────────────────────────────────────────────────────┤
+  │ 50%          │ Daily candle enters the run zone but hasn't closed yet │
+  ├──────────────┼────────────────────────────────────────────────────────┤
+  │ 100%         │ Daily candle full body closes inside the run zone      │
+  └──────────────┴────────────────────────────────────────────────────────┘
+
+  ---
+  Why Run Zones Matter
+
+  Once price enters a run zone:
+  - No resistance/support to stop it
+  - Higher probability of continuation
+  - Bigger moves possible
+  - Better R:R (target is far, few obstacles)
+
+  ---
+  Example
+
+  Previous days created levels at:
+  - 590.00 (4H low)
+  - 600.00 (4H high)
+
+  Between 590 and 600 = RUN ZONE (no levels)
+
+  If price sweeps 590 and reclaims:
+  - Run zone is 590 → 600
+  - Nothing to stop price until 600
+  - This is why your setup works well
+
+  ---
+  For Your Setup
+
+  Your 4H low sweep → 4H high move is essentially playing the run zone:
+
+  4H High: 594.00 ────── Target
+                ↑
+           [run zone]
+           [empty space]
+                ↑
+  4H Low:  590.00 ────── Entry (on reclaim after sweep)
+
+  Once price reclaims the 4H low and enters the run zone, there's nothing
+  stopping it until the 4H high. That's why the move can happen in 2-3 candles
+  like you described.
+
+❯ so its basically the open space between levels? Bigger the space, the     
+  more higher the probability? can you verify that?                         
+
+⏺ Yes, run zone = open space between levels. But let me clarify the second part
+  based on what the notes actually say:
+
+  ---
+  What the Notes Confirm
+
+  Kai:
+  "The idea behind run is there's really nothing to stop you as there's simply 
+  big space to move without resistance and support."
+
+  Vision (from top watch):
+  "spy confirmed upside and same for other things but was way too close to daily
+   levels"
+
+  rishabr:
+  "the r:r was pretty shit so not worth taking it" (when target was close)
+
+  ---
+  It's Not Exactly "Higher Probability"
+
+  It's more accurate to say:
+
+  ┌─────────────────┬──────────────────────────────┐
+  │  Bigger Space   │    What It Actually Means    │
+  ├─────────────────┼──────────────────────────────┤
+  │ Better R:R      │ Target is far, stop is tight │
+  ├─────────────────┼──────────────────────────────┤
+  │ Fewer obstacles │ No levels to cause rejection │
+  ├─────────────────┼──────────────────────────────┤
+  │ Cleaner move    │ Less chop, more directional  │
+  ├─────────────────┼──────────────────────────────┤
+  │ Worth taking    │ Risk makes sense             │
+  └─────────────────┴──────────────────────────────┘
+
+  ┌────────────────┬─────────────────────────────────────┐
+  │ Smaller Space  │            What It Means            │
+  ├────────────────┼─────────────────────────────────────┤
+  │ Worse R:R      │ Target is close, not worth the risk │
+  ├────────────────┼─────────────────────────────────────┤
+  │ More obstacles │ Levels can cause rejection          │
+  ├────────────────┼─────────────────────────────────────┤
+  │ Choppier move  │ Price can stall/reverse             │
+  ├────────────────┼─────────────────────────────────────┤
+  │ Skip it        │ Even if it "works," not worth it    │
+  └────────────────┴─────────────────────────────────────┘
+
+  ---
+  The Real Filter
+
+  From the Q&A and top watch, Vision skips trades when:
+
+  "was way too close to daily levels"
+
+  "If it was so close to a daily level, and it got rejected, be cautious!"
+
+  So it's less about probability and more about:
+
+  Big space = Take the trade (R:R worth it)
+  Small space = Skip (even if it might work, not worth the risk)
+
+  ---
+  Verification From Top Watch
+
+  Vision frequently mentions gap fills and room:
+
+  "has a nice gap to fill under 201.75"
+
+  "has room towards 193.63"
+
+  "has a lot of open space under 157.77"
+
+  "nothing but fireworks past that level" (implying run zone after)
+
+  These all reference the concept - when there's space/room/gap, the trade is
+  worth taking.
+
+  ---
+  Bottom Line
+
+  Confirmed:
+  - Run zone = open space between levels ✓
+  - Bigger space = better trade (R:R) ✓
+  - Bigger space = cleaner move (fewer obstacles) ✓
+
+  More accurate than "higher probability":
+  - Bigger space = worth taking the trade
+  - Smaller space = skip even if setup is valid
+
+  The probability of the setup working might be similar, but the payoff is
+  different. Vision skips low R:R setups even when they confirm.
+
+❯ alright, create a workflow for me now before entering a trade 
+
+⏺ Trading Workflow
+
+  Phase 1: Pre-Market (Daily Chart)
+
+  Step 1: Mark Levels
+
+  □ Previous day high (wick)
+  □ Previous day low (wick)
+  □ Previous day open/close (body) - if price is near them
+  □ 20 EMA position
+  □ 200 EMA position
+  □ Any unfilled gaps
+
+  Step 2: Identify Run Zones
+
+  □ Where is open space between levels?
+  □ Zoom out - do you see a "straight line" gap?
+  □ Mark potential targets within run zones
+
+  Step 3: Determine Daily Bias
+
+  ┌─────────────────────────┬────────────────────────┐
+  │     Price Opens...      │          Bias          │
+  ├─────────────────────────┼────────────────────────┤
+  │ Near previous day low   │ Bullish (bounce)       │
+  ├─────────────────────────┼────────────────────────┤
+  │ Near previous day high  │ Bearish (rejection)    │
+  ├─────────────────────────┼────────────────────────┤
+  │ Below previous day low  │ Bearish (continuation) │
+  ├─────────────────────────┼────────────────────────┤
+  │ Above previous day high │ Bullish (continuation) │
+  ├─────────────────────────┼────────────────────────┤
+  │ Middle of range         │ No bias - wait         │
+  └─────────────────────────┴────────────────────────┘
+
+  ---
+  Phase 2: Market Open (5m Chart)
+
+  Step 4: Mark Opening Range
+
+  □ First 5m candle high
+  □ First 5m candle low
+  □ This is your ORB (Opening Range Breakout) zone
+
+  Step 5: Check EMA Alignment
+
+  ┌──────────────────┬────────────┐
+  │ Price vs 20 EMA  │ Direction  │
+  ├──────────────────┼────────────┤
+  │ Above 20 EMA     │ Calls only │
+  ├──────────────────┼────────────┤
+  │ Below 20 EMA     │ Puts only  │
+  ├──────────────────┼────────────┤
+  │ Crossing/unclear │ Wait       │
+  └──────────────────┴────────────┘
+
+  ---
+  Phase 3: R:R Check (Before Any Entry)
+
+  Step 6: Calculate R:R
+
+  Target = Next daily level (PDH, PDL, range H/L, gap fill)
+  Stop = Below/above entry candle or sweep low/high
+  Entry = Current price
+
+  R:R = (Target - Entry) / (Entry - Stop)
+
+  Step 7: R:R Decision
+
+  ┌───────┬──────────────────────────────────────────┐
+  │  R:R  │                  Action                  │
+  ├───────┼──────────────────────────────────────────┤
+  │ > 3:1 │ Take starters at open (if bias aligned)  │
+  ├───────┼──────────────────────────────────────────┤
+  │ > 2:1 │ Wait for 5m confirmation, then full size │
+  ├───────┼──────────────────────────────────────────┤
+  │ < 2:1 │ Skip - not worth it                      │
+  └───────┴──────────────────────────────────────────┘
+
+  Step 8: Run Zone Check
+
+  □ Is there open space to target?
+  □ Any daily levels in the way?
+  □ If level is close → skip or reduce size
+
+  ---
+  Phase 4: Entry Decision
+
+  Path A: Starters (Aggressive Entry)
+
+  Requirements:
+  - Daily bias clear
+  - R:R > 3:1
+  - Price reclaims key level (e.g., 4H low)
+  - 1m shows displacement/momentum
+
+  Action:
+  Enter 50% size
+  Stop below sweep/reclaim level
+
+  Path B: Confirmed Entry (Full Size)
+
+  Requirements:
+  - All of Path A, plus:
+  - 5m full body closes outside opening range
+  - EMA aligned with direction
+
+  Action:
+  Enter remaining 50% (or full size if no starters)
+  Stop below entry candle low (not the level)
+
+  Path C: Skip
+
+  When to skip:
+  - R:R < 2:1
+  - Daily level too close to target
+  - EMA against your direction
+  - Price opens middle of range (no bias)
+  - Volume < 100k on break candle
+
+  ---
+  Phase 5: Trade Management
+
+  Step 9: Stop Loss Rules
+
+  Option 1: Level-Based (Preferred)
+  Invalidation = Full body close through entry candle H/L
+  Not just a wick - needs full body
+
+  Option 2: Percentage-Based (Beginner)
+  Hard stop at -30%
+  Then graduate to level-based when disciplined
+
+  Step 10: Trim Schedule
+
+  ┌──────────────┬──────────────────────────┐
+  │ Profit Level │          Action          │
+  ├──────────────┼──────────────────────────┤
+  │ +20%         │ Sell 60-70% of position  │
+  ├──────────────┼──────────────────────────┤
+  │ +30%         │ Sell another portion     │
+  ├──────────────┼──────────────────────────┤
+  │ +50%         │ Sell another portion     │
+  ├──────────────┼──────────────────────────┤
+  │ Target hit   │ Close remaining or trail │
+  └──────────────┴──────────────────────────┘
+
+  Step 11: Trail Runners
+
+  □ Move stop to breakeven after first trim
+  □ Use 20 EMA as trailing stop
+  □ Or use new 5m highs/lows as levels
+  □ Back-to-back candles in one direction = hold
+  □ Close below 20 EMA = exit runners
+
+  ---
+  Quick Reference Checklist
+
+  Before Entry:
+
+  □ Daily bias determined?
+  □ Levels marked?
+  □ Run zone identified?
+  □ R:R calculated (> 2:1)?
+  □ EMA aligned?
+  □ No daily level blocking target?
+
+  Entry Trigger:
+
+  □ Starters: Reclaim + 1m displacement + R:R > 3:1
+  □ Confirmed: Full 5m body outside range + EMA aligned
+
+  After Entry:
+
+  □ Stop set (entry candle H/L or -30%)
+  □ Target identified (next daily level)
+  □ Trim plan ready (60-70% at 20%)
+
+  ---
+  Your 4H Low Sweep Setup (Specific)
+
+  PRE-MARKET:
+  □ Mark 4H low and 4H high on daily
+  □ Check for run zone between them
+  □ Note 20 EMA position
+
+  AT OPEN:
+  □ Price near 4H low? → Bullish bias
+  □ Mark 5m opening range
+
+  ENTRY TRIGGER:
+  □ 4H low swept (wick below)
+  □ Price reclaims 4H low
+  □ 1m displacement candle → STARTERS (50%)
+  □ 5m full body outside range → ADD (full size)
+
+  MANAGEMENT:
+  □ Stop: Below sweep low
+  □ Target: 4H high
+  □ Trim 70% at halfway or +20%
+  □ Trail rest to target
+
+  ---
+  Rules to Never Break
+
+  1. No 5m confirmation = no full size (starters max)
+  2. R:R < 2:1 = skip
+  3. Against EMA trend = skip
+  4. Daily level close to target = skip or half size
+  5. Trim at +20% no matter what
+  6. If invalidated, try once more max, then done
+  7. Friday = half size (more volatile)
+
+✻ Churned for 34s
+
+❯ i dont want my 4h setup which I discussed at start of session, just what  
+  my mentor had...                                                          
+
+⏺ Vision's Trading Workflow
+
+  Phase 1: Pre-Market (Daily Chart)
+
+  Step 1: Mark Levels
+
+  □ Previous day high (wick)
+  □ Previous day low (wick)
+  □ Previous day body open/close (if price is near)
+  □ Daily range highs/lows
+  □ 20 EMA
+  □ 200 EMA
+  □ Any unfilled gaps
+
+  Step 2: Identify Run Zones
+
+  □ Open space between levels?
+  □ Zoom out - see a "straight line" gap?
+  □ Big space = worth trading
+  □ Small space = skip
+
+  Step 3: Scan for Setups
+
+  □ Check where price will open relative to levels
+  □ Note which direction has best R:R
+  □ Identify target (next daily level)
+
+  ---
+  Phase 2: At Open (Determine Bias)
+
+  Step 4: Where Does Price Open?
+
+  ┌──────────────────────┬─────────┬────────────────────┐
+  │       Opens...       │  Bias   │        Play        │
+  ├──────────────────────┼─────────┼────────────────────┤
+  │ Near PDL             │ Bullish │ Calls to PDH       │
+  ├──────────────────────┼─────────┼────────────────────┤
+  │ Near PDH             │ Bearish │ Puts to PDL        │
+  ├──────────────────────┼─────────┼────────────────────┤
+  │ Below PDL            │ Bearish │ Continuation puts  │
+  ├──────────────────────┼─────────┼────────────────────┤
+  │ Above PDH            │ Bullish │ Continuation calls │
+  ├──────────────────────┼─────────┼────────────────────┤
+  │ Inside range, middle │ None    │ Wait for 5m break  │
+  └──────────────────────┴─────────┴────────────────────┘
+
+  Step 5: Mark 5m Opening Range
+
+  □ First 5m candle high
+  □ First 5m candle low
+
+  Step 6: Check EMA on 5m
+
+  ┌────────────────┬────────────┐
+  │ Price Position │ Direction  │
+  ├────────────────┼────────────┤
+  │ Above 20 EMA   │ Calls only │
+  ├────────────────┼────────────┤
+  │ Below 20 EMA   │ Puts only  │
+  └────────────────┴────────────┘
+
+  ---
+  Phase 3: R:R Assessment
+
+  Step 7: Calculate Visually
+
+  Target = Next daily level
+  Stop = 5m low/high or entry candle
+  Entry = Current price
+
+  Look at chart: Is target far? Is stop tight?
+
+  Step 8: Decision
+
+  ┌───────────────────────────────┬───────────────────────────────────┐
+  │              R:R              │              Action               │
+  ├───────────────────────────────┼───────────────────────────────────┤
+  │ Good (target far, stop tight) │ Take starters or wait for confirm │
+  ├───────────────────────────────┼───────────────────────────────────┤
+  │ Bad (target close)            │ Skip                              │
+  └───────────────────────────────┴───────────────────────────────────┘
+
+  Step 9: Check for Obstacles
+
+  □ Any daily level between entry and target?
+  □ If yes and it's close → skip or be cautious
+  □ If no → clean run zone, take the trade
+
+  ---
+  Phase 4: Entry
+
+  Path A: Starters (Before Confirmation)
+
+  When:
+  - Daily bias clear
+  - R:R good
+  - No 5m confirmation yet
+
+  Action:
+  Enter 50% of normal size
+  Stop below 5m low (for calls) or above 5m high (for puts)
+
+  Path B: Confirmed Entry
+
+  Requirements:
+  - Full 5m candle body closes outside opening range
+  - Both open AND close outside the range
+  - EMA aligned
+
+  Action:
+  Enter full size (or add to starters)
+  Stop = entry candle high/low
+
+  Path C: Skip
+
+  When:
+  - R:R bad (target too close)
+  - EMA against direction
+  - Daily level blocking target
+  - Opens middle of range with no clear bias
+  - Volume < 100k on break candle
+
+  ---
+  Phase 5: Stop Loss
+
+  Option 1: Level-Based (Vision's Preference)
+
+  Invalidation = Full body close through entry candle H/L
+  Wicks don't count - need full body
+
+  Option 2: Percentage-Based (For Beginners)
+
+  -30% hard stop
+  Graduate to level-based when disciplined
+
+  ---
+  Phase 6: Trim & Manage
+
+  Trim Schedule
+
+  ┌───────────────────────────┬─────────────────────┐
+  │           Level           │       Action        │
+  ├───────────────────────────┼─────────────────────┤
+  │ +20%                      │ Sell 60-70% minimum │
+  ├───────────────────────────┼─────────────────────┤
+  │ Price target              │ Sell more           │
+  ├───────────────────────────┼─────────────────────┤
+  │ Trend dies (loses 20 EMA) │ Close runners       │
+  └───────────────────────────┴─────────────────────┘
+
+  Trail Runners
+
+  □ Move stop to breakeven after first trim
+  □ Use 20 EMA as trailing stop
+  □ Or wait for close below new 5m lows
+  □ Back-to-back candles = momentum, hold
+
+  ---
+  Quick Checklist
+
+  Before Entry:
+
+  □ Daily levels marked?
+  □ Bias determined (open location)?
+  □ R:R good (target far, stop tight)?
+  □ Run zone clear (no levels blocking)?
+  □ EMA aligned on 5m?
+
+  Entry Trigger:
+
+  □ Starters: Bias + R:R good (no 5m confirm yet)
+  □ Confirmed: Full 5m body outside opening range
+
+  After Entry:
+
+  □ Stop set (entry candle H/L or -30%)
+  □ Trim 60-70% at +20%
+  □ Trail rest with 20 EMA
+
+  ---
+  Rules
+
+  1. No full body outside range = no confirmed entry
+  2. Bad R:R = skip (even if confirms)
+  3. Against EMA = skip
+  4. Daily level close to target = skip or half size
+  5. Trim at +20% - no exceptions
+  6. Trade invalidates = try once more, then done
+  7. Friday = half size
+  8. Starters = 50% of normal size
+
+  ---
+  Strategies Summary
+
+  Strategy: ORB
+  Setup: 5m range break
+  Entry: Full body outside
+  Target: Daily levels
+  ────────────────────────────────────────
+  Strategy: Run
+  Setup: Gap/space on daily
+  Entry: 5m confirms into run
+  Target: End of run zone
+  ────────────────────────────────────────
+  Strategy: Wick
+  Setup: No wick on daily candle
+  Entry: Starters (half size)
+  Target: Fill the wick
+  ────────────────────────────────────────
+  Strategy: 20 EMA Reclaim
+  Setup: Price reclaims 20 EMA
+  Entry: Quick scalp, tight stop
+  Target: 200 EMA, HOD, daily level
+  ────────────────────────────────────────
+  Strategy: Range Rejection
+  Setup: Price rejects range H/L
+  Entry: Half size
+  Target: Opposite side of range
+
+❯ the hardest part is consistency in an entry - say we enter on 5m bearish  
+  momentum below 5m opening range (not confirmed), it has tendency to go up 
+   much more and past 5m candle high, when you are expecting downside       
+  momentum. like whenevery I enter 5m candle, it flips direction on me, and 
+   i absolutely hate that. How do I ensure at least next 5m candle goes my  
+  way.                                                                      
+
+⏺ You can't ensure the next candle goes your way. That's the uncomfortable
+  truth.
+
+  But here's what Vision's method addresses:
+
+  ---
+  Why This Happens
+
+  You're entering before confirmation but expecting confirmed results.
+
+  From Vision:
+  "if you see me enter prior to that [confirmation] i emphasize that theres no 
+  confirmation but its based on r:r / intuition"
+
+  Starters/aggressive entries have lower win rate. That's the trade-off for
+  better R:R.
+
+  ---
+  The Filter You Might Be Missing
+
+  From rishabr:
+  "just because it closes below the low doesn't mean you buy puts"
+
+  "its the core, but theres more nuance to it"
+
+  Momentum alone isn't enough. You need:
+
+  □ EMA aligned? (below 20 EMA for puts)
+  □ Daily bias aligned? (opened near high, expecting sell)
+  □ Run zone clear? (no daily level about to cause bounce)
+  □ Volume decent? (>100k on break candle)
+
+  ---
+  What's Likely Happening
+
+  ┌───────────────────────────────────────┬──────────────────────────────┐
+  │               Scenario                │         Why It Flips         │
+  ├───────────────────────────────────────┼──────────────────────────────┤
+  │ Entering below range but above 20 EMA │ EMA acts as support, bounces │
+  ├───────────────────────────────────────┼──────────────────────────────┤
+  │ Entering near daily level below       │ Daily level causes bounce    │
+  ├───────────────────────────────────────┼──────────────────────────────┤
+  │ Entering on low volume break          │ Weak move, fades back        │
+  ├───────────────────────────────────────┼──────────────────────────────┤
+  │ No daily bias for downside            │ Fighting HTF structure       │
+  └───────────────────────────────────────┴──────────────────────────────┘
+
+  ---
+  The Honest Answer
+
+  To increase odds of next candle continuing:
+
+  1. Wait for Full Body Confirmation
+
+  Don't enter on momentum
+  Wait for candle to CLOSE
+  Full body outside range = higher probability
+
+  This is the single biggest filter. You give up some R:R for higher win rate.
+
+  2. Check EMA Before Entry
+
+  For puts: Price should be BELOW 20 EMA
+  If above 20 EMA and you short = fighting trend
+
+  3. Check Daily Level Below
+
+  If there's a daily level right below your entry
+  Price will likely bounce there
+  Skip or wait for that level to break
+
+  4. Check Volume
+
+  Volume < 100k on break candle = weak
+  Higher chance of reversal
+
+  ---
+  Vision's Two Paths
+
+  ┌─────────────────────────────┬──────────┬────────┬────────────────────┐
+  │            Path             │ Win Rate │  R:R   │     Acceptance     │
+  ├─────────────────────────────┼──────────┼────────┼────────────────────┤
+  │ Starters (before confirm)   │ Lower    │ Better │ Accept more losers │
+  ├─────────────────────────────┼──────────┼────────┼────────────────────┤
+  │ Confirmed (full body close) │ Higher   │ Worse  │ Accept later entry │
+  └─────────────────────────────┴──────────┴────────┴────────────────────┘
+
+  You can't have both. Pick one and accept the trade-off.
+
+  ---
+  If You Keep Getting Flipped
+
+  You're likely:
+  1. Taking starters but expecting confirmed win rate
+  2. Not checking EMA alignment
+  3. Not checking daily levels below/above entry
+  4. Entering on low volume breaks
+
+  The fix:
+  - Either wait for confirmation (higher win rate)
+  - Or accept starters will fail more often (but winners pay more)
+
+  ---
+  Practical Rule
+
+  If you hate getting flipped, only take confirmed entries:
+
+  1. Wait for 5m candle to fully close
+  2. Check: Is full body outside range?
+  3. Check: Am I below 20 EMA for puts?
+  4. Check: Is there a daily level right below me?
+  5. If all yes → enter
+  6. If any no → skip
+
+  You'll miss some moves. You'll enter later. But you'll stop getting flipped as
+   often.
+
+  ---
+  From Kai's Notes
+
+  "For trend, don't get tempted to go in early. Wait for the EMA trend to 
+  confirm and then go in."
+
+  "Avoid trade if the set up has no extra confluence. Even if it confirms, the 
+  trend is not in our favor."
+
+  The flipping you're experiencing = entering without all confluences aligned.
+
+✻ Churned for 32s
+
+❯ question on drawing levels - these should be levels that have not been    
+  tapped into?                                                              
+
+⏺ I didn't see "untapped" specifically mentioned in the Q&A or notes. But here's
+   what Vision does say about levels:
+
+  ---
+  What Vision Marks
+
+  From the Q&A:
+
+  "I don't use hourly levels. I don't use pmh or pml levels. I use pdh and pdl."
+
+  "Levels are highs and lows of the candles not open/close price of the candle"
+
+  "Good but don't completely ignore the bodies especially of the previous day or
+   closest day"
+
+  ---
+  His Level Hierarchy
+
+  ┌──────────────────────────────┬───────────────────────┐
+  │          Level Type          │     When to Mark      │
+  ├──────────────────────────────┼───────────────────────┤
+  │ Previous day high (wick)     │ Always                │
+  ├──────────────────────────────┼───────────────────────┤
+  │ Previous day low (wick)      │ Always                │
+  ├──────────────────────────────┼───────────────────────┤
+  │ Previous day body open/close │ If price is near them │
+  ├──────────────────────────────┼───────────────────────┤
+  │ Daily range highs/lows       │ For range plays       │
+  ├──────────────────────────────┼───────────────────────┤
+  │ Gaps                         │ As targets            │
+  └──────────────────────────────┴───────────────────────┘
+
+  ---
+  Tapped vs Untapped
+
+  The notes don't explicitly distinguish this, but logically:
+
+  Untapped levels (more significant):
+  - Price hasn't reached them yet
+  - Liquidity sitting there
+  - Stronger reaction expected
+
+  Tapped levels (less significant):
+  - Price already touched and moved away
+  - Liquidity partially filled
+  - May still act as S/R but weaker
+
+  ---
+  What the Notes DO Mention
+
+  Run zones = untapped areas:
+  "The idea behind run is there's really nothing to stop you as there's simply 
+  big space to move without resistance and support"
+
+  This implies the value is in areas price hasn't traded through.
+
+  Gaps = untapped:
+  "has a nice gap to fill"
+
+  Gaps are by definition untapped - price skipped over that area.
+
+  ---
+  Practical Approach (Based on Vision's Method)
+
+  Mark:
+  □ PDH / PDL (regardless of tapped)
+  □ Daily range H/L
+  □ Gaps (untapped by definition)
+  □ Body levels only if price is near them
+
+  Prioritize as targets:
+  □ Untapped levels (gaps, unfilled wicks)
+  □ Levels price is moving toward, not away from
+
+  ---
+  My Best Interpretation
+
+  Vision doesn't seem to filter by "tapped vs untapped" explicitly. He marks
+  recent levels (previous day, daily range) and uses them as:
+  - Targets (where price is heading)
+  - S/R (where price may react)
+  - Invalidation (if broken, bias changes)
+
+  The "untapped" concept applies more to targets - you're aiming for levels
+  price hasn't reached yet (like PDH when price is at PDL).
+
+  ---
+  Do you want me to search the Q&A files again for anything specific about level
+   selection?
+
+❯ how does he find trending stocks? 
+
+⏺ From the Q&A and top watch notes, here's what Vision shared:
+
+  ---
+  His Process
+
+  Vision:
+  "Based on lifetime strats more than anything but i scan a list of stocks each 
+  day where i look at the daily for potential breakouts"
+
+  "I scan the market 30 minutes before open to see where things open"
+
+  ---
+  What He Looks For on Daily
+
+  From the top watch patterns:
+
+  Setup: Daily range breakout
+  What He's Scanning For: "first daily candle trying to open outside of its
+    range"
+  ────────────────────────────────────────
+  Setup: EMA reclaim/rejection
+  What He's Scanning For: "respected the daily 20ema" / "first close under
+  20ema"
+  ────────────────────────────────────────
+  Setup: Gap fills
+  What He's Scanning For: "has a nice gap to fill"
+  ────────────────────────────────────────
+  Setup: Red to green / Green to red
+  What He's Scanning For: "weekly going red to green"
+  ────────────────────────────────────────
+  Setup: Sector strength
+  What He's Scanning For: "if semis move" / "china names moving pm"
+  ────────────────────────────────────────
+  Setup: Post-earnings
+  What He's Scanning For: "post earnings lotto"
+
+  ---
+  His Watchlist (Recurring Names)
+
+  From top watch, these appear most often:
+
+  High Volume / Clean Movers:
+  - TSLA
+  - NVDA
+  - AMD
+  - AAPL
+  - AMZN
+  - GOOGL
+  - META
+  - MSFT
+  - SPY (for sentiment)
+
+  Sector Plays:
+  - Semis: NVDA, AMD, INTC, SMCI, MU
+  - China: BABA, PDD, NIO, JD
+
+  Lottos (Lower Volume):
+  - Earnings plays
+  - Names with big gaps
+
+  ---
+  Specific Quotes on Selection
+
+  Breakout potential:
+  "amd opening outside of its 2 month daily range for the first time. needs to 
+  break past 240 still but nice long setup"
+
+  EMA as filter:
+  "AMD was above all emas while Google had to beat the 200 still"
+
+  Range characteristics:
+  "tsla still in its weekly range one of these days will breakout with a 10% 
+  move"
+
+  Relative strength:
+  "if market goes short this would be the first name id expect continuation 
+  from"
+
+  ---
+  The Scan Criteria (Inferred)
+
+  Based on top watch patterns:
+
+  □ Opening above/below key daily level?
+  □ Breaking out of daily range?
+  □ Reclaiming or losing 20 EMA?
+  □ Weekly candle flipping red to green (or vice versa)?
+  □ Has a gap to fill?
+  □ Post-earnings with volatility?
+  □ Sector moving? (semis, china, etc.)
+  □ Good R:R on either side of the range?
+
+  ---
+  His Pre-Market Routine
+
+  30 min before open:
+  1. Check where stocks are opening relative to levels
+  2. Note which have best R:R setups
+  3. Identify direction based on open location
+  4. Post top watch with bias + levels + targets
+
+  ---
+  Key Quote
+
+  Vision:
+  "not many real breakout setups" (on slow days)
+
+  He's not forcing trades. If nothing sets up clean on the daily, he says so.
+
+  ---
+  Practical Takeaway
+
+  He's not using screeners or complex scans. He:
+  1. Watches the same ~15-20 high-volume names
+  2. Checks daily chart for breakout/range/EMA setups
+  3. Sees where they open pre-market
+  4. Picks 2-4 with best R:R for the day
+
+❯ /export 
+  ⎿  Conversation exported to:
+     2026-02-01-local-command-caveatcaveat-the-messages-below-w.txt
+
+❯ i am hesitating to enter trades when it comes to execution probably fear  
+  of being wrong                                                            
+
+⏺ This came up in the Q&A. Here's what Vision said:
+
+  ---
+  The Sizing Fix
+
+  Vision:
+  "if you enter a trade with $1000 and youre scared then size down"
+  "if you enter a trade with $500 and youre scared then size down"
+  "if you enter a trade with $250 and youre NOT scared then rinse and repeat 
+  that"
+
+  The rule: Size down until the loss doesn't scare you. Then stay there.
+
+  ---
+  Why Fear Happens
+
+  ┌─────────────────────┬──────────────────────────────────────┐
+  │        Cause        │                 Fix                  │
+  ├─────────────────────┼──────────────────────────────────────┤
+  │ Sized too big       │ Size down until calm                 │
+  ├─────────────────────┼──────────────────────────────────────┤
+  │ Watching P&L        │ Watch the chart, not the money       │
+  ├─────────────────────┼──────────────────────────────────────┤
+  │ No clear rules      │ Define exact entry trigger           │
+  ├─────────────────────┼──────────────────────────────────────┤
+  │ Fear of being wrong │ Accept losses are part of the system │
+  └─────────────────────┴──────────────────────────────────────┘
+
+  ---
+  From Vision
+
+  "Prioritize risk management to remove emotional attachment"
+
+  "Drop your size to under 10%. If you focus on money you will fail"
+
+  ---
+  The Mindset Shift
+
+  You're not trying to be right. You're trying to follow the system.
+
+  If the setup confirms → you enter
+  If it doesn't → you don't
+
+  Being "wrong" on a trade that followed the rules isn't a mistake. It's just a
+  loss. Losses are built into the system.
+
+  Vision blew up 4 accounts before finding consistency. He wasn't always right.
+  He just got disciplined.
+
+  ---
+  Practical Fix
+
+  1. Remove the decision:
+  Setup confirms → Enter. No thinking.
+  Setup doesn't confirm → Skip. No thinking.
+
+  2. Size down aggressively:
+  Trade with an amount where:
+  - A -30% stop doesn't make you flinch
+  - You can take 3-4 losses in a row and feel nothing
+
+  3. Stop watching P&L:
+  Watch the chart
+  Watch your levels
+  Watch the 20 EMA
+  Not the dollar amount
+
+  ---
+  From Kai's Notes
+
+  "Use your discipline against your instinct"
+
+  "No rushing. No greed. No FOMO. No Chase."
+
+  ---
+  The Truth
+
+  Hesitation = you're sized too big or you don't trust the system.
+
+  Fix one or both:
+  - Size down until fear disappears
+  - Follow the rules mechanically until you trust them
+
+❯ give me a concise steps numbered which is going to be my process for      
+  short listing my topwatch -                                               
+
+⏺ Top Watch Process
+
+  Night Before / Pre-Market
+
+  1. Scan daily chart on your watchlist (10-15 names)
+  2. For each stock, check:
+    - Breaking out of daily range?
+    - Reclaiming or losing 20 EMA?
+    - Gap to fill?
+    - Weekly candle flipping red↔green?
+  3. Mark levels on candidates:
+    - PDH / PDL (wicks)
+    - Daily range H/L
+    - Gaps
+  4. Identify run zones (open space between levels)
+
+  30 Min Before Open
+
+  5. Check where each stock is opening:
+    - Near PDL → calls setup
+    - Near PDH → puts setup
+    - Middle → skip
+  6. Calculate R:R for each:
+    - Target far + stop tight = good
+    - Target close = skip
+  7. Pick 2-4 with best R:R and clear bias
+  8. Write your top watch:
+    - Ticker
+    - Direction (calls/puts)
+    - Entry trigger (level or 5m break)
+    - Target
+    - Invalidation
+
+  ---
+  Example Format
+
+  NVDA - calls if opens above 191.37
+  Target: 193.63 (gap fill)
+  Invalid: close below 190.00
+
+  AMD - puts if loses 229.53
+  Target: 215.00 (daily range low)
+  Invalid: reclaims 20 EMA
+
+❯ how does vision identify high resistance areas on higher time frame? how  
+  does he pick the names which have momentum to upside and increases his    
+  win rate?                                                                 
+
+⏺ Based on the Q&A and top watch notes:
+
+  ---
+  Identifying Resistance on HTF (Daily)
+
+  What He Marks as Resistance
+
+  ┌───────────────────┬─────────────────────────────────────┐
+  │    Level Type     │       Example from Top Watch        │
+  ├───────────────────┼─────────────────────────────────────┤
+  │ Previous day high │ "if rejected daily highs yesterday" │
+  ├───────────────────┼─────────────────────────────────────┤
+  │ Daily range high  │ "daily range highs at 281"          │
+  ├───────────────────┼─────────────────────────────────────┤
+  │ 20 EMA on daily   │ "rejecting 20ema on daily"          │
+  ├───────────────────┼─────────────────────────────────────┤
+  │ 200 EMA on daily  │ "had to beat the 200 still"         │
+  ├───────────────────┼─────────────────────────────────────┤
+  │ Gap highs         │ "gap fill above"                    │
+  └───────────────────┴─────────────────────────────────────┘
+
+  How He Knows It's Strong Resistance
+
+  From top watch patterns:
+
+  "If it was so close to a daily level, and it got rejected, be cautious"
+
+  "was way too close to daily levels" (reason to skip)
+
+  Strong resistance = multiple levels stacked:
+  - Daily range high + 20 EMA nearby = harder to break
+  - Single level with space above = easier to break
+
+  ---
+  Picking Names with Momentum (Higher Win Rate)
+
+  1. EMA Position on Daily
+
+  Vision:
+  "AMD was above all emas while Google had to beat the 200 still"
+
+
+  ┌────────────────────┬────────────────┐
+  │    EMA Position    │    Momentum    │
+  ├────────────────────┼────────────────┤
+  │ Above 20 AND 200   │ Strong bullish │
+  ├────────────────────┼────────────────┤
+  │ Below 20 AND 200   │ Strong bearish │
+  ├────────────────────┼────────────────┤
+  │ Between 20 and 200 │ Mixed, weaker  │
+  └────────────────────┴────────────────┘
+
+  Play calls on names above all EMAs. Play puts on names below all EMAs.
+
+  ---
+  2. Weekly Candle Flip
+
+  From top watch:
+
+  "amzn past 233.76 goes red to green on the weekly"
+
+  "weekly going to open red after being up" → puts
+
+  Red to green = momentum shifting bullish
+  Green to red = momentum shifting bearish
+
+  ---
+  3. Opening Location
+
+  "opening above previous day highs" = bullish continuation
+  "opening under previous day lows" = bearish continuation
+
+  Continuation setups > Reversal setups for win rate.
+
+  ---
+  4. Reclaim and Hold
+
+  "reclaimed and held nicely all dec range"
+
+  "respected the daily 20ema"
+
+  If price reclaims a level and holds = momentum confirmed.
+
+  ---
+  5. First Time Breaking Range
+
+  "amd opening outside of its 2 month daily range for the first time"
+
+  "first daily candle trying to open outside of its range"
+
+  First breakout of long range = momentum starting.
+
+  ---
+  His Filter for Higher Win Rate
+
+  Strong setup (higher win rate):
+  □ Above all EMAs (for calls)
+  □ Opening above PDH (continuation)
+  □ Weekly flipping red to green
+  □ No resistance nearby (run zone)
+  □ First time breaking range
+
+  Weaker setup (lower win rate):
+  □ Between EMAs
+  □ Opening middle of range
+  □ Fighting daily level nearby
+  □ Reversal play against trend
+
+  ---
+  Example from Top Watch
+
+  High probability call:
+  "NVDA over pdh with its next pt at 195.89. trend in favor, best long setup imo
+   today"
+
+  Why:
+  - Above PDH (continuation)
+  - Trend in favor (EMA aligned)
+  - Target identified (run zone to 195.89)
+
+  Lower probability (he notes caution):
+  "opening inside previous day candle set up for a range"
+
+  Why:
+  - No clear direction
+  - Could go either way
+  - Wait for 5m break
+
+  ---
+  Summary
+
+  ┌────────────┬────────────────────────┬────────────────────────┐
+  │   Factor   │    Bullish Momentum    │    Bearish Momentum    │
+  ├────────────┼────────────────────────┼────────────────────────┤
+  │ EMA        │ Above 20 AND 200       │ Below 20 AND 200       │
+  ├────────────┼────────────────────────┼────────────────────────┤
+  │ Open       │ Above PDH              │ Below PDL              │
+  ├────────────┼────────────────────────┼────────────────────────┤
+  │ Weekly     │ Red to green           │ Green to red           │
+  ├────────────┼────────────────────────┼────────────────────────┤
+  │ Range      │ Breaking above         │ Breaking below         │
+  ├────────────┼────────────────────────┼────────────────────────┤
+  │ Resistance │ None nearby (run zone) │ None nearby (run zone) │
+  └────────────┴────────────────────────┴────────────────────────┘
+
+  Stack these confluences = higher win rate.
+
+❯ what if it opens b/w pdc and pdh? 
+
+⏺ From the Q&A, marketmkr addressed this:
+
+  "since the hypothetical open is between the 20 [ema] and the previous high, 
+  it'll most likely chop up till it breaks"
+
+  ---
+  Opens Between PDC and PDH
+
+  ┌───────────────────────────┬────────────────────────────────────────────┐
+  │         Situation         │                Implication                 │
+  ├───────────────────────────┼────────────────────────────────────────────┤
+  │ Inside previous day range │ No clear bias                              │
+  ├───────────────────────────┼────────────────────────────────────────────┤
+  │ Closer to high            │ Slight bullish lean, but PDH is resistance │
+  ├───────────────────────────┼────────────────────────────────────────────┤
+  │ Likely to chop            │ Wait for 5m break to confirm direction     │
+  └───────────────────────────┴────────────────────────────────────────────┘
+
+  ---
+  The Play
+
+  Option 1: Wait for 5m confirmation
+  Breaks above PDH → Calls (continuation)
+  Breaks below PDC → Puts (rejection of highs)
+
+  Option 2: Assess R:R
+  Calls: Entry near PDH, target = ? (need next level above)
+         R:R might be bad if no run zone above
+
+  Puts: Entry near PDH, target = PDL
+        R:R might be good if PDL is far
+
+  ---
+  From Vision's Top Watch
+
+  "opening inside previous day candle set up for a range but has a nice run 
+  towards 181s if thats the case"
+
+  "inside previous day candle... has a good r:r on either side, would recommend 
+  waiting for ltf confirmation"
+
+  ---
+  Decision Tree
+
+  Opens between PDC and PDH:
+
+  1. Is there a run zone above PDH?
+     - Yes → Watch for breakout, calls if confirms
+     - No → Skip calls (resistance stacked)
+
+  2. Is PDL far below?
+     - Yes → Puts have good R:R if rejects
+     - No → Skip puts too
+
+  3. Neither has good R:R?
+     - Skip this name, find a better setup
+
+  ---
+  Key Point
+
+  Opening inside range = no edge yet.
+
+  Wait for 5m to break and confirm direction, or skip and find a name with
+  clearer bias (opening near PDL or above PDH).
+
+❯ how does vision filter his topwatch list? 
+  ⎿  Interrupted · What should Claude do instead?
+
+❯ what is a run zone? 
+
+⏺ A run zone is empty space on the daily chart between two levels - an area with
+   no support/resistance where price can move freely.
+
+  ---
+  Visual
+
+  Daily Chart:
+
+  595.00 ──────── Level (resistance)
+
+         [NO LEVELS HERE]     ← Run Zone
+         [Empty space]
+         [Price runs freely]
+
+  585.00 ──────── Level (support)
+
+  ---
+  How to Spot It
+
+  Kai's tip:
+  "Tip to identify a run is you zoom out and see a straight line"
+
+  No candle bodies, no wicks, no price action in that zone = run zone.
+
+  ---
+  Why It Matters
+
+  ┌───────────────────────┬────────────────────────┐
+  │       Run Zone        │      No Run Zone       │
+  ├───────────────────────┼────────────────────────┤
+  │ Nothing to stop price │ Levels cause rejection │
+  ├───────────────────────┼────────────────────────┤
+  │ Cleaner move          │ Choppy move            │
+  ├───────────────────────┼────────────────────────┤
+  │ Better R:R            │ Worse R:R              │
+  ├───────────────────────┼────────────────────────┤
+  │ Take the trade        │ Skip or be cautious    │
+  └───────────────────────┴────────────────────────┘
+
+  ---
+  Example
+
+  PDH: 594.00
+  PDL: 590.00
+
+  If no levels between them → 590 to 594 is a run zone
+  If there's a level at 592 → run zone is smaller, could reject at 592
+
+❯ Here is file to topwatch list for 2 years history - tell me his A-Z       
+  process for creating topwatch list before market opens.                   
+  /Users/danyal.isran/dev/tqu/components/topwatch.json and                  
+  /Users/danyal.isran/dev/tqu/components/topwatch2.json                     
+
+⏺ Read 1 file (ctrl+o to expand)
+
+⏺ Based on 2 years of top watch history, here's Vision's A-Z process:
+
+  ---
+  Vision's Top Watch Process
+
+  Step 1: Daily Chart Scan
+
+  Check each stock for:
+
+  □ EMA position (above/below 20 and 200 EMA)
+  □ Range boundaries (daily range high/low)
+  □ Breakout potential (first candle outside range?)
+  □ Gap fills (unfilled gaps above/below)
+  □ Pattern (flag, pennant, wedge)
+  □ Weekly candle color (red to green flip?)
+
+  His language:
+  "got its first candle close above the 20ema on the daily"
+  "opening outside of its daily range for the first time"
+  "weekly candle red to green move"
+
+  ---
+  Step 2: Mark Key Levels
+
+  □ Previous day high/low (wicks)
+  □ Daily range boundaries
+  □ 20 EMA / 200 EMA
+  □ Gap fill zones
+  □ Weekly pivot points
+
+  His language:
+  "using 250.08 as my sentiment"
+  "pivot point at 248.53"
+  "range: 124.03 - 127.67"
+
+  ---
+  Step 3: Determine Direction Based on Open
+
+  Pre-market, he checks where price will open:
+
+  ┌─────────────────┬────────────────────────────────────┐
+  │    Opens...     │              His Call              │
+  ├─────────────────┼────────────────────────────────────┤
+  │ Above key level │ "if opens above X → calls"         │
+  ├─────────────────┼────────────────────────────────────┤
+  │ Below key level │ "if opens below X → puts"          │
+  ├─────────────────┼────────────────────────────────────┤
+  │ Inside range    │ "no bias watching the X - Y range" │
+  └─────────────────┴────────────────────────────────────┘
+
+  His language:
+  "needs to open above 191.37"
+  "if opens under 183.36 i'll short this"
+  "will see which side breaks first"
+
+  ---
+  Step 4: Identify Confirmation Trigger
+
+  He always states what confirms the trade:
+
+  □ Full close above/below level
+  □ Break of 5m high/low
+  □ Reclaim of 20 EMA on 5m
+  □ Break of range
+
+  His language:
+  "full close above 253.78 (reg position)"
+  "first 5m candle above the 20ema (lottos)"
+  "needs a break and close above 196.19"
+
+  ---
+  Step 5: Set Target (Run Zone)
+
+  He identifies how far price can go:
+
+  □ Next daily level
+  □ Gap fill zone
+  □ Daily range high/low
+  □ EMA on daily
+
+  His language:
+  "has room towards 113s"
+  "gap fill between 82.31 - 84.36"
+  "looking for 180s / 185s"
+  "can see 200 eow"
+
+  ---
+  Step 6: Assess R:R
+
+  He filters by whether the trade is worth it:
+
+  ┌───────────────────┬─────────────────────────────────┐
+  │    Assessment     │          His Decision           │
+  ├───────────────────┼─────────────────────────────────┤
+  │ Good R:R          │ Include in top watch            │
+  ├───────────────────┼─────────────────────────────────┤
+  │ Bad R:R           │ Skip or note "not the best R:R" │
+  ├───────────────────┼─────────────────────────────────┤
+  │ Either side works │ "good R:R either side"          │
+  └───────────────────┴─────────────────────────────────┘
+
+  His language:
+  "nice r:r risking 23.61 to see 25s"
+  "not the best r:r imo"
+  "Either side has a good R:R"
+
+  ---
+  Step 7: Determine Position Size
+
+  ┌────────────────────────────┬──────────────────┐
+  │         Situation          │       Size       │
+  ├────────────────────────────┼──────────────────┤
+  │ Confirmed setup            │ Regular position │
+  ├────────────────────────────┼──────────────────┤
+  │ Before confirmation        │ Starters         │
+  ├────────────────────────────┼──────────────────┤
+  │ Post-earnings / Low volume │ Lotto            │
+  ├────────────────────────────┼──────────────────┤
+  │ Volatile / Meme            │ Lotto            │
+  └────────────────────────────┴──────────────────┘
+
+  His language:
+  "lotto pos due to volatility"
+  "starter pos until it fully breaks"
+  "will be a lotto due to how low vol"
+  "reg position" or just normal entry
+
+  ---
+  Step 8: Add Sector/Sympathy Notes
+
+  He notes related plays:
+
+  □ Sector strength (semis, EV, china)
+  □ Earnings sympathy
+  □ Correlation plays
+
+  His language:
+  "pretty clear the whole semiconductor sector is running"
+  "can swing as sympathy to TSLAs earnings"
+  "if amd rejects and goes lower can short nvda"
+  "china stocks gapping up"
+
+  ---
+  Step 9: Note Market Condition
+
+  He adds context:
+
+  □ Ranging day warning
+  □ Not many setups warning
+  □ Heavy/light market read
+
+  His language:
+  "important to note everything is ranging"
+  "not many A+ setups today please size accordingly"
+  "today might be a slow day"
+  "lots of stock opening inside their previous day candle"
+
+  ---
+  His Top Watch Format
+
+  **TICKER** [setup description]. [entry trigger] → [target]. [notes]
+
+  Examples:
+  "AMD if opens above 159.78 can see a push towards 162s"
+
+  "NVDA full close above 126 sets up nicely towards 130s"
+
+  "TSLA pivot point at 248.53. if holds above can buy towards 260s. or loses 
+  this level and snaps back to 241.92"
+
+  ---
+  Summary Checklist
+
+  A-Z Process:
+
+  1. Scan daily chart for structure (EMA, range, breakout)
+  2. Mark levels (PDH/PDL, range, gaps)
+  3. Check pre-market open location
+  4. Determine direction (above = calls, below = puts)
+  5. Identify confirmation trigger (full close, 5m break)
+  6. Set target (next level, gap fill, EMA)
+  7. Assess R:R (good = include, bad = skip)
+  8. Determine size (reg, starter, lotto)
+  9. Note sector/sympathy plays
+  10. Add market condition warning if needed
+  11. Pick 2-4 best setups
+  12. Write top watch with entry + target + invalidation
+
+✻ Crunched for 49s
+
+❯ give me an example of a concise  trade plan i can write before every      
+  trade that lists htf, ltf confluences, and invalidation crietia....very   
+  concise and to the point since I dont have time on live                   
+
+⏺ Trade Plan Template
+
+  TICKER: _____ | DIRECTION: Calls / Puts
+
+  HTF (Daily):
+  • Bias: _____ (near PDL/PDH, above/below EMA)
+  • Target: _____ (level)
+  • Run zone clear? Y / N
+
+  LTF (5m):
+  • Entry trigger: _____
+  • EMA aligned? Y / N
+
+  R:R: _____ : 1
+
+  Size: Reg / Starter / Lotto
+
+  Invalid: Full body close above/below _____
+
+  ---
+  Filled Example
+
+  TICKER: AMD | DIRECTION: Calls
+
+  HTF (Daily):
+  • Bias: Near PDL, above 20 EMA
+  • Target: 165.00 (daily range high)
+  • Run zone clear? Y
+
+  LTF (5m):
+  • Entry trigger: Full body above 159.78
+  • EMA aligned? Y
+
+  R:R: 3:1
+
+  Size: Reg
+
+  Invalid: Full body close below 158.50
+
+  ---
+  Even Shorter (For Speed)
+
+  AMD Calls
+  HTF: PDL bounce, above 20EMA, target 165
+  LTF: Entry >159.78, EMA ✓
+  R:R: 3:1 | Size: Reg
+  Invalid: <158.50
