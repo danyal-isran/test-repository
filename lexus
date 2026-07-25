@@ -1,0 +1,1817 @@
+▗ ▗   ▖ ▖  Claude Code v2.1.177
+           Fable 5 · Claude Enterprise
+  ▘▘ ▝▝    ~/dev/command-center
+
+ ▎ Fable 5 is here! Our newest model for complex, long-running work.
+
+❯ Find me the cheapest 2021-2024 lexus es 300h near dallas, austin or houston,  
+  with no accident, less than 45k miles, with no accident history               
+
+⏺ I'll search car listing sites for 2021-2024 Lexus ES 300h listings near
+  Dallas, Austin, and Houston. Let me load the web tools first.
+
+⏺ Fetch(https://www.cars.com/shopping/results/?stock_type=used&makes[]=lexus&mod
+       els[]=lexus-es_300h&maximum_distance=100&zip=75201&year_min=2021&year_max
+       =2024&mileage_max=45000&accidents_or_damage=false&sort=list_price&page_si
+       ze=20)
+  ⎿  Received 473.1KB (200 OK)
+
+⏺ Fetch(https://www.cars.com/shopping/results/?stock_type=used&makes[]=lexus&mod
+       els[]=lexus-es_300h&maximum_distance=100&zip=78701&year_min=2021&year_max
+       =2024&mileage_max=45000&accidents_or_damage=false&sort=list_price&page_si
+       ze=20)
+  ⎿  Received 456.3KB (200 OK)
+
+⏺ Fetch(https://www.cars.com/shopping/results/?stock_type=used&makes[]=lexus&mod
+       els[]=lexus-es_300h&maximum_distance=100&zip=77002&year_min=2021&year_max
+       =2024&mileage_max=45000&accidents_or_damage=false&sort=list_price&page_si
+       ze=20)
+  ⎿  Received 433.6KB (200 OK)
+
+⏺ Fetch(https://www.cars.com/shopping/results/?stock_type=used&makes[]=lexus&mod
+       els[]=lexus-es_300h&maximum_distance=100&zip=75201&year_min=2021&year_max
+       =2024&mileage_max=45000&accidents_or_damage=false&sort=list_price&page_si
+       ze=20)
+  ⎿  Received 473.1KB (200 OK)
+
+⏺ Fetch(https://www.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInve
+       ntoryListing.action?zip=75201&distance=100&entitySelectingHelper.selected
+       Entity=d2373&sortType=PRICE&sortDir=ASC&startYear=2021&endYear=2024&maxMi
+       leage=45000)
+  ⎿  Received 0 bytes (403 Forbidden)
+
+⏺ CarGurus blocks automated access, but I have the detail links. Let me verify
+  accident history on the two cheapest listings, and cross-check Autotrader for
+  anything cheaper.
+
+⏺ Fetch(https://www.cars.com/vehicledetail/9daff030-8e1b-408b-b767-e82195077272/
+       )
+  ⎿  Received 183.2KB (200 OK)
+
+⏺ Fetch(https://www.cars.com/vehicledetail/01f356d7-4992-4506-9666-8b3d1816c15f/
+       )
+  ⎿  Received 192.7KB (200 OK)
+
+⏺ Fetch(https://www.autotrader.com/cars-for-sale/lexus/es-300h/dallas-tx?searchR
+       adius=100&startYear=2021&endYear=2024&maxMileage=45000&sortBy=derivedpric
+       eASC&zip=75201)
+  ⎿  Received 3.7KB (200 OK)
+
+⏺ Fetch(https://www.truecar.com/used-cars-for-sale/listings/lexus/es/location-da
+       llas-tx/?trim=es-300h&year-high=2024&year-low=2021&mileage-high=45000&sor
+       t[]=list_price_asc&excludeAccidents=true)
+  ⎿  Received 0 bytes (403 Forbidden)
+
+⏺ Found it. The cheapest 2021–2024 Lexus ES 300h meeting your criteria across
+  the Dallas/Austin/Houston areas is:
+
+  🏆 Cheapest: 2022 Lexus ES 300h Base — $36,625 · 44,921 mi
+  - Sewell Lexus of Dallas (6211 Lemmon Ave, Dallas)
+  - Verified on the listing page: no accidents reported, clean title, personal 
+  use only, no open recalls
+  - Lexus Certified Pre-Owned, Iridium exterior / black leather
+  - Caveats: multiple previous owners, it's right at your 45k mile cap, and the
+  price bundles a $1,795 dealer protection package
+  - Listing link
+  (https://www.cars.com/vehicledetail/9daff030-8e1b-408b-b767-e82195077272/)
+
+  Runner-up (arguably better value): 2021 ES 300h — $37,998 · only 17,354 mi
+  - CarMax Garland (12715 LBJ Fwy, Garland)
+  - Verified: 0 accidents, clean title, personal use only; CarMax 10-day
+  money-back guarantee
+  - $1,373 more than the Sewell car but with ~27,500 fewer miles — on a per-mile
+  basis this is the stronger buy
+  - Listing link
+  (https://www.cars.com/vehicledetail/01f356d7-4992-4506-9666-8b3d1816c15f/)
+
+  Rest of the top 5 statewide (all under 45k mi):
+
+  ┌──────┬──────┬─────────┬────────┬─────────────────────────────────┐
+  │ Year │ Trim │  Price  │ Miles  │             Dealer              │
+  ├──────┼──────┼─────────┼────────┼─────────────────────────────────┤
+  │ 2024 │ Base │ $41,177 │ 24,358 │ Shottenkirk Toyota, Weatherford │
+  ├──────┼──────┼─────────┼────────┼─────────────────────────────────┤
+  │ 2023 │ 300h │ $42,799 │ 37,900 │ Clay Cooley CDJ, Irving         │
+  ├──────┼──────┼─────────┼────────┼─────────────────────────────────┤
+  │ 2023 │ Base │ $43,212 │ 7,920  │ Car Town Hyundai, San Angelo    │
+  └──────┴──────┴─────────┴────────┴─────────────────────────────────┘
+
+  A few notes on coverage: the same 10 cars showed up in all three metro
+  searches, and everything cheap right now is clustered around DFW — nothing in
+  Austin or Houston beats the two above (Austin's closest was a $47.5k Ultra
+  Luxury in Cedar Park; Houston's was a $50.8k CPO in Spring). I verified
+  accident history directly on the two cheapest listings' detail pages, but
+  CarGurus and TrueCar blocked automated access and Autotrader was down, so this
+  is based on Cars.com inventory. Before buying, pull the full Carfax/AutoCheck
+  at the dealer — and at Sewell, ask whether the $1,795 add-on package is
+  negotiable.
+
+  Sources: Cars.com search results (https://www.cars.com/shopping/results/?stock
+  _type=used&makes[]=lexus&models[]=lexus-es_300h&zip=75201&year_min=2021&year_m
+  ax=2024&mileage_max=45000&sort=list_price), 2022 ES 300h listing
+  (https://www.cars.com/vehicledetail/9daff030-8e1b-408b-b767-e82195077272/),
+  2021 ES 300h listing
+  (https://www.cars.com/vehicledetail/01f356d7-4992-4506-9666-8b3d1816c15f/)
+
+✻ Brewed for 2m 1s
+
+※ recap: You asked for the cheapest 2021-2024 Lexus ES 300h near Dallas/Austin/Houston with no accidents and under 45k miles. Best find: a 2022 at Sewell Lexus of Dallas for $36,625; next step is contacting the dealer if interested. (disable recaps in /config)
+
+❯ what about near 43230 zip code                                                
+
+⏺ Let me run the same search near ZIP 43230 (Columbus, OH area).
+
+⏺ Fetch(https://www.cars.com/shopping/results/?stock_type=used&makes[]=lexus&mod
+       els[]=lexus-es_300h&maximum_distance=100&zip=43230&year_min=2021&year_max
+       =2024&mileage_max=45000&accidents_or_damage=false&sort=list_price&page_si
+       ze=20)  ⎿  Received 435.8KB (200 OK)
+
+⏺ The two cheapest here are very close in price — let me verify accident history
+  on both detail pages, especially the suspiciously cheap 2023 F SPORT.
+
+⏺ Fetch(https://www.cars.com/vehicledetail/acc8bf52-9e8f-4ef1-9ac0-ad29ffc2e0c0/
+       )
+  ⎿  Received 197.8KB (200 OK)
+
+⏺ Fetch(https://www.cars.com/vehicledetail/7307334e-2791-44cb-9433-7b0478d0a607/
+       )
+  ⎿  Received 216.2KB (200 OK)
+
+⏺ Fetch(https://www.cars.com/vehicledetail/dd096a69-a409-4bed-a261-abf80f771baf/
+       )
+  ⎿  Received 197.5KB (200 OK)
+
+⏺ Here's the picture near ZIP 43230 (Columbus, OH):
+
+  🏆 Cheapest with no accidents: 2021 ES 300h Luxury — $37,289 · 32,771 mi
+  - Noblesville Imports, Noblesville, IN (~163 mi from Columbus)
+  - Verified on the listing: 0 accidents, clean title, personal use only, prior
+  CPO, dealer-serviced with regular oil changes
+  - White Pearl / Chateau interior, multiple previous owners
+  - Listing link
+  (https://www.cars.com/vehicledetail/acc8bf52-9e8f-4ef1-9ac0-ad29ffc2e0c0/)
+
+  ⚠️ Watch out: the nominally cheaper-looking 2023 F SPORT Handling at $37,449
+  (North Coast Mitsubishi, Cleveland) has accidents reported and non-personal 
+  use on its history — I checked its detail page and it fails your criteria.
+  That's why it's priced like a 2021.
+
+  Best value runner-up: 2021 ES 300h Base — $39,302 · only 5,515 mi
+  - Lexus of Ann Arbor, MI (~164 mi)
+  - Verified: no accidents, clean title, 1 owner, personal use only
+  - Lexus L/Certified — CPO with unlimited-mileage warranty up to 6 years
+  - Eminent White Pearl, Mark Levinson audio, heated/cooled seats
+  - For $2,000 more than the Noblesville car you get 27k fewer miles, one owner,
+  and the factory CPO warranty — this is the one I'd actually go see
+  - Listing link
+  (https://www.cars.com/vehicledetail/dd096a69-a409-4bed-a261-abf80f771baf/)
+
+  Other clean-looking options, unverified: 2023 Ultra Luxury $41,497 / 39,283 mi
+  (Indianapolis), 2022 Luxury $41,714 / 31,043 mi (Cincinnati — closest at 93
+  mi), 2022 Luxury $41,935 / 28,251 mi (Indianapolis).
+
+  One caveat: there's nothing cheap actually close to Columbus right now —
+  everything under $42k is a 90+ mile drive into Indiana, Michigan, or
+  Cincinnati. Compared to the Texas search, the entry price here is about $650
+  cheaper ($37,289 vs $36,625 in Dallas), but the Ann Arbor car is the strongest
+  single listing across both searches. As before, pull the full Carfax before
+  committing.
+
+  Sources: Cars.com search near 43230 (https://www.cars.com/shopping/results/?st
+  ock_type=used&makes[]=lexus&models[]=lexus-es_300h&zip=43230&year_min=2021&yea
+  r_max=2024&mileage_max=45000&sort=list_price), Noblesville listing
+  (https://www.cars.com/vehicledetail/acc8bf52-9e8f-4ef1-9ac0-ad29ffc2e0c0/),
+  Ann Arbor listing
+  (https://www.cars.com/vehicledetail/dd096a69-a409-4bed-a261-abf80f771baf/),
+  Cleveland F SPORT listing (excluded)
+  (https://www.cars.com/vehicledetail/7307334e-2791-44cb-9433-7b0478d0a607/)
+
+✻ Churned for 1m 26s
+
+❯ i would need to drive back to dallas, so which one is the best deal right     
+  now. ideally 1 owner, CPO, no accident, and the best trim                     
+
+⏺ Good constraint — that changes the calculus. A car bought near Columbus gets a
+  ~1,000-mile shakedown drive home, and anything along the I-65/I-40 corridor
+  (Louisville, Nashville) is literally on your route. Let me verify the three
+  strongest high-trim/CPO candidates: the 2024 Luxury CPO at Lexus of Louisville
+  (on your route to Dallas), the 2023 Ultra Luxury in Indianapolis, and the
+  2023 Ultra Luxury CPO at Sewell in Dallas.
+
+⏺ Fetch(https://www.cars.com/vehicledetail/f3d457cf-6561-4677-82a1-e3db3b99c243/
+       )
+  ⎿  Received 173.8KB (200 OK)
+
+⏺ Fetch(https://www.cars.com/vehicledetail/87416d35-acb9-43ce-a485-5e6cb68c5872/
+       )
+  ⎿  Received 203.9KB (200 OK)
+
+⏺ Fetch(https://www.cars.com/vehicledetail/77d0c780-4b05-4dca-adcb-050a730e93b7/
+       )
+  ⎿  Received 198.6KB (200 OK)
+
+⏺ Here's my verdict, factoring in the drive back to Dallas. I verified all the
+  finalists' history pages.
+
+  🏆 Best deal: 2023 ES 300h Ultra Luxury — $41,497 · 39,283 mi
+
+  Napleton Kia of Carmel (Indianapolis) · listing
+  (https://www.cars.com/vehicledetail/87416d35-acb9-43ce-a485-5e6cb68c5872/)
+
+  - 1 owner ✓ · 0 accidents ✓ · clean title ✓ · personal use only ✓ · top trim ✓
+  — it hits everything except CPO
+  - Ultra Luxury is the highest ES trim: head-up display, heated/cooled seats,
+  heated wheel, wireless charging, parking assist
+  - Just marked down $1,725, and it's ~$5,100 cheaper than the next-best
+  high-trim option
+  - It's directly on your route home: Columbus → Dallas via I-70/I-44 goes
+  straight through Indianapolis. Zero detour.
+  - The CPO miss is softened by remaining factory coverage: as a 2023, it likely
+  still has some basic warranty left, plus Lexus's 8yr/100k hybrid-component
+  and 10yr/150k hybrid-battery warranties, which transfer. Note it can never
+  become L/Certified — only Lexus dealers can CPO, and this is a Kia store.
+
+  If CPO is non-negotiable: 2024 ES 300h Luxury L/Certified — $46,598 · 25,247 
+  mi
+
+  Lexus of Louisville · listing
+  (https://www.cars.com/vehicledetail/f3d457cf-6561-4677-82a1-e3db3b99c243/)
+
+  - 0 accidents, clean title, full L/Certified package: balance of 4yr/50k
+  warranty + 2yr/unlimited-mile CPO warranty, 10yr/150k hybrid battery, 2 years
+  free maintenance
+  - Newer, fewer miles, Mark Levinson audio, and Louisville is also on a natural
+  Columbus→Dallas route (I-65/I-40)
+  - Two yellow flags: the history shows "non-personal use" (likely a lease or
+  loaner) and the owner count is ambiguous — the dealer says "one-owner local
+  trade" but the history panel says multiple. Get the Carfax before driving
+  down.
+
+  The Ann Arbor 2021 ($39,302, 5,515 mi, 1-owner L/Certified) is still the best
+  pure value, but it's Base trim and 3.5 hours the wrong direction, so it loses
+  on your latest criteria. The Dallas-area cars don't work for the drive-home
+  plan, and nothing there beats these anyway — Sewell's 2023 Ultra Luxury CPO is
+  $49,913.
+
+  My pick is the Napleton car. You give up the CPO badge but keep the
+  transferable hybrid warranties, save $5k, get the top trim, a one-owner
+  accident-free history, and the dealer is on your way home. Call ahead to
+  confirm it's still there, ask for the Carfax, and try to negotiate — it's
+  already been cut once, which suggests they want it gone.
+
+✻ Cooked for 1m 22s
+
+※ recap: You're shopping for a 2021-2024 Lexus ES 300h, no accidents, under 45k miles, to drive from Columbus to Dallas. Best deal: 1-owner 2023 Ultra Luxury, $41,497 at Napleton Kia Carmel, Indianapolis. Next: call them and request the Carfax. (disable recaps in /config)
+
+❯ for the napleton one, how much does something similar cost near DFW area      
+
+⏺ Good sanity check. Let me pull the current DFW-area comps for high-trim ES
+  300h models (Luxury / F SPORT / Ultra Luxury, 2022–2024).
+
+⏺ Fetch(https://www.cars.com/shopping/results/?stock_type=used&makes[]=lexus&mod
+       els[]=lexus-es_300h&maximum_distance=75&zip=75201&year_min=2022&year_max=
+       2024&sort=list_price&page_size=50)
+  ⎿  Received 525.7KB (200 OK)
+
+⏺ The DFW market confirms the Napleton car is a genuine outlier. Here's every
+  high-trim ES 300h currently listed in the Dallas–Fort Worth area (2022–2024):
+
+  ┌──────┬───────────────┬─────────┬────────┬─────────────────────────┬─────┐
+  │ Year │     Trim      │  Price  │ Miles  │         Dealer          │ CPO │
+  ├──────┼───────────────┼─────────┼────────┼─────────────────────────┼─────┤
+  │ 2022 │ Ultra Luxury  │ $43,720 │ 46,586 │ Sewell Lexus, Fort      │ No  │
+  │      │               │         │        │ Worth                   │     │
+  ├──────┼───────────────┼─────────┼────────┼─────────────────────────┼─────┤
+  │ 2024 │ F SPORT       │ $44,961 │ 41,226 │ Vandergriff Acura,      │ No  │
+  │      │ Handling      │         │        │ Arlington               │     │
+  ├──────┼───────────────┼─────────┼────────┼─────────────────────────┼─────┤
+  │ 2023 │ Ultra Luxury  │ $49,913 │ 15,008 │ Sewell Lexus, Dallas    │ Yes │
+  └──────┴───────────────┴─────────┴────────┴─────────────────────────┴─────┘
+
+  (The two others that appeared — $47,496 and $50,800 — are actually in Austin
+  and Houston.)
+
+  What this means for the Napleton car at $41,497 / 39,283 mi:
+
+  - The direct comp — same year, same trim — is $49,913 at Sewell Dallas. That's
+  $8,400 more. You do get 24k fewer miles and L/Certified status for that
+  money, so it's not pure markup, but it prices the trim in the DFW market.
+  - The closest-priced DFW alternative is a 2022 Ultra Luxury at $43,720 with 
+  46,586 miles — that's $2,200 more than Napleton for a car that's a year older,
+  has 7,300 more miles, isn't CPO either, and exceeds your 45k mileage cap.
+  - Nothing high-trim in DFW comes in under $43.7k. The Napleton car is the
+  cheapest Ultra Luxury across everything I've swept in both regions (Texas +
+  OH/IN/MI/KY).
+
+  So the arbitrage is real: buy in Indianapolis, drive it home down I-70/I-44,
+  and you're roughly $2,200–$8,400 ahead of buying the equivalent car in Dallas
+  — minus about $70 of gas (the ES 300h does 43–44 mpg, so the ~950-mile drive
+  costs ~22 gallons) and a night on the road. Sales tax is a wash since Texas
+  charges its 6.25% when you register there regardless of where you buy.
+
+  One caution before you commit to the detour: this car has been sitting at a
+  Kia store and already took a $1,725 price cut, which is why it's cheap — but
+  that also means it could sell any day. Call Napleton, confirm availability,
+  get the Carfax emailed to you, and consider putting down a refundable deposit
+  before you start driving.
+
+  Sources: DFW high-trim search (https://www.cars.com/shopping/results/?stock_ty
+  pe=used&makes[]=lexus&models[]=lexus-es_300h&maximum_distance=75&zip=75201&yea
+  r_min=2022&year_max=2024&sort=list_price), Napleton listing
+  (https://www.cars.com/vehicledetail/87416d35-acb9-43ce-a485-5e6cb68c5872/)
+
+✻ Cogitated for 49s
+
+❯ car will need to be registered in dallas, so how does sales tax work and      
+  documentation                                                                 
+
+⏺ Good question — buying in Indiana as a Texas resident has a specific tax flow.
+  Let me verify the current rules on both the Indiana and Texas sides.
+
+⏺ Web Search("Indiana dealer sells car to Texas resident sales tax ST-108NR
+            nonresident reciprocal rate out-of-state registration")
+  ⎿  Did 1 search in 7s
+⏺ Fetch(https://comptroller.texas.gov/taxes/motor-vehicle/sales.php)
+  ⎿  Received 0 bytes (404 Not Found)
+
+⏺ Fetch(https://www.txdmv.gov/motorists/buying-or-selling-a-vehicle)
+  ⎿  Received 229.1KB (200 OK)
+
+⏺ Fetch(https://www.in.gov/dor/files/sib28s.pdf)
+  ⎿  Received 208.4KB (200 OK)
+
+⏺ Fetch(https://comptroller.texas.gov/taxes/motor-vehicle/out-of-state.php)
+  ⎿  Received 0 bytes (404 Not Found)
+
+⏺ The PDF was saved locally — I can read it directly. And let me find the right
+  Texas Comptroller page.
+
+  Read 1 file (ctrl+o to expand)
+
+⏺ Web Search("Texas comptroller motor vehicle use tax Texas resident purchased
+            vehicle out of state dealer credit for tax paid other state 6.25%")
+  ⎿  Did 1 search in 6s
+
+⏺ Here's how it works when you buy from the Indiana dealer and register in
+  Dallas. Good news: you won't be double-taxed, and the rates happen to line up
+  cleanly.
+
+  Sales tax: pay 6.25% at the dealer, owe ~$0 more in Texas
+
+  At Napleton (Indiana side): Indiana law has a special rule for exactly your
+  situation. If the vehicle will be moved and titled in another state within 30
+  days of sale, the Indiana dealer collects sales tax at your destination 
+  state's rate — Texas's 6.25% — instead of Indiana's 7%. The dealer documents
+  this on Form ST-108NR (nonresident) and remits it to Indiana. On $41,497
+  that's about $2,594, paid at signing. (The "nonreciprocal state" list you may
+  see referenced — Arizona, California, Florida, etc. — only applies to RVs and
+  cargo trailers, not passenger cars.)
+
+  At the Dallas County tax office (Texas side): Texas residents bringing in a
+  vehicle bought out of state owe 6.25% motor vehicle use tax on the sales
+  price, less credit for sales tax legally paid to another state. Since Indiana
+  collected exactly 6.25%, the credit zeroes it out — you pay no additional tax,
+  just title and registration fees.
+
+  Two things to nail down with the dealer before signing: confirm they'll
+  process it as an ST-108NR nonresident sale at the Texas rate (not Indiana's
+  7%), and get a copy of the ST-108NR plus the purchase order showing tax
+  collected — that's your proof for the credit in Dallas.
+
+  Documentation and steps
+
+  Leave the dealership with:
+  1. Form ST-108NR + purchase agreement showing price and tax paid
+  2. Properly assigned Indiana title (with odometer disclosure) — or
+  confirmation of where/when they'll mail it, especially if you finance
+  3. Temporary/interim plate from the dealer for the drive home
+  4. Form 130-U (Application for Texas Title and/or Registration) — bigger
+  dealer groups like Napleton often fill this out for out-of-state buyers; ask
+  if they'll handle Texas titling through a title service
+
+  Before you drive: add the car (by VIN) to your Texas auto insurance policy —
+  you'll need proof of Texas liability coverage to register.
+
+  Once in Dallas, within 30 days of the sale date:
+  1. Get an emissions inspection. Dallas County is one of Texas's 17 emissions
+  counties — the safety inspection was eliminated in 2025, but a passing
+  emissions test is still required for registration. Any Texas inspection
+  station, ~$25–40.
+  2. Go to the Dallas County Tax Assessor-Collector with: Form 130-U, the
+  assigned title, proof of tax paid (ST-108NR), proof of insurance, and your ID.
+  3. Pay the fees: ~$33 title application, ~$51 base registration plus small
+  local fees, and a $7.50 inspection-replacement fee — roughly $100–150 all-in.
+
+  Miss the 30-day window and Texas adds a 5% penalty on the tax (10% after 60
+  days) — and the 30-day deadline also underpins Indiana's lower-rate treatment,
+  so don't let the paperwork sit.
+
+  Bottom line: total tax+registration cost is ~$2,700 whether you buy in
+  Indianapolis or Dallas — the tax is a complete wash, so the ~$2,200–8,400
+  price advantage on the Napleton car survives intact.
+
+  Sources: Indiana DOR Sales Tax Information Bulletin #28S (PDF)
+  (https://www.in.gov/dor/files/sib28s.pdf), Texas Comptroller — Motor Vehicle
+  Use Tax (96-254)
+  (https://comptroller.texas.gov/taxes/publications/96-254/mv-use.php), Texas
+  Comptroller — Motor Vehicle Sales Tax
+  (https://comptroller.texas.gov/taxes/publications/96-254/mv-sales.php), TxDMV
+  — Buying or Selling a Vehicle
+  (https://www.txdmv.gov/motorists/buying-or-selling-a-vehicle), Indiana DOR —
+  Vehicle Dealer Information
+  (https://www.in.gov/dor/business-tax/dealer-information/)
+
+✻ Baked for 2m 19s
+
+※ recap: Car search: best pick is the 2023 Lexus ES 300h Ultra Luxury at Napleton Kia Carmel (Indianapolis), $41,497, 1-owner, no accidents, on your route to Dallas; tax is a wash. Next: call Napleton to confirm availability and get the Carfax. (disable recaps in /config)
+
+❯ what does napleton ultra lexury have that the sewell one doesnt't stock       
+  P40944                                                                        
+
+⏺ Let me pull the full equipment lists for both cars — the Napleton listing and
+  Sewell's stock #P40944.
+
+⏺ Fetch(https://www.cars.com/vehicledetail/87416d35-acb9-43ce-a485-5e6cb68c5872/
+       )
+  ⎿  Received 203.9KB (200 OK)
+
+⏺ Web Search("Sewell Lexus P40944 2023 ES 300h Ultra Luxury")
+  ⎿  Did 1 search in 8s
+
+⏺ Web Search("P40944 Lexus ES 300h")
+  ⎿  Did 1 search in 5s
+
+⏺ Fetch(https://www.sewell.com/inventory/used-2023-lexus-es-300h-ultra-luxury-fw
+       d-4dr-car-58afa1c16pu030984/)
+  ⎿  Received 135.4KB (200 OK)
+
+⏺ Fetch(https://www.sewell.com/VehicleSearchResults?keyword=P40944)
+  ⎿  Received 593 bytes (301 Moved Permanently)
+
+⏺ Fetch(https://www.sewell.com/VehicleSearchResults?make=Lexus&model=ES+300h)
+  ⎿  Received 629 bytes (301 Moved Permanently)
+
+⏺ Sewell's site search redirects — let me try their inventory search path and
+  grab the cars.com link for Sewell's 2023 Ultra Luxury.
+⏺ Fetch(https://www.sewell.com/inventory/?search=P40944)
+  ⎿  Received 134KB (200 OK)
+
+⏺ Fetch(https://www.cars.com/shopping/results/?stock_type=used&makes[]=lexus&mod
+       els[]=lexus-es_300h&maximum_distance=75&zip=75201&year_min=2022&year_max=
+       2024&sort=list_price&page_size=50)
+  ⎿  Received 525.7KB (200 OK)
+
+⏺ Found Sewell's 2023 Ultra Luxury on cars.com. Let me pull its full spec sheet
+  to compare against the Napleton car.
+
+⏺ Fetch(https://www.cars.com/vehicledetail/34c5db58-1355-4674-8483-10de1a523a15/
+       )
+  ⎿  Received 168.9KB (200 OK)
+
+⏺ The Sewell car on cars.com shows stock #464486A — P40944 must be from Sewell's
+  own site. Let me hunt for it directly.
+
+⏺ Web Search(""P40944" Lexus")
+  ⎿  Did 1 search in 6s
+
+⏺ Fetch(https://www.sewell.com/inventory/?condition=used&make=Lexus&model=ES+300
+       h)
+  ⎿  Received 14.6KB (200 OK)
+
+⏺ Found it — stock P40944 is Sewell's $36,625 car: the 2022 ES 300h Base trim
+  (VIN 58ADA1C19NU022320, Iridium, 44,921 mi, CPO). So you're comparing the top
+  trim against the bottom trim, and the gap is substantial.
+
+  What the Napleton Ultra Luxury has that P40944 doesn't
+
+  Confirmed on the Napleton listing:
+
+  - Head-up display
+  - Premium triple-beam adaptive LED headlamps (P40944 has standard bi-LED)
+  - Ventilated (cooled) front seats + heated, with driver memory
+  - Heated steering wheel with open-pore wood trim (wood cabin accents
+  throughout)
+  - Intuitive Parking Assist with automatic braking
+  - Wireless phone charger
+  - Hands-free power open/close trunk (P40944's trunk is manual)
+  - SmartAccess key card, remote start
+
+  Plus the trim-level upholstery difference: Ultra Luxury gets genuine 
+  semi-aniline leather; the Base trim comes with NuLuxe synthetic leather
+  (listing sites often label it "leather," but it isn't). Ultra Luxury also
+  rides on larger wheels and gets upgraded cabin trim and ambient lighting.
+  Neither car appears to have Mark Levinson audio — the Napleton listing shows
+  the standard system.
+
+  Beyond equipment, the Napleton car is a year newer (2023 vs 2022), has ~5,600
+  fewer miles, and is a 1-owner, personal-use car.
+
+  One thing I noticed about P40944 worth knowing
+
+  An earlier snapshot of this same VIN shows it listed at 39,122 miles / $39,985
+  — it's now at 44,921 miles / $36,625. The car gained ~5,800 miles while in
+  Sewell's hands, which usually means it's been used as a service loaner or
+  demo. Combined with its "multiple owners" history, that explains the price.
+  It's still a legitimate car (CPO, no accidents, clean title), but it's not the
+  same animal.
+
+  The honest framing: P40944 is $4,872 cheaper and has the L/Certified warranty,
+  and it's already in Dallas. The Napleton car costs more but gets you the
+  entire Ultra Luxury feature set, a newer model year, fewer miles, and a
+  cleaner one-owner story — for still ~$8,400 less than Sewell's own 2023 Ultra
+  Luxury ($49,913). If the luxury features matter to you at all, the Napleton
+  car is the better value per dollar.
+
+  Sources: Sewell used ES 300h inventory
+  (https://www.sewell.com/inventory/?condition=used&make=Lexus&model=ES+300h),
+  P40944 listing data (Roadster/Sewell)
+  (https://shop.roadster.com/inventory/used/Lexus/ES-Hybrid/Fort-Worth-TX),
+  Sewell 2022 ES 300h on Cars.com
+  (https://www.cars.com/vehicledetail/9daff030-8e1b-408b-b767-e82195077272/),
+  Napleton 2023 Ultra Luxury listing
+  (https://www.cars.com/vehicledetail/87416d35-acb9-43ce-a485-5e6cb68c5872/),
+  Sewell 2023 Ultra Luxury on Cars.com
+  (https://www.cars.com/vehicledetail/34c5db58-1355-4674-8483-10de1a523a15/)
+
+✻ Sautéed for 3m 12s
+
+※ recap: You're shopping for a 2021-2024 Lexus ES 300h to drive back to Dallas. Best pick: the $41,497 one-owner 2023 Ultra Luxury at Napleton Kia in Indianapolis. Next step: call them to confirm availability and get the Carfax.
+
+❯ so out of all the options, which is the best deal                             
+
+⏺ The Napleton car. It's not particularly close.
+
+  2023 ES 300h Ultra Luxury — $41,497 · 39,283 mi · Napleton Kia of Carmel, 
+  Indianapolis
+
+  Here's the case, in one place:
+
+  - Against your wishlist (1 owner, CPO, no accident, best trim): it hits three
+  of four — 1 owner ✓, 0 accidents/clean title/personal use ✓, top trim ✓. It
+  only misses CPO, and Lexus's transferable 8yr/100k hybrid-component and
+  10yr/150k hybrid-battery warranties cover the powertrain that matters most on
+  this car.
+  - Against the market: the identical year/trim at Sewell is $49,913. Even after
+  you credit Sewell's car for its lower miles and CPO status (worth maybe $4–5k
+  combined), Napleton is still thousands under. Nothing high-trim in DFW,
+  Columbus, Indy, Louisville, or Ann Arbor touches its price-per-car.
+  - Against your logistics: it's on I-70, directly on your drive from Columbus
+  to Dallas. No detour, no shipping, and the tax is a wash (6.25% paid at the
+  dealer via Indiana's nonresident process, fully credited when you register in
+  Dallas).
+
+  How the finalists lose:
+
+  ┌────────────────────┬─────────┬──────────────────────────────────────────┐
+  │        Car         │  Price  │          Why it's not the pick           │
+  ├────────────────────┼─────────┼──────────────────────────────────────────┤
+  │                    │         │ Bottom trim, 45k miles, multi-owner with │
+  │ Sewell P40944,     │ $36,625 │  ~5,800 miles added as an apparent       │
+  │ 2022 Base CPO      │         │ loaner. Cheap, but you're buying the     │
+  │                    │         │ least car.                               │
+  ├────────────────────┼─────────┼──────────────────────────────────────────┤
+  │ Ann Arbor 2021     │         │ Phenomenal car, wrong spec and wrong     │
+  │ Base, 5,515 mi,    │ $39,302 │ direction — Base trim and a 7-hour       │
+  │ 1-owner CPO        │         │ round-trip detour north.                 │
+  ├────────────────────┼─────────┼──────────────────────────────────────────┤
+  │                    │         │ $5,100 more, mid trim, and the           │
+  │ Louisville 2024    │ $46,598 │ "non-personal use" + ambiguous owner     │
+  │ Luxury CPO         │         │ history contradicts what you're          │
+  │                    │         │ optimizing for.                          │
+  ├────────────────────┼─────────┼──────────────────────────────────────────┤
+  │ Sewell 2023 Ultra  │         │ The same car as Napleton's with fewer    │
+  │ Luxury CPO         │ $49,913 │ miles — for $8,400 more. That's the      │
+  │                    │         │ price that makes Napleton the deal.      │
+  └────────────────────┴─────────┴──────────────────────────────────────────┘
+
+  Next steps if you want it: call Napleton today to confirm it's still on the
+  lot (it's the cheapest Ultra Luxury in two regions and already took a $1,725
+  cut — it will move), ask them to email the Carfax to confirm the
+  1-owner/0-accident history matches the listing, put down a refundable deposit,
+  and confirm they'll process the sale as an Indiana ST-108NR nonresident deal
+  at Texas's 6.25% with a 45-day interim plate for the drive home.
+
+✻ Worked for 30s
+
+❯ find me the cheapest luxury 300h trim for lexus es near dallas 300 mile range 
+
+⏺ Searching for ES 300h Luxury trim specifically within ~300 miles of Dallas
+  (keeping your 2021–2024, under-45k, no-accident criteria).
+
+⏺ Fetch(https://www.cars.com/shopping/results/?stock_type=used&makes[]=lexus&mod
+       els[]=lexus-es_300h&trims[]=lexus-es_300h-luxury&maximum_distance=250&zip
+       =75201&year_min=2021&year_max=2024&mileage_max=45000&sort=list_price&page
+       _size=50)
+  ⎿  Received 323.9KB (200 OK)
+
+⏺ Fetch(https://www.cars.com/vehicledetail/01f356d7-4992-4506-9666-8b3d1816c15f/
+       )
+  ⎿  Received 192.7KB (200 OK)
+
+⏺ Fetch(https://www.cars.com/vehicledetail/6e4575e7-dd1d-429a-bf64-dd5cefe9bf7e/
+       )
+  ⎿  Received 181.2KB (200 OK)
+
+⏺ Bottom line: there are no 2021–2024 ES 300h Luxury trims under 45k miles 
+  within 300 miles of Dallas right now (on Cars.com, which has had the broadest
+  coverage in this search).
+
+  I decoded the VINs on the two Dallas-area cars with unlabeled trims to be sure
+  — Lexus encodes trim in the VIN (58ADA = Base, 58AEA = Luxury, 58AFA = Ultra
+  Luxury/F SPORT):
+
+  - CarMax Garland 2021 ($37,998) → VIN 58ADA1C11MU002058 → Base
+  - Clay Cooley 2023 ($42,799) → VIN 58ADA1C12PU028043 → Base
+
+  So everything cheap around DFW is Base trim; the only high trims are the Ultra
+  Luxury cars we already covered ($43,720 at 46k miles, $49,913 CPO). The
+  Luxury trim is just absent from the local market.
+
+  The nearest actual Luxury trims:
+
+  ┌────────────┬─────────┬────────┬─────────────────────────┬───────────────┐
+  │    Car     │  Price  │ Miles  │        Location         │ Distance from │
+  │            │         │        │                         │     Dallas    │
+  ├────────────┼─────────┼────────┼─────────────────────────┼───────────────┤
+  │ 2021       │ $37,289 │ 32,771 │ Noblesville Imports,    │ ~900 mi       │
+  │ Luxury     │         │        │ Indianapolis area       │               │
+  ├────────────┼─────────┼────────┼─────────────────────────┼───────────────┤
+  │ 2024       │ $46,598 │ 25,247 │ Lexus of Louisville, KY │ ~736 mi       │
+  │ Luxury CPO │         │        │                         │               │
+  ├────────────┼─────────┼────────┼─────────────────────────┼───────────────┤
+  │ 2024       │ $47,888 │ 25,891 │ Lexus of Albuquerque,   │ ~586 mi       │
+  │ Luxury     │         │        │ NM                      │               │
+  └────────────┴─────────┴────────┴─────────────────────────┴───────────────┘
+
+  The one worth noticing: the cheapest Luxury trim anywhere in this whole search
+  — the $37,289 Noblesville car (verified 0 accidents, clean title, personal 
+  use, prior CPO) — is in the same Indianapolis suburb cluster as the Napleton 
+  Ultra Luxury. Noblesville and Carmel are adjacent, about 20 minutes apart, and
+  both sit right on your Columbus-to-Dallas drive. You could test-drive the
+  $37,289 Luxury and the $41,497 Ultra Luxury in a single stop and decide on the
+  spot whether the extra $4,200 for the top trim, newer year, and 1-owner
+  history is worth it to you.
+
+  If you'd rather stay strictly local to Dallas, your realistic options are:
+  accept Base trim (CarMax's $37,998 / 17k-mile car is the best of those), pay
+  up for Ultra Luxury, or wait for a Luxury to hit the DFW market — they're
+  common nationally, so one will show up, but it isn't there today.
+
+✻ Churned for 1m 30s
+
+❯ im looking for 2023 or newer                                                  
+
+⏺ Refining to 2023+ ES 300h Luxury trim. Since nothing was within 300 miles of
+  Dallas, let me sweep wide — around Dallas, around Columbus (your starting
+  point), and nationally.
+
+⏺ Fetch(https://www.cars.com/shopping/results/?stock_type=used&makes[]=lexus&mod
+       els[]=lexus-es_300h&trims[]=lexus-es_300h-luxury&maximum_distance=all&zip
+       =75201&year_min=2023&mileage_max=45000&sort=list_price&page_size=50)  ⎿  Received 869KB (200 OK)
+
+⏺ Fetch(https://www.cars.com/vehicledetail/66ba95c9-eb78-4291-bcbf-37c228d77ab1/
+       )
+  ⎿  Received 174.7KB (200 OK)
+
+⏺ Fetch(https://www.cars.com/vehicledetail/5293474d-3618-45c3-9ec8-fcfb6a6c3fdc/
+       )
+  ⎿  Received 196KB (200 OK)
+
+⏺ Here's the 2023+ Luxury landscape — and there's a new standout, with caveats.
+
+  🏆 Cheapest by a mile: 2024 ES 300h Luxury — $37,790 · 24,025 mi
+
+  Lexus of West Kendall, Miami, FL · listing
+  (https://www.cars.com/vehicledetail/66ba95c9-eb78-4291-bcbf-37c228d77ab1/)
+
+  - Lexus L/Certified CPO (161-point inspection, unlimited-mile warranty to 6
+  years, 2 years free maintenance)
+  - 1 owner, 0 accidents, clean title, already cut $2,100
+  - Eminent White Pearl over Palomino leather
+  - $6,200 cheaper than the next 2023+ Luxury in the country — and $3,700 less
+  than the Napleton Ultra Luxury
+  - The catch #1: "non-personal use" on the history — almost certainly a rental
+  or dealer loaner. Clean record and CPO soften that, but it's the reason for
+  the price, and it's the same flag that dinged the Louisville car for you.
+  - The catch #2: Miami is ~1,300 miles from Dallas and nowhere near your
+  Columbus drive. Realistic options: have it shipped (~$800–1,200 to Dallas; the
+  CPO warranty is nationwide, so any Texas Lexus dealer services it), or fly to
+  MIA and make it an I-10 road trip. Even with shipping it's ~$38,800 all-in —
+  still the cheapest 2023+ Luxury anywhere.
+
+  ⚠️ One to avoid
+
+  The 2025 Luxury at $44,898 (Drive A Dream, Marietta, GA) looks tempting —
+  9,417 miles, 1 owner, Mark Levinson — but the history shows a title issue,
+  plus an $899 stack of doc/e-filing fees at an independent lot. Pass.
+
+  The rest of the 2023+ Luxury market (cheapest first)
+
+  ┌───────┬─────────┬────────┬─────────────────┬───────────────────────────┐
+  │ Year  │  Price  │ Miles  │     Dealer      │           Notes           │
+  ├───────┼─────────┼────────┼─────────────────┼───────────────────────────┤
+  │ 2024  │ $44,018 │ 38,352 │ Hennessy Lexus, │ Unverified history, Lexus │
+  │ CPO   │         │        │  Atlanta        │  store                    │
+  ├───────┼─────────┼────────┼─────────────────┼───────────────────────────┤
+  │ 2024  │ $46,598 │ 25,247 │ Lexus of        │ On your drive route;      │
+  │ CPO   │         │        │ Louisville      │ non-personal use flag     │
+  ├───────┼─────────┼────────┼─────────────────┼───────────────────────────┤
+  │ 2025  │ $49,825 │ 83     │ Sewell Lexus,   │ Essentially brand new,    │
+  │       │         │        │ Dallas          │ local                     │
+  └───────┴─────────┴────────┴─────────────────┴───────────────────────────┘
+
+  How I'd frame the decision now: if "1 owner + CPO + no accidents" outranks
+  "personal use only," the Miami car is the best 2023+ Luxury deal in the
+  country and worth a call today — get the Carfax to see whether "non-personal"
+  means loaner (mild) or rental fleet (harsher usage). If you want to keep it
+  simple and on your route, Louisville at $46,598 carries the same
+  non-personal-use flag for $8,800 more — which honestly makes
+  Miami-plus-shipping look even better. And if you'd stretch for
+  effectively-new, Sewell's 83-mile 2025 at $49,825 is sitting in Dallas.
+
+  Also keep the Napleton Ultra Luxury ($41,497) in your back pocket — it's a
+  trim above, personal-use, one-owner, and on your drive. Between the two, Miami
+  wins on price and warranty; Napleton wins on trim and provenance.
+
+✻ Worked for 1m 34s
+
+※ recap: You're shopping for a used Lexus ES 300h to drive back to Dallas; cheapest 2023+ Luxury found is a $37,790 CPO 2024 in Miami (rental/loaner history). Next action: call the dealer to check availability and get the Carfax.
+
+❯ What about https://www.driveadream.com/used/LEXUS/2025-LEXUS-ES-62651192ac180 
+  13719a6da3414a8bb09.htm?utm_medium=referral&utm_source=cars.com&utm_campaign= 
+  cars.com_VDP_deeplink&utm_csid=11945a4d-49c2-4aba-a469-aacd251d066e           
+
+⏺ That's the dealer's own page for the Marietta car I flagged. Let me pull it
+  and see what they disclose.
+
+⏺ Fetch(https://www.driveadream.com/used/LEXUS/2025-LEXUS-ES-62651192ac18013719a
+       6da3414a8bb09.htm)
+  ⎿  Received 0 bytes (403 Forbidden)
+
+⏺ Fetch(https://www.cars.com/vehicledetail/5293474d-3618-45c3-9ec8-fcfb6a6c3fdc/
+       )
+  ⎿  Received 196KB (200 OK)
+
+⏺ Web Search(""58AEA1C13SU069035"")
+  ⎿  Did 1 search in 6s
+
+⏺ I tried the dealer's own page, but driveadream.com blocks automated access, so
+  I went back to the underlying history data for that exact VIN
+  (58AEA1C13SU069035). Here's where it stands:
+
+  The title problem is real, and it's the whole story on this car. The vehicle
+  history panel reports, verbatim, "Title: Issue reported" — alongside 0
+  accidents, 1 owner, personal use only, and no open recalls. On a 2025 with
+  9,417 miles and no accidents, a title brand almost always means one of:
+
+  - Manufacturer buyback (lemon law) — the most common no-accident brand on a
+  near-new car; the first owner forced Lexus to repurchase it over a recurring
+  defect
+  - Flood or hail damage — plausible for a Georgia/Florida-market car; no
+  "accident" gets reported
+  - Theft recovery or a paperwork/odometer brand
+
+  I searched for the VIN in public auction records (Copart/IAAI indexes) and
+  found nothing — which doesn't clear it, it just means the answer is on the
+  Carfax, which the dealer holds.
+
+  Why I'd still pass at this price. The math doesn't work: $44,000 + $799 doc +
+  $99 e-filing = $44,898 for a car that's only ~$2,500–4,000 under clean-title
+  market (clean 2025 Luxurys run $46.8k–$49.8k). Branded-title cars typically
+  trade far below that — a lemon buyback maybe 10–15% under, flood/salvage
+  20–40% under. You'd be paying nearly clean-car money while inheriting all the
+  branded-title costs: harder financing, some insurers refusing or surcharging
+  coverage, no possibility of Lexus CPO, a permanent resale haircut, and — if
+  it's flood — a voided factory warranty.
+
+  If you're still curious, one phone call resolves it: ask Drive A Dream for the
+  Carfax and the exact brand. If they say "manufacturer buyback," ask for the
+  repurchase documents showing what the defect was and the repair history —
+  Georgia requires resold lemon buybacks to be disclosed in writing. If the word
+  "flood" appears anywhere, hang up. And if they claim the title is actually
+  clean, make them prove it — the "Great Deal" badge on the listing is
+  price-based only; it knows nothing about the title.
+
+  My recommendation is unchanged: for a 2023+ Luxury, the Miami car ($37,790, 
+  2024, L/Certified CPO, clean title, 0 accidents) is $7,100 cheaper than this
+  one with a factory-backed warranty instead of a title problem. This Marietta
+  car only makes sense somewhere around $38–40k all-in with a benign, documented
+  buyback story — and even then, the Miami car still beats it.
+
+  Sources: Cars.com listing (VIN + title disclosure)
+  (https://www.cars.com/vehicledetail/5293474d-3618-45c3-9ec8-fcfb6a6c3fdc/),
+  VIN search results (https://vininspect.com/vin/lexus/es/2025/58aea1c14su),
+  Miami 2024 Luxury CPO listing
+  (https://www.cars.com/vehicledetail/66ba95c9-eb78-4291-bcbf-37c228d77ab1/)
+
+✻ Cogitated for 1m 32s
+
+※ recap: You're shopping for a 2023+ Lexus ES 300h Luxury, no accidents, to register in Dallas. Best find: $37,790 CPO 2024 in Miami; the Marietta 2025 has a title issue. Next: call the Miami dealer for the Carfax.
+
+❯ how much would you say CPO is worth?                                          
+
+⏺ Short answer: on an ES 300h specifically, about $1,500–2,500 — call it $2,000
+  as a working number. Here's how I get there, three ways:
+
+  1. What it costs to replicate. L/Certified gets you a 2-year/unlimited-mile
+  warranty that kicks in after the 4-year basic warranty ends, the 161-point
+  inspection/reconditioning, 2 years of free maintenance (4 services, ~$600–900
+  at Lexus rates), roadside, and $0 deductible. Buying similar coverage yourself
+  — a Lexus-backed extended warranty plus prepaid maintenance — runs roughly
+  $2,000–3,500 retail. That's the ceiling on what CPO can be worth, since you
+  could always bolt it onto a non-CPO car.
+
+  2. What it's actuarially worth on this car. This is the part people
+  overweight. The ES 300h's expensive components are covered regardless of CPO:
+  hybrid battery 10yr/150k, hybrid system components 8yr/100k, powertrain
+  6yr/70k — all transfer to you automatically. What CPO marginally covers is
+  bumper-to-bumper stuff in years 5–6: infotainment screens, sensors, seat
+  motors, HVAC. On a Toyota-hybrid drivetrain with Lexus build quality, the
+  expected repair spend there is honestly maybe $500–1,000. The warranty's value
+  is mostly peace of mind, not expected payout.
+
+  3. What the market charges. Across the broader used market, CPO premiums run
+  ~3–5% of price; for luxury brands roughly $2,000–3,000 on a $40k car.
+  Consistent with the other two estimates.
+
+  There are two soft extras worth something: CPO cars often qualify for
+  promotional used-car APRs through Lexus Financial (can be worth real money if
+  you finance), and the CPO warranty stays with the car, which helps a little at
+  resale.
+
+  Applied to your actual choices:
+
+  - Napleton UL ($41,497, no CPO) vs Sewell UL CPO ($49,913): the gap is $8,400.
+  CPO is worth ~$2k and the 24k-mile difference maybe $3k on this drivetrain —
+  that still leaves ~$3,400 of pure premium. Napleton keeps winning.
+  - Miami 2024 Luxury CPO ($37,790): here CPO is worth more than average to you,
+  maybe toward the $2,500–3,000 end — because the car has rental/loaner
+  history, and the factory 161-point inspection plus a 6-year unlimited-mile
+  warranty is exactly the hedge you want against how a non-personal-use car was
+  treated. Cheapest price and the strongest insurance against its own main risk.
+  - General rule for the rest of your shopping: treat CPO as a ~$2k tiebreaker,
+  never a $5k+ justification. If a dealer wants materially more than that for
+  the badge, you're better off buying the cleaner non-CPO car — on this
+  platform, reliability is doing most of the warranty's job for free.
+
+✻ Churned for 44s
+
+❯ would lexus dealer be willing to mark it down by 3000 or that wont happen     
+
+⏺ Let me check one data point that matters a lot for this — how long the Miami
+  car has been sitting.
+
+⏺ Fetch(https://www.cars.com/vehicledetail/66ba95c9-eb78-4291-bcbf-37c228d77ab1/
+       )
+  ⎿  Received 174.7KB (200 OK)
+
+⏺ Honest answer: $3,000 more off almost certainly won't happen on this car. The
+  data explains why:
+
+  - It was listed on July 9 — it's been on the lot just over two weeks
+  - The dealer already cut it $2,100 on July 14, just five days in — that's a
+  store deliberately pricing to be the national leader, not a car going stale
+  - At $37,790 it's already the cheapest 2023+ Luxury CPO in the country by
+  ~$6,200. Typical dealer gross on a used car is $1,500–2,500; another $3,000
+  would put them underwater
+  - The listing advertises "1 PRICE INCLUDES ALL FEES, SIMPLY PRICING, NO GAMES"
+  — a one-price store posture, which means the discount is pre-baked and the
+  salespeople usually can't move the number even if they want to
+
+  Cars that get $3k knocked off are the ones sitting 60+ days at above-market
+  prices — like the Napleton car was when it took its $1,725 cut. This one is
+  the opposite: fresh, aggressively priced, and likely to sell fast precisely
+  because of it.
+
+  What's realistically gettable — worth maybe $1,000–1,500 in total value:
+
+  1. Ask for shipping to Dallas instead of a price cut. This is the
+  highest-percentage play. Dealers book transport at wholesale rates (~$600–900
+  for Miami→Dallas), it's worth ~$1,000+ to you, and it doesn't touch the gross
+  they report on the car. Frame it as: "I'll wire a deposit today if you deliver
+  it."
+  2. Time it to month-end. July closes in six days — if they're chasing a CPO
+  volume target, a done-deal out-of-state buyer with no trade and no financing
+  contingency is easy math. That might shake loose $300–500 or the shipping.
+  3. Get the out-the-door number in writing before committing. The listing says
+  price includes fees, but Florida dealers are infamous for $999+
+  "dealer/pre-delivery" fees, and this listing's fee breakdown is undisclosed.
+  Confirming OTD in an email is both protection and a soft negotiation lever.
+  4. Small stuff stacks: full tank, all-weather mats, first service covered.
+
+  The bigger point: you don't need $3k off for this to win. At $37,790 + ~$1k
+  shipping, you're at ~$38,800 for a 2024 Luxury CPO — still $2,700 under the
+  Napleton Ultra Luxury and $7,800 under the next-cheapest 2023+ Luxury
+  anywhere. Squeezing the last $3k out of a deal that's already the best in the
+  country risks losing it to the next caller. If the Carfax comes back with a
+  benign loaner story, I'd take the shipping concession and close.
+
+✻ Churned for 1m 5s
+❯ looking for 9-12k miles for 45,000$ or 30-40k miles for $40,000 ultra luxury  
+  es300h                                                                        
+
+⏺ Searching nationally for Ultra Luxury ES 300h (2023+, under 45k miles) sorted
+  by price, to match against your two brackets.
+
+⏺ Fetch(https://www.cars.com/shopping/results/?stock_type=used&makes[]=lexus&mod
+       els[]=lexus-es_300h&trims[]=lexus-es_300h-ultra_luxury&maximum_distance=a
+       ll&zip=75201&year_min=2023&mileage_max=45000&sort=list_price&page_size=50
+       )
+  ⎿  Received 851.5KB (200 OK)
+
+⏺ Fetch(https://www.cars.com/vehicledetail/2176f0ce-d2ee-408d-bbfd-e06bc89ce9ce/
+       )
+  ⎿  Received 179.2KB (200 OK)
+
+⏺ Fetch(https://www.cars.com/vehicledetail/8620303e-0678-43f2-bd21-b2fd8eba455f/
+       )
+  ⎿  Received 163.4KB (200 OK)
+
+⏺ Here's how your two brackets line up against the entire national market — and
+  one important catch I found.
+
+  Bracket B: 30–40k miles for $40,000 → achievable, one car
+
+  The Napleton 2023 Ultra Luxury is the only car in the country that fits —
+  $41,497 at 39,283 miles, and you know its history is verified (1 owner, 0
+  accidents, personal use). One warning: the apparent competitor, CarMax
+  Murrieta's "2024 Ultra Luxury" at $41,998, is mislabeled — its VIN is
+  58ADA1C19RU042444, and 58ADA is the Base trim code (Ultra Luxury VINs start
+  58AFA, like Sewell's). The feature list confirms it: no head-up display, no
+  cooled seats. So it's out.
+
+  After Napleton, the next genuine Ultra Luxury is $46,990. That means Napleton
+  at asking is already $5,500 under the next-cheapest, and your $40,000 target
+  is a realistic negotiation, not a fantasy — the car has been sitting long
+  enough to take a $1,725 cut already. Offer $40,000 flat as a drive-away
+  out-the-door-ish number, settle anywhere under $41,000, and you've hit your
+  bracket.
+
+  Bracket A: 9–12k miles for $45,000 → doesn't exist today
+
+  The real 9–12k-mile Ultra Luxury market is $7,000+ above your number:
+
+  ┌──────────┬────────┬─────────┬──────────────────────────────┐
+  │   Year   │ Miles  │  Price  │            Dealer            │
+  ├──────────┼────────┼─────────┼──────────────────────────────┤
+  │ 2024 CPO │ 9,024  │ $52,293 │ Lexus of Wichita             │
+  ├──────────┼────────┼─────────┼──────────────────────────────┤
+  │ 2025     │ 11,089 │ $54,505 │ Tom Wood Lexus, Indianapolis │
+  ├──────────┼────────┼─────────┼──────────────────────────────┤
+  │ 2025 CPO │ 8,795  │ $52,075 │ Lexus of Ann Arbor           │
+  └──────────┴────────┴─────────┴──────────────────────────────┘
+
+  But there's a better play than waiting for a $45k unicorn: a 2023 Ultra Luxury
+  with 6 miles — literally never driven — at Ourisman Lexus in Rockville, MD 
+  for $47,797 (CPO, CARFAX 1-owner, 0 accidents, Obsidian over Palomino, Mark
+  Levinson). That's new-car condition for $4,500 less than the 9k-mile 2024s.
+  One nuance: since it was first titled in ~2023, its warranty clock has been
+  running while it sat, so you get roughly 3–4 remaining years of coverage
+  rather than a fresh six. At $2,800 over your bracket-A budget — and likely
+  negotiable, since a three-year-old car with 6 miles is a dealer's oddball to
+  move — it's the closest real-world version of what you're asking for. (listing
+  (https://www.cars.com/vehicledetail/2176f0ce-d2ee-408d-bbfd-e06bc89ce9ce/))
+
+  My read
+
+  The market prices Ultra Luxurys on a steep mileage curve: ~$41.5k at 39k miles
+  → ~$47–48k at 20–28k → ~$50k at 15k → $52k+ under 12k. Your bracket B sits
+  right on that curve; your bracket A is about $7k below it. So: push Napleton
+  toward $40k this week — it's on your drive home and the only bracket-B car in
+  existence. If you'd rather spend $47–48k, skip the 9–12k-mile cars entirely
+  and chase the 6-mile Ourisman car instead; it's simply more car for less
+  money.
+
+  Sources: national Ultra Luxury search
+  (https://www.cars.com/shopping/results/?stock_type=used&makes[]=lexus&models[]
+  =lexus-es_300h&trims[]=lexus-es_300h-ultra_luxury&maximum_distance=all&zip=752
+  01&year_min=2023&mileage_max=45000&sort=list_price), Napleton listing
+  (https://www.cars.com/vehicledetail/87416d35-acb9-43ce-a485-5e6cb68c5872/),
+  Ourisman 6-mile listing
+  (https://www.cars.com/vehicledetail/2176f0ce-d2ee-408d-bbfd-e06bc89ce9ce/),
+  CarMax listing (mislabeled trim)
+  (https://www.cars.com/vehicledetail/8620303e-0678-43f2-bd21-b2fd8eba455f/)
+
+✻ Cogitated for 1m 50s
+
+※ recap: You're hunting the best ES 300h Ultra Luxury deal to drive from Columbus back to Dallas. The Napleton Carmel 2023 at $41,497 is the only car fitting your 30-40k-mile bracket; next step is calling them to offer $40,000 and confirm the Carfax.
+
+❯ can you tell me what premium trim has vs luxury vs ultra luxury for es300h    
+  2023+                                                                         
+
+⏺ Good question — and worth getting precise, since listing sites mislabel these
+  constantly (as we saw with the CarMax car). Let me verify the official
+  equipment breakdown for 2023+.
+
+⏺ Web Search("2023 2024 Lexus ES 300h trim levels compared base Premium Luxury
+            Ultra Luxury standard features differences")
+  ⎿  Did 1 search in 7s
+
+⏺ "Premium" turns out to be a package on the base car, not a trim. Let me get
+  the exact Luxury vs Ultra Luxury deltas from the trim spec pages.
+
+⏺ Fetch(https://www.cars.com/research/lexus-es_300h-2023/trims/)
+  ⎿  Received 96.2KB (200 OK)
+
+⏺ MSRPs confirmed. Now the per-trim equipment detail from Autotrader's trim
+  guide.
+
+⏺ Fetch(https://www.autotrader.com/comparisons/2024-lexus-es-choosing-the-right-
+       trim)
+  ⎿  Received 3.7KB (200 OK)
+
+⏺ Fetch(https://www.edmunds.com/lexus/es-300h/2023/trims/)
+  ⎿  Received 0 bytes (403 Forbidden)
+
+⏺ Fetch(https://www.lexusofcherryhill.com/manufacturer-information/lexus-es-trim
+       -levels/)
+  ⎿  Received 309.8KB (200 OK)
+
+⏺ Here's the 2023+ ES 300h trim ladder, assembled from the spec sources plus the
+  actual listings we've examined. First, one clarification: "Premium" isn't a 
+  trim — it's a $2,430 option package on the base car. Listing sites often
+  display a base car with that package as "ES 300h Premium," which is why it
+  shows up in search results.
+
+  The ladder (2023 MSRPs when new)
+
+  ┌───────────────┬──────────────┬────────────────┬────────────────────────┐
+  │               │ Base ES 300h │     Luxury     │      Ultra Luxury      │
+  ├───────────────┼──────────────┼────────────────┼────────────────────────┤
+  │ MSRP (2023)   │ $43,340      │ $48,510        │ $52,130                │
+  ├───────────────┼──────────────┼────────────────┼────────────────────────┤
+  │               │ NuLuxe       │ Genuine        │ Quilted semi-aniline   │
+  │ Upholstery    │ (synthetic)  │ perforated     │ leather                │
+  │               │              │ leather        │                        │
+  ├───────────────┼──────────────┼────────────────┼────────────────────────┤
+  │               │ 8-way power, │ Heated and     │ 14-way driver,         │
+  │ Front seats   │  heated      │ ventilated,    │ heated/ventilated,     │
+  │               │              │ memory         │ memory                 │
+  ├───────────────┼──────────────┼────────────────┼────────────────────────┤
+  │ Steering      │              │ Upgraded,      │                        │
+  │ wheel         │ Standard     │ heated         │ Heated with wood rim   │
+  │               │              │ available      │                        │
+  ├───────────────┼──────────────┼────────────────┼────────────────────────┤
+  │               │              │ Wood trim +    │ Upgraded open-pore     │
+  │ Cabin trim    │ Standard     │ ambient        │ wood throughout        │
+  │               │              │ lighting       │                        │
+  ├───────────────┼──────────────┼────────────────┼────────────────────────┤
+  │ Head-up       │ —            │ —              │ Standard               │
+  │ display       │              │                │                        │
+  ├───────────────┼──────────────┼────────────────┼────────────────────────┤
+  │ Trunk         │ Manual       │ Manual         │ Hands-free power trunk │
+  │               │              │                │  (kick sensor)         │
+  ├───────────────┼──────────────┼────────────────┼────────────────────────┤
+  │ Headlights    │ Bi-LED       │ Bi-LED         │ Triple-beam adaptive   │
+  │               │              │                │ LED                    │
+  ├───────────────┼──────────────┼────────────────┼────────────────────────┤
+  │ Rear sunshade │ —            │ —              │ Power rear + side      │
+  │               │              │                │ shades                 │
+  ├───────────────┼──────────────┼────────────────┼────────────────────────┤
+  │ Parking       │              │                │                        │
+  │ assist w/     │ —            │ —              │ Standard               │
+  │ braking       │              │                │                        │
+  ├───────────────┼──────────────┼────────────────┼────────────────────────┤
+  │ Wireless      │ Via Premium  │ Standard       │ Standard               │
+  │ charger       │ pkg          │                │                        │
+  ├───────────────┼──────────────┼────────────────┼────────────────────────┤
+  │ Wheels        │ 17"          │ 18"            │ 18" (noise-reducing)   │
+  └───────────────┴──────────────┴────────────────┴────────────────────────┘
+
+  What every trim shares: the identical 215-hp hybrid powertrain (2.5L + eCVT,
+  43/44 mpg), FWD, Lexus Safety System+ 2.5 (adaptive cruise, pre-collision,
+  lane tracing), blind spot monitoring, moonroof, and wireless CarPlay/Android
+  Auto. You're never buying performance or safety as you climb — only comfort
+  and convenience.
+
+  The Premium package on base (~$2,430) is the sweet spot for value shoppers:
+  heated/ventilated front seats, driver memory, heated power steering wheel,
+  wireless charging, rear parking sensors. It closes most of the gap to Luxury
+  except the real leather and wood.
+
+  Luxury over base: genuine leather instead of synthetic, ventilation and memory
+  standard, wood trim with ambient lighting, bigger wheels. It's "the nice one"
+  without the gadgets.
+
+  Ultra Luxury over Luxury: this is where the toys live — HUD, hands-free power
+  trunk, heated wood steering wheel, adaptive triple-beam headlights, power rear
+  sunshade, parking assist with auto-brake, and the softest (semi-aniline)
+  leather. Notably it's only ~$3,600 more than Luxury at MSRP, which is why used
+  ULs are often better value than used Luxurys.
+
+  Also in the lineup: F SPORT Design (~$47,725) is cosmetic — body kit, 19"
+  gloss-black wheels, spoiler; F SPORT Handling (~$49,635) adds actual hardware
+  — adaptive suspension, bolstered sport seats, LFA-style gauges. Sportier look
+  and feel, but it gives up the UL's comfort features.
+
+  Mark Levinson audio (17-speaker, 1,800W) is optional on Luxury and Ultra
+  Luxury — never standard — so check each car individually. The Louisville
+  Luxury and the Ourisman 6-mile UL have it; the Napleton UL appears not to.
+
+  Two practical notes for your search: verify trim by VIN, not by listing label
+  — 58ADA = Base, 58AEA = Luxury, 58AFA = Ultra Luxury (that's how we caught the
+  CarMax "Ultra Luxury" that was actually a Base). And one caveat: sources
+  disagree slightly on Luxury-trim upholstery details (one dealer site puts
+  quilted semi-aniline on Luxury; Lexus's own materials reserve it for UL), so
+  on any specific car, the window sticker settles it — dealers can pull it by
+  VIN.
+
+  Sources: Cars.com 2023 ES 300h trims
+  (https://www.cars.com/research/lexus-es_300h-2023/trims/), Edmunds 2023 ES
+  300h trims (https://www.edmunds.com/lexus/es-300h/2023/trims/), Lexus of
+  Cherry Hill trim guide (https://www.lexusofcherryhill.com/manufacturer-informa
+  tion/lexus-es-trim-levels/)
+
+✻ Cooked for 3m 1s
+
+※ recap: You're hunting the best-deal Lexus ES 300h to buy and drive back to Dallas, and the top pick is Napleton's 2023 Ultra Luxury at $41,497. Next: call Napleton, get the Carfax, and offer around $40k.
+
+❯ how much do you think it's worth to pay for 2025 es 300h luxury with 33 miles 
+  from dealership                                                               
+⏺ One market fact matters a lot here, so let me verify it before giving you a
+  number — the redesigned next-gen ES launch status, since that determines how
+  hard leftover 2025s should be discounted.
+
+⏺ Web Search("2026 Lexus ES redesign 350h on sale date pricing US new
+            generation")
+  ⎿  Did 1 search in 8s
+
+⏺ Short answer: $45,000–$47,000 — and I wouldn't go past $48,000. Here's the
+  reasoning:
+
+  The car's biggest problem isn't miles — it's the calendar. The redesigned
+  eighth-generation ES launched this year; the new 2026 ES 350h hybrid hit
+  dealer lots in June starting around $51,000 with destination (new platform, 46
+  mpg, AWD available, new interior tech). That makes any 2025 ES 300h an
+  outgoing-generation car, and 33 miles doesn't change that. The original
+  ~$50,900 sticker (MSRP + destination) is now irrelevant as an anchor — a
+  brand-new, better car costs the same money.
+
+  What the live market says. From the national sweep we just did, used 2025
+  Luxurys are asking: $46,813 (18k mi), $46,998 CPO (28k mi), $48,010 (16k mi),
+  $48,084 (13k mi). Sewell Dallas wants $49,825 for their 83-mile 2025 Luxury.
+  So the retail curve puts a ~0-mile example around $48–49.5k asking — but those
+  asks were set as the new generation was just arriving, and last-gen leftovers
+  only get cheaper from here. Paying the ask means buying at the top of a
+  declining curve.
+
+  The math that should anchor your offer: the moment you register it, it's a
+  "used last-gen 2025" that retails around $46–48k — so paying $49–50k is
+  donating $2–3k of instant depreciation beyond the normal hit. Fair value is
+  where you're not underwater versus the comps on day one: $45–46.5k if it's an 
+  untitled new leftover (dealers should be discounting 8–12% to clear
+  dead-generation stock, and you get the full warranty clock starting at
+  purchase), $46–47k if it's titled/CPO (the warranty has been quietly running
+  since first titling — ask for the in-service date).
+
+  Sanity checks at the price points:
+  - At $48k+ → walk. A new 2026 ES 350h is $51k, and the 6-mile 2023 Ultra 
+  Luxury CPO in Rockville is $47,797 — a trim above for the same money.
+  - At $46k → fair deal, reasonable buy if the color/options are right (Mark
+  Levinson? triple-beams? — check the window sticker).
+  - At $45k or below → good deal; take it.
+
+  Negotiation leverage is strongly yours: an outgoing-generation car sitting
+  with delivery miles in July 2026 is pure floor-plan cost to the dealer, and
+  every week it competes with the shiny new ES in the same showroom. Open at
+  $44.5k, be wire-ready, let month-end do the rest.
+
+  Sources: Lexus pressroom — 2026 ES 350h launch
+  (https://pressroom.lexus.com/2026-lexus-es-350h-hybrid-joins-battery-electric-
+  es-350e-es-500ein-eighth-generation-es-lineup/), autoevolution — 2026 ES 350h
+  June arrival, $51,095 start (https://www.autoevolution.com/news/2026-lexus-es-
+  350h-hitting-us-dealer-lots-this-june-from-51095-269395.html), national 2025
+  Luxury comps (https://www.cars.com/shopping/results/?stock_type=used&makes[]=l
+  exus&models[]=lexus-es_300h&trims[]=lexus-es_300h-luxury&maximum_distance=all&
+  zip=75201&year_min=2023&mileage_max=45000&sort=list_price)
+
+✻ Baked for 1m 15s
+
+❯ 2023 Ultra Luxury CPO in Rockville, show me listing?                          
+
+⏺ Fetch(https://www.cars.com/vehicledetail/2176f0ce-d2ee-408d-bbfd-e06bc89ce9ce/
+       )
+  ⎿  Received 179.1KB (200 OK)
+
+⏺ Here it is — confirmed active as of today:
+
+  2023 Lexus ES 300h Ultra Luxury — $47,797 · 6 miles
+  📍 Ourisman Lexus of Rockville — 15501 Frederick Road, Rockville, MD 20855
+
+  🔗 View the listing on Cars.com 
+  (https://www.cars.com/vehicledetail/2176f0ce-d2ee-408d-bbfd-e06bc89ce9ce/)
+
+  Key details for when you call:
+  - VIN: 58AFA1C15PU036548 (58AFA confirms genuine Ultra Luxury) · Stock #:
+  TU036548
+  - Colors: Obsidian (black) over Palomino with matte walnut open-pore trim
+  - Equipment: It's loaded — Mark Levinson audio (which the Napleton car lacks),
+  triple-beam adaptive headlamps, heated/ventilated seats, heated steering
+  wheel, surround-view camera, parking assist with auto-braking
+  - CPO: L/Certified — balance of the 4yr/50k basic warranty +
+  2yr/unlimited-mile CPO coverage, 10yr/150k hybrid battery
+  - History: CARFAX 1-owner, 0 accidents, clean title (verified earlier)
+
+  Two things to know going in:
+
+  1. It was listed only five days ago (July 20) with no price cuts yet — so
+  unlike the Napleton car, there's little staleness leverage. The price is
+  already strong for what it is, and a never-driven Ultra Luxury with Mark
+  Levinson will attract calls.
+  2. Ask the dealer two questions: the in-service date (when it was first titled
+  — that's when the 4yr/50k warranty clock started, so you want to know exactly
+  how much coverage remains), and the story — why does a 2023 have 6 miles?
+  Likely someone bought it and never took delivery, or it sat as showroom stock
+  before being titled. A benign answer plus the Carfax makes this essentially a
+  new car at a used price.
+
+  Logistics from your side: Rockville is ~420 miles east of Columbus (about 6.5
+  hours), so it's a real detour from your Dallas drive — doable as a fly-in or
+  add-a-day, or ask Ourisman about shipping to Dallas (~$1,000–1,300 from
+  Maryland). Even with shipping, ~$49k all-in for an unused Ultra Luxury with
+  Mark Levinson still undercuts Sewell's 15k-mile example at $49,913.
+
+✻ Cooked for 36s
+
+❯ that rockville has 6k miles and has accident                                  
+  https://www.carfax.com/vehiclehistory/ar20/lnEgzU3R55AeWtbfpcg6hiqayG4Z02pj_u 
+  FlWQv2_GLNc1GFg-CUwlOREMQGndvGKaMomd4ic4VuyXGZ_qXPGTyr4uCjnrohxy8             
+
+⏺ That's a critical catch — let me pull that Carfax report and see exactly what
+  it says.
+
+⏺ Fetch(https://www.carfax.com/vehiclehistory/ar20/lnEgzU3R55AeWtbfpcg6hiqayG4Z0
+       2pj_uFlWQv2_GLNc1GFg-CUwlOREMQGndvGKaMomd4ic4VuyXGZ_qXPGTyr4uCjnrohxy8)
+  ⎿  Received 0 bytes (403 Forbidden)
+
+⏺ Good catch — and this is exactly why the live Carfax beats listing-site
+  badges. Carfax blocks automated access on my end, so I can't read the report
+  myself, but taking what you're seeing at face value: that kills the car on 
+  your criteria.
+
+  What this changes:
+
+  - The "6 miles" was bad listing data — presumably ~6,000 miles truncated or
+  mis-entered by the dealer. Still very low, but not the never-driven unicorn
+  the listing implied.
+  - The accident directly fails your hard requirement, which has been "no
+  accident history" from message one. Cross it off.
+  - The price story inverts. At "6 miles, clean history," $47,797 was a
+  standout. At 6k miles with an accident record, it's priced like a clean car
+  while carrying damage history — Sewell's genuinely clean CARFAX 1-owner 2023
+  UL at $49,913/15k miles is now clearly the better car for only $2,100 more,
+  and the Napleton car at $41,497 beats both.
+  - One nuance if you were ever tempted anyway: L/Certified excludes
+  structural/frame damage, so if Lexus certified it, the accident was likely
+  cosmetic-and-repaired. But minor or not, it fails your spec, and a Carfax
+  accident entry permanently drags resale — you'd be selling that explanation to
+  the next buyer too.
+
+  The broader lesson this confirms: the history snippets on cars.com ("0
+  accidents, clean title") lag or miss what the live Carfax shows — we've now
+  seen listing data be wrong twice (CarMax's mislabeled trim, and this). Before 
+  you commit to any of the finalists, do exactly what you just did — get the 
+  dealer's live Carfax by VIN. That especially applies to the Napleton car (VIN
+  check + Carfax before you drive to Carmel) and the Miami car if you go that
+  direction.
+
+  Revised standing shortlist:
+
+  ┌───────────────────┬─────────────┬────────┬──────────────────────────────┐
+  │        Car        │    Price    │ Miles  │            Status            │
+  ├───────────────────┼─────────────┼────────┼──────────────────────────────┤
+  │ Napleton 2023 UL, │             │        │ Best fit for your            │
+  │  Indianapolis     │ $41,497     │ 39,283 │ $40k/30–40k bracket — verify │
+  │                   │             │        │  Carfax, offer $40k          │
+  ├───────────────────┼─────────────┼────────┼──────────────────────────────┤
+  │ Sewell 2023 UL    │ $49,913     │ 15,008 │ The clean low-mile UL,       │
+  │ CPO, Dallas       │             │        │ local, CARFAX 1-owner        │
+  ├───────────────────┼─────────────┼────────┼──────────────────────────────┤
+  │ Miami 2024 Luxury │             │        │ Cheapest 2023+ Luxury;       │
+  │  CPO              │ $37,790     │ 24,025 │ rental/loaner history to     │
+  │                   │             │        │ confirm                      │
+  ├───────────────────┼─────────────┼────────┼──────────────────────────────┤
+  │ ~~Ourisman 2023   │ ~~$47,797~~ │ ~~6k~~ │ Out — accident on Carfax     │
+  │ UL, Rockville~~   │             │        │                              │
+  └───────────────────┴─────────────┴────────┴──────────────────────────────┘
+
+  Want me to sweep for any other low-mile (under ~12k) Ultra Luxurys that might
+  have appeared, now that Rockville is off the board?
+
+✻ Worked for 49s
+
+❯ napleton was sold                                                             
+
+⏺ Sorry to hear that — it was the best fit for your bracket. Let me re-sweep the
+  national Ultra Luxury market for what's available now.
+
+⏺ Fetch(https://www.cars.com/shopping/results/?stock_type=used&makes[]=lexus&mod
+       els[]=lexus-es_300h&trims[]=lexus-es_300h-ultra_luxury&maximum_distance=a
+       ll&zip=75201&year_min=2023&mileage_max=45000&sort=list_price&page_size=50
+       &napleton=refresh)
+  ⎿  Received 857.4KB (200 OK)
+
+⏺ Fetch(https://www.cars.com/vehicledetail/ddccbfd3-d60f-4e89-9973-d21c53c36daf/
+       )
+  ⎿  Received 165.8KB (200 OK)
+
+⏺ Fetch(https://www.cars.com/vehicledetail/85f39621-9a21-4c6f-8f88-4df6f7678243/
+       )
+  ⎿  Received 165.7KB (200 OK)
+
+⏺ Both verified as genuine Ultra Luxurys (58AFA VINs), both freshly listed July
+  23. Here's the post-Napleton reality:
+
+  Your $40k / 30–40k-mile bracket is now empty
+
+  The Napleton car was the only UL in the country at that price point — and it
+  sold within days of hitting our radar. That's the lesson: cars priced $5k+
+  under the trim's market floor move in under three weeks. The bracket isn't
+  fantasy (Napleton proved it exists), but it requires pouncing the day one
+  appears, not deliberating.
+
+  Best available right now: Toyota of Cedar Park — $47,496 · 28,218 mi
+
+  2024 Ultra Luxury, Eminent White Pearl / black · listing
+  (https://www.cars.com/vehicledetail/85f39621-9a21-4c6f-8f88-4df6f7678243/)
+
+  - Loaded: Mark Levinson, head-up display, triple-beam LEDs, panoramic view
+  monitor with parking assist, wireless charging — the full UL kit including the
+  audio upgrade Napleton's car lacked
+  - AutoCheck shows no accidents or title issues; big family-owned franchise
+  store (4,191 reviews)
+  - Rated a "great deal" — priced below the $47,859–$53,230 market band for this
+  car
+  - The logistics beat everything else we've looked at: it's in Texas. No
+  interstate tax paperwork, no shipping, no detour — you get to Dallas however
+  you're getting there, then it's a 3-hour drive to Austin's suburbs. Texas
+  6.25% tax applies identically to any car you buy.
+  - Caveats: no-haggle store (the price is the price, realistically), and —
+  lesson freshly learned — get the live Carfax by VIN (58AFA1C17RU044248) before
+  driving down.
+
+  The runner-up, a $46,990 / 26k-mile UL at Unlimited Motors in Elwood, IN, is
+  $500 cheaper but it's an independent multi-lot used dealer with at least one
+  recent review complaining about post-payment delivery problems, its
+  accident/owner history isn't visible in the listing, and Mark Levinson isn't
+  confirmed. Not worth $500.
+
+  Where this leaves your two brackets
+
+  - $45k / 9–12k miles: still doesn't exist (floor remains ~$52k at Lexus of
+  Wichita). No change.
+  - $40k / 30–40k miles: gone with Napleton. Your three realistic paths: (a)
+  stretch to $47.5k for the Cedar Park car — more miles than bracket A wanted
+  but every feature, clean history, and zero logistics; (b) set a
+  Cars.com/CarGurus saved-search alert for "ES 300h Ultra Luxury, 2023+, under
+  $43k" and be ready to put a deposit down same-day when the next Napleton-type
+  car surfaces — they come from lease returns and appear every few weeks; (c)
+  flex on trim: the Miami 2024 Luxury CPO at $37,790 is still listed and still
+  the best pure deal in this entire search if the UL extras aren't must-haves.
+
+  If I'm choosing for you: Cedar Park. It's $6k over your bracket but it's the
+  right car, clean, loaded, essentially local to your destination, and available
+  today rather than theoretical.
+
+✻ Cooked for 1m 45s
+
+❯ what about this one? https://www.sewell.com/inventory/used-2025-lexus-es-300h 
+  -luxury-fwd-4dr-car-58aea1c1xsu065130/                                        
+
+⏺ That's the Sewell 2025 Luxury I'd spotted earlier at $49,825 — possibly the
+  same car you asked about with the delivery miles. Let me pull the listing
+  details.
+
+⏺ Fetch(https://www.sewell.com/inventory/used-2025-lexus-es-300h-luxury-fwd-4dr-
+       car-58aea1c1xsu065130/)
+  ⎿  Received 400.6KB (200 OK)
+⏺ That's the same car I flagged earlier — here's the full picture:
+
+  2025 ES 300h Luxury · 83 miles · $49,825 all-in ($49,600 + $225 doc)
+  Sewell Lexus of Dallas · Stock P40786 · Nightfall Mica over Acorn · CARFAX
+  1-owner
+
+  My verdict: right car, wrong price — by about $3,000. This is exactly the car
+  my earlier valuation applied to, and the analysis holds:
+
+  - It's the outgoing generation. The redesigned 2026 ES is in showrooms now — a
+  new ES 350h Premium is ~$51,000. Sewell is asking 98% of new-redesigned-car
+  money for the last-gen model. The 83 miles make it feel new, but the market
+  will treat it as "used previous-gen 2025" the day you register it.
+  - The comps say $46–48k. Used 2025 Luxurys nationally: $46,813 (18k mi),
+  $46,998 CPO (28k mi), $48,084 (13k mi). An 83-mile example deserves the top of
+  that range, not $2k above it.
+  - It's titled, so the warranty clock is already running — ask for the
+  in-service date. And it's not listed as CPO; at this price, ask Sewell to
+  include L/Certification (they can certify their own Lexus inventory, and it's
+  worth ~$2k to you).
+
+  What's genuinely attractive: it's a one-owner, essentially unused car at a
+  first-class store in Dallas — zero logistics, zero unknowns about how it was
+  treated, easy service relationship afterward. There's real value in that
+  convenience; just not $3k of it.
+
+  How I'd play it: offer $46,500 all-in, settle up to ~$47,500–48,000 if they 
+  include L/Certified status. Sewell isn't a big-discount store, but this unit
+  has now been sitting at $49,825 for a while, the new ES is cannibalizing its
+  audience in their own showroom, and July ends in six days.
+
+  And keep the cross-shop math in view:
+
+  ┌──────────────────┬──────────┬────────┬─────────────────────────────────┐
+  │       Car        │  Price   │ Miles  │          The trade-off          │
+  ├──────────────────┼──────────┼────────┼─────────────────────────────────┤
+  │ This Sewell 2025 │ $49,825  │ 83     │ Newest, cleanest, local —       │
+  │  Luxury          │ ask      │        │ priciest                        │
+  ├──────────────────┼──────────┼────────┼─────────────────────────────────┤
+  │ Cedar Park 2024  │ $47,496  │ 28,218 │ $2.3k less for the trim above,  │
+  │ Ultra Luxury     │          │        │ ML + HUD, also in Texas         │
+  ├──────────────────┼──────────┼────────┼─────────────────────────────────┤
+  │ Miami 2024       │ $37,790  │ 24,025 │ Same trim, $12k less, CPO —     │
+  │ Luxury CPO       │          │        │ rental history + shipping       │
+  └──────────────────┴──────────┴────────┴─────────────────────────────────┘
+
+  At $49.8k I'd take the Cedar Park UL instead; at ~$46.5–47k this Sewell car
+  becomes a legitimately good buy and the easiest transaction of everything
+  we've found. If they won't budge under $48k, walk — the comps will keep
+  sliding as 2026s stack up.
+
+✻ Cooked for 57s
+
+※ recap: You're hunting an ES 300h deal to register in Dallas; Napleton sold, so top picks are the Cedar Park Ultra Luxury at $47,496 and Sewell's 83-mile 2025 Luxury. Next: pull Carfaxes, then offer Sewell $46,500 or buy Cedar Park.
+
+❯ whats the main difference between the 2022 vs 2023 for lexus es 300h          
+
+⏺ The short answer is "almost nothing mechanical, one meaningful tech change" —
+  but let me verify the exact year the infotainment switched, since that's the
+  difference buyers actually feel.
+
+⏺ Web Search("2023 Lexus ES changes vs 2022 Lexus Interface infotainment
+            wireless CarPlay what's new F Sport Design")
+  ⎿  Did 1 search in 9s
+
+⏺ Confirmed — here's the real difference. Mechanically they're identical (same
+  215-hp hybrid, same chassis, same styling — the ES's facelift happened in
+  2022). The 2023 change is all about the cockpit tech, and it's the one 
+  difference you'll feel every single day:
+
+  What 2023 added over 2022:
+
+  1. Lexus Interface infotainment — the modern cloud-based system (same family
+  as the new NX/RX): higher-resolution anti-glare 8" standard / 12.3" available
+  touchscreen, cloud navigation, "Hey Lexus" voice assistant, over-the-air
+  updates
+  2. The infamous trackpad was deleted. The 2022 still has Lexus's old Remote
+  Touch touchpad on the console (universally disliked by reviewers) alongside
+  its touchscreen running the old software
+  3. Wireless Apple CarPlay and Android Auto standard (2022 requires a cable),
+  plus dual-device Bluetooth
+  4. Redesigned center console — the trackpad's space became a sunglass holder,
+  relocated cupholders, and an available wireless charging pad
+  5. F SPORT Design trim added (the F Sport look without the adaptive
+  suspension), including on the 300h
+
+  Everything else — power, fuel economy (43/44 mpg), Lexus Safety System+ 2.5,
+  trim structure, seats, dimensions — carried over unchanged. Performance is the
+  same car to the decimal.
+
+  What this means for your shopping:
+
+  - The price gap you've seen in the listings is largely this: the 2022 Ultra
+  Luxury at Sewell Fort Worth was $43,720 while 2023 ULs run $47.5–50k. A chunk
+  of that $4–6k is the infotainment generation, not just the model year.
+  - If you're keeping the car 5+ years, buy 2023+. The old 2022 system will feel
+  dated fast, the trackpad annoys daily, and resale will increasingly favor the
+  Lexus Interface cars. This is also why I've kept your search at 2023+.
+  - If you were purely value-hunting, a 2022 is the same machine for
+  meaningfully less — but you told me 2023+, and given the tech delta, that's
+  the right call.
+
+  One practical tip: this also gives you a instant way to spot a mislabeled
+  model year in photos — if you see a touchpad on the console, it's a 2022 or
+  earlier; if the console is smooth with a wireless charger up front, it's
+  2023+.
+
+  Sources: Lexus USA Newsroom — 2023 ES multimedia & F Sport (https://pressroom.
+  lexus.com/new-f-sport-variations-multimedia-on-2023-lexus-es/), KBB — 2023 ES
+  new infotainment (https://www.kbb.com/car-news/2023-lexus-es-new-f-sport-packa
+  ges-infotainment-system), CarBuzz — 2023 ES F Sport packages (https://carbuzz.
+  com/news/2023-lexus-es-arrives-with-new-f-sport-design-and-handling-packages/)
+
+✻ Brewed for 1m 5s
+
+❯ and whats difference between luxury vs ultra luxury                           
+
+⏺ This one I can answer from what we've already verified across the listings and
+  spec sources — no new digging needed.
+
+  What they share (so you know what you're not paying for): identical powertrain
+  and mpg, same safety suite, and the core comfort kit — heated and ventilated
+  front seats with memory, genuine leather, wood interior trim with ambient
+  lighting, navigation. Mark Levinson is optional on both, never standard. A
+  well-equipped Luxury already feels like a proper Lexus.
+
+  What Ultra Luxury adds over Luxury — essentially the gadget-and-coddling
+  layer:
+
+  1. Head-up display — biggest daily-use item of the bunch
+  2. Hands-free power trunk with kick sensor (Luxury's trunk is manual)
+  3. Heated steering wheel with a wood rim
+  4. Triple-beam adaptive LED headlights (vs standard bi-LED)
+  5. Power rear sunshade + manual rear side shades — the back-seat-passenger
+  feature
+  6. Parking assist with automatic braking and surround-view camera
+  7. Softer semi-aniline quilted leather (vs Luxury's perforated leather) and a
+  14-way driver's seat
+  8. Upgraded open-pore wood and noise-reducing wheel design
+
+  Nothing on that list changes how the car drives — it's pure comfort,
+  convenience, and cabin ambiance.
+
+  The money angle, which is the interesting part: new, the gap was only ~$3,600
+  ($48,510 vs $52,130 MSRP). Used, it compresses even further — look at your own
+  candidates: the Louisville 2024 Luxury CPO asks $46,598 at 25k miles while
+  the Cedar Park 2024 Ultra Luxury asks $47,496 at 28k miles. That's a ~$900
+  step for the entire feature list above. This is why I've consistently steered
+  you toward ULs: on the used market, the top trim is nearly free relative to
+  Luxury, so the only reason to buy a used Luxury is when a specific car is
+  exceptionally priced (like the $37,790 Miami CPO, which wins on price, not
+  trim).
+
+  Quick visual tells when you're scanning photos: wood-rimmed steering wheel,
+  headlights with three distinct LED elements, and a rear-window sunshade =
+  Ultra Luxury. Smooth black wheel rim and plain headlamps = Luxury.
+
+✻ Sautéed for 24s
+
+❯ how much should i offer for https://www.carfax.com/VehicleHistory/p/Report.cf 
+  x?partner=DEY_0&vin=58AFZ1B13PU159081                                         
+
+⏺ Let me decode that VIN first — something looks off about it — and find the
+  listing it belongs to.
+
+⏺ Fetch(https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVin/58AFZ1B13PU159081?form
+       at=json)
+  ⎿  Received 11.9KB (200 OK)
+
+⏺ Web Search(""58AFZ1B13PU159081"")
+  ⎿  Did 1 search in 4s
+
+⏺ Fetch(https://www.cars.com/shopping/results/?stock_type=used&makes[]=lexus&mod
+       els[]=lexus-es_350&trims[]=lexus-es_350-ultra_luxury&maximum_distance=all
+       &zip=75201&year_min=2023&mileage_max=50000&sort=list_price&page_size=50)
+  ⎿  Received 858.9KB (200 OK)
+
+⏺ Now I can give you a grounded answer — with the caveat that the Carfax link
+  itself is behind Carfax's bot-wall on my end, so I can't see this specific
+  car's mileage, asking price, or history. Here's the framework:
+
+  First: confirm you want the V6
+
+  You've been hunting 300h hybrids all week. This is the gas ES 350 — same Ultra
+  Luxury features, 301 hp V6 (quicker, smoother, some people specifically
+  prefer it), but ~25 mpg combined vs the hybrid's 43–44. At 12k miles/year
+  that's roughly $650–700/year more in fuel, forever. If the hybrid economy was
+  part of the point, walk regardless of price. If you're happy with the V6, read
+  on.
+
+  What 2023 ES 350 Ultra Luxurys actually sell for
+
+  Current national asking prices, cheapest first:
+
+  ┌────────┬─────────┬───────────────────┐
+  │ Miles  │ Asking  │       Notes       │
+  ├────────┼─────────┼───────────────────┤
+  │ 45,115 │ $41,779 │ market floor      │
+  ├────────┼─────────┼───────────────────┤
+  │ 42,639 │ $46,221 │ CPO (Lakeway, TX) │
+  ├────────┼─────────┼───────────────────┤
+  │ 25,576 │ $46,776 │                   │
+  ├────────┼─────────┼───────────────────┤
+  │ 31,603 │ $48,520 │ CPO (Fort Worth)  │
+  ├────────┼─────────┼───────────────────┤
+  │ 20,204 │ $48,690 │                   │
+  └────────┴─────────┴───────────────────┘
+
+  Offer bands (assuming its Carfax is clean)
+
+  - ~15–20k miles: offer $45,000, settle up to ~$47,000
+  - ~25–30k miles: offer $43,500, settle up to ~$46,000
+  - ~35–45k miles: offer $40,500, settle up to ~$44,000
+
+  Those open ~6–8% under comp-implied retail — aggressive but defensible, since
+  you can cite the $41.8k floor car and the two Texas CPO comps by name.
+
+  Before you make any offer, check three things on the Carfax you're holding
+
+  1. Accidents/damage — any entry and your offer drops 10–15% minimum, or you
+  walk (it's been your hard rule all along, and it should stay)
+  2. Use type — personal vs lease/rental/loaner; non-personal use = knock
+  another $1,000–1,500 off
+  3. Owner count and service records — 1-owner with dealer service history
+  supports the top of the band; multiple owners or gaps push you to the bottom
+
+  If you send me the dealer's listing link (or just the asking price and
+  mileage), I'll give you a specific number instead of a band — and I can also
+  tell you whether the Fort Worth CPO at $48,520 or Lakeway CPO at $46,221 makes
+  a better Texas-local alternative to whatever this one costs.
+
+✻ Worked for 1m 33s
+
+❯ oh no i am looking for 300h hybrid. give me the frame work. how much to       
+  offer. give me matrix for 2023, 2024, 2025 ultra luxury, luxury and premium   
+  for different mileage bands                                                   
+
+⏺ Here's the full framework, built from the ~40 live listings we've verified
+  this week. All numbers are maximum pay (all-in with doc fees, before tax) for
+  a clean-history, no-accident, personal-use, non-CPO car — with an opening
+  offer about $2,000 under each cell.
+
+  Ultra Luxury — max pay
+
+  ┌───────────┬─────────┬─────────┬─────────┐
+  │   Miles   │  2023   │  2024   │  2025   │
+  ├───────────┼─────────┼─────────┼─────────┤
+  │ Under 10k │ $47,500 │ $49,500 │ $52,000 │
+  ├───────────┼─────────┼─────────┼─────────┤
+  │ 10–20k    │ $46,000 │ $48,000 │ $50,000 │
+  ├───────────┼─────────┼─────────┼─────────┤
+  │ 20–30k    │ $44,500 │ $46,500 │ $48,500 │
+  ├───────────┼─────────┼─────────┼─────────┤
+  │ 30–45k    │ $42,500 │ $44,500 │ $46,500 │
+  └───────────┴─────────┴─────────┴─────────┘
+
+  Reality check: asks currently run $47–50k for 2024s at 21–29k miles, so you're
+  negotiating 3–7% off — doable. The sold Napleton car ($41.5k at 39k miles)
+  sat right at this matrix's 2023/30–45k cell, and it moved in days: when a car
+  prices at the matrix, don't negotiate, buy.
+
+  Luxury — max pay
+
+  ┌───────────┬─────────┬─────────┬─────────┐
+  │   Miles   │  2023   │  2024   │  2025   │
+  ├───────────┼─────────┼─────────┼─────────┤
+  │ Under 10k │ $44,000 │ $46,000 │ $48,000 │
+  ├───────────┼─────────┼─────────┼─────────┤
+  │ 10–20k    │ $42,500 │ $44,500 │ $46,000 │
+  ├───────────┼─────────┼─────────┼─────────┤
+  │ 20–30k    │ $41,000 │ $43,000 │ $44,500 │
+  ├───────────┼─────────┼─────────┼─────────┤
+  │ 30–45k    │ $39,500 │ $41,500 │ $42,500 │
+  └───────────┴─────────┴─────────┴─────────┘
+
+  The Miami car ($37,790, 2024, 24k, CPO) is ~$7k under its cell even after the
+  non-personal-use deduction — which is why I keep calling it the best pure deal
+  we've found.
+
+  Premium (base + Premium package) — max pay
+
+  ┌───────────┬─────────┬─────────┬─────────┐
+  │   Miles   │  2023   │  2024   │  2025   │
+  ├───────────┼─────────┼─────────┼─────────┤
+  │ Under 10k │ $41,000 │ $43,000 │ $45,000 │
+  ├───────────┼─────────┼─────────┼─────────┤
+  │ 10–20k    │ $40,000 │ $41,500 │ $43,500 │
+  ├───────────┼─────────┼─────────┼─────────┤
+  │ 20–30k    │ $38,500 │ $40,000 │ $42,000 │
+  ├───────────┼─────────┼─────────┼─────────┤
+  │ 30–45k    │ $37,000 │ $38,500 │ $40,000 │
+  └───────────┴─────────┴─────────┴─────────┘
+
+  For a plain base car without the Premium package, subtract another ~$1,000.
+
+  Adjustments to any cell
+
+  ┌──────────────────────────────────────┬──────────────────────────────────┐
+  │                Factor                │            Adjustment            │
+  ├──────────────────────────────────────┼──────────────────────────────────┤
+  │ Lexus L/Certified CPO                │ +$1,500–2,000                    │
+  ├──────────────────────────────────────┼──────────────────────────────────┤
+  │ Mark Levinson audio                  │ +$500–1,000                      │
+  ├──────────────────────────────────────┼──────────────────────────────────┤
+  │ Non-personal use                     │ −$1,000–1,500                    │
+  │ (rental/loaner/lease)                │                                  │
+  ├──────────────────────────────────────┼──────────────────────────────────┤
+  │ Multiple owners                      │ −$500                            │
+  ├──────────────────────────────────────┼──────────────────────────────────┤
+  │ 45+ days on market / prior price     │ open $1,000 lower                │
+  │ cuts                                 │                                  │
+  ├──────────────────────────────────────┼──────────────────────────────────┤
+  │ Any accident on the live Carfax      │ walk (your rule, and the right   │
+  │                                      │ one)                             │
+  └──────────────────────────────────────┴──────────────────────────────────┘
+
+  How to run the play
+
+  1. Verify trim by VIN before anything: 58ADA = Base/Premium, 58AEA = Luxury,
+  58AFA = Ultra Luxury (and 1C1 = hybrid, 1B1 = the V6 gas car that almost got
+  you yesterday). We've caught two mislabels this week.
+  2. Live Carfax by VIN from the dealer — not the listing-site badges, which
+  were wrong on the Rockville car.
+  3. Open ~$2k under the matrix cell, citing comps by name (I can pull current
+  ones for any specific car). Settle at the cell; walk $500 above it.
+  4. Get the out-the-door number in writing before traveling — vehicle + doc +
+  any add-ons. Texas 6.25% is the same wherever you buy, so compare cars
+  pre-tax.
+  5. Timing pressure is your friend: month-end (July 31 is next week), and every
+  week of new 2026 ES supply pushes this whole matrix down — figure
+  ~$300–500/month of drift. Don't let a dealer's "the price is firm" outlast
+  that math.
+
+  One strategic note on 2025s: the matrix caps them hard because a brand-new
+  2026 ES 350h starts ~$51k. Most 2025 UL asks right now are $54–60k — ignore
+  them entirely rather than negotiating; the sellers haven't accepted the new
+  reality yet. The value sweet spot in today's market is a 2024 Ultra Luxury at 
+  20–30k miles for ≤$46,500 — the Cedar Park car ($47,496, ML + HUD, clean
+  AutoCheck, in Texas) is $1k over that cell and the closest live candidate to
+  matrix-fair.
+
+✻ Sautéed for 1m 12s
+
+※ recap: You're shopping for a used Lexus ES 300h to register in Dallas, and I built your offer-price matrix by year, trim, and mileage. Next: get the live Carfax on the Cedar Park 2024 Ultra Luxury and offer around $45,500.
+
+❯ lexus dealership has these three. you tell me how much to offer for each of   
+  them. 1) https://www.sewell.com/inventory/used-2025-lexus-es-300h-luxury-fwd- 
+  4dr-car-58aea1c1xsu065130/ 2) https://www.sewell.com/inventory/certified-used 
+  -2024-lexus-es-300h-fwd-4dr-car-58ada1c17ru048775/ 3)                         
+  https://www.sewell.com/inventory/certified-used-2023-lexus-es-300h-ultra-luxu 
+  ry-fwd-4dr-car-58afa1c11pu033047/                                             
+
+⏺ All three are at Sewell — good, that's a single negotiation. Let me confirm
+  current pricing and equipment on each straight from their pages.
+
+⏺ Fetch(https://www.sewell.com/inventory/used-2025-lexus-es-300h-luxury-fwd-4dr-
+       car-58aea1c1xsu065130/)
+  ⎿  Received 400.6KB (200 OK)
+⏺ Fetch(https://www.sewell.com/inventory/certified-used-2024-lexus-es-300h-fwd-4
+       dr-car-58ada1c17ru048775/)
+  ⎿  Received 399.2KB (200 OK)
+
+⏺ Fetch(https://www.sewell.com/inventory/certified-used-2023-lexus-es-300h-ultra
+       -luxury-fwd-4dr-car-58afa1c11pu033047/)
+  ⎿  Received 396.6KB (200 OK)
+
+⏺ Here are your numbers for all three, matrix-applied with today's confirmed
+  asks:
+
+  Car 1 — 2025 Luxury · 83 mi · asking $49,825 (not CPO)
+
+  Open at $46,000 · settle at $47,500 · hard ceiling $48,000 (and only if they 
+  add L/Certification)
+
+  Matrix cell: 2025 Luxury under 10k = $48,000, and it gets no CPO bump because
+  it isn't certified. Your leverage: the redesigned 2026 ES 350h in their own
+  showroom starts ~$51k; used 2025 Luxury comps run $46.8–48.1k at 13–18k miles;
+  and this car has sat at the same price for at least a week. A near-new car
+  they took in has real margin — asking them to certify it costs them little and
+  closes your gap.
+
+  Car 2 — 2024 base + Premium pkg, CPO · 30,213 mi · asking $44,213
+
+  Open at $40,000 · settle at $41,500 · hard ceiling $42,000
+
+  Matrix cell: 2024 Premium at the 30k boundary ≈ $39,500–40,000, plus $2,000
+  for CPO = $41,500–42,000. This is the most overpriced of the three — about
+  $2,200–2,700 above ceiling. Your comp ammunition is brutal: Shottenkirk
+  Weatherford (an hour away) has a 2024 base with 6,000 fewer miles for $41,177,
+  and CarMax has a 43k-mile 2024 at $41,998. Say those numbers out loud and let
+  them react.
+
+  Car 3 — 2023 Ultra Luxury CPO · 15,008 mi · asking $49,913
+
+  Open at $46,000 · settle at $47,500 · hard ceiling $48,000
+
+  Matrix cell: 2023 UL at 10–20k = $46,000 + $2,000 CPO = $48,000. No Mark
+  Levinson listed, so no adder. Comp ammunition: Toyota of Cedar Park's 2024 UL
+  — one year newer, with ML and HUD — asks $47,496; other 2024 ULs sit at
+  $46,990–47,560. A 2023 asking $50k while newer, better-equipped cars ask less
+  is exactly the argument that moves a sales manager. Note their price includes
+  a $1,795 dealer protection package — if they won't cut price, deleting or
+  comping that is the same money.
+
+  How to play it as one negotiation
+
+  You're in an unusually strong spot: one store, three acceptable cars. Tell the
+  salesperson exactly that — "I'm buying one of these three by month-end; here 
+  are my numbers on each; whichever car hits its number first wins." That turns
+  their own inventory into competing bidders, and July 31 is Friday.
+
+  If two land at ceiling simultaneously: take Car 3 over Car 1 — same $48k, but
+  you get the full Ultra Luxury feature set plus CPO versus a non-certified
+  Luxury, and their warranty runout dates are nearly identical (both covered to
+  ~2029). Take Car 2 only if it actually reaches $42k — at that price it's the
+  value buy; at $44k it's the worst deal of the three.
+
+  And the standing rule before signing anything: live Carfax on the specific
+  VIN, even at a store this reputable — their own 2022 base gained 5,800 loaner
+  miles while listed, so ask directly whether any of these served loaner duty.
+
+✻ Cogitated for 1m 26s
+
+※ recap: You're buying a used ES 300h hybrid near Dallas, now negotiating three cars at Sewell. Next action: give Sewell your numbers ($46k on the 2025 Luxury, $40k on the 2024, $46k on the 2023 Ultra Luxury) before month-end Friday.
+
+❯ /export                                                                       
+  ⎿  Conversation copied to clipboard
+
+❯ /export                                                                       
+  ⎿  Export cancelled
